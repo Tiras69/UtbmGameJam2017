@@ -37,7 +37,7 @@ public class PauseUIManager : Singleton<PauseUIManager>
     {
         if (Input.GetKeyUp(KeyCode.Escape))
         {
-            Toggle();
+            Show();
         }
     }
 
