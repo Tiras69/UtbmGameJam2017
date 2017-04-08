@@ -1,5 +1,9 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
+using System.IO;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -18,8 +22,8 @@ public class GameManager : Singleton<GameManager> {
     protected GameManager()
     {
         m_currentGameState = GameState.GameState_MENU;
-        m_allGameLaws = new List<Law>(100);
-        m_currentGameSessionLaws = new List<Law>(100);
+        m_allGameLaws = new List<Law>(100);                 // Set to 100 to avoid memory allocations.
+        m_currentGameSessionLaws = new LinkedList<Law>();
         CurrentMonthInSemester = 0;
     }
     #endregion
@@ -38,15 +42,17 @@ public class GameManager : Singleton<GameManager> {
     private int m_employement;
     private int m_religion;
     List<Law> m_allGameLaws;
-    List<Law> m_currentGameSessionLaws;
+    LinkedList<Law> m_currentGameSessionLaws;
+    Law m_currentLaw;
     private int m_currentMonthInSemester;
 
     public Slider economy;
     public Slider emploi;
     public Slider religion;
 
-    
+    #endregion
 
+    #region Properties
     public int GovernmentOpinion
     {
         get
@@ -137,35 +143,125 @@ public class GameManager : Singleton<GameManager> {
             m_currentMonthInSemester = value;
         }
     }
-
     #endregion
 
     #region Methods
     public void LoadAllLaws()
     {
+        UnityEngine.Debug.Log(Application.dataPath);
+
+        // Get files with the xml extension
+        string[] files = Directory.GetFiles(Application.streamingAssetsPath+"/Laws", "*.xml");
+
+        for (int i = 0; i < files.Length; i++)
+        {
+            try {
+                Law tmplaw = XmlSerializerHelper<Law>.DeserializeXmlFile(files[i]);
+                m_allGameLaws.Add(tmplaw);
+            }
+            catch( Exception e)
+            {
+                // Trigger a breakpoint if Visual is attached to UNITY
+                #if UNITY_EDITOR
+                if (Debugger.IsAttached)
+                    Debugger.Break();
+                #endif
+                UnityEngine.Debug.Log(e.Message);
+            }
+
+        }
 
     }
 
-    public Law GetNextLaw()
+    public void StartGameSession()
     {
-        if (CurrentMonthInSemester < 6)
-        {
-            m_currentGameState = GameState.GameState_DECIDELAW;
-            int nextIndex = Random.Range(0, m_currentGameSessionLaws.Count - 1);
-            CurrentMonthInSemester++;
-            return m_currentGameSessionLaws[nextIndex];
-        }
-        else
-        {
-            StartSemesterReport();
-            CurrentMonthInSemester = 0;
-        }
-        return null;
+        m_currentGameState = GameState.GameState_BEGINSEMESTER;
+        // Here we will add the first avaible laws for a start game.
+        // But for debug purpose it's the entire law database.
+        foreach (Law law in m_allGameLaws)
+            m_currentGameSessionLaws.AddLast( law );
+
+        m_currentLaw = m_currentGameSessionLaws.ElementAt( UnityEngine.Random.Range(0, m_currentGameSessionLaws.Count - 1 ) );
+    }
+
+    public Law GetCurrentLaw()
+    {
+        return m_currentLaw;
+    }
+
+    public void GoToNextMonth()
+    {
+
     }
 
     public void StartSemesterReport()
     {
         m_currentGameState = GameState.GameState_SEMESTERREPORT;
+    }
+
+    public void ModifyGameProperty(GameProperty _property, int _value)
+    {
+        switch (_property)
+        {
+            case GameProperty.GameProperty_ECONOMY:
+                {
+                    m_economy += _value;
+                }
+                break;
+
+            case GameProperty.GameProperty_EMPLOYMENT:
+                {
+                    m_employement += _value;
+                }
+                break;
+
+            case GameProperty.GameProperty_GOVERNMENTOPINION:
+                {
+                    m_governmentOpinion += _value;
+                }
+                break;
+
+            case GameProperty.GameProperty_PERSONALMONEY:
+                {
+                    m_personalMoney += _value;
+                }
+                break;
+
+            case GameProperty.GameProperty_POPULACEOPINION:
+                {
+                    m_populaceOpinion += _value;
+                }
+                break;
+
+            case GameProperty.GameProperty_RELIGION:
+                {
+                    m_religion += _value;
+                }
+                break;
+
+            default:
+                {
+                    UnityEngine.Debug.Log("Game Property not yet supported");
+                }
+                break;
+        }
+    }
+
+    public void AddLawToPool(int _id)
+    {
+        Law law = FindLawById(_id);
+        if( law != null)
+            m_currentGameSessionLaws.AddLast( law );
+        else
+            UnityEngine.Debug.Log("law " + _id + "doesn't exists");
+    }
+
+    private Law FindLawById(int _id)
+    {
+        for (int i = 0; i < m_allGameLaws.Count; i++)
+            if (m_allGameLaws[i].Id == _id)
+                return m_allGameLaws[i];
+        return null;
     }
 
     #endregion

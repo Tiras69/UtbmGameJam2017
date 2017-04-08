@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class ManageEvent : MonoBehaviour {
 
-    public GameManager game;
-    public GameController control;
+    private Law m_currentLaw;
 
     // Use this for initialization
     void Start () {
-		
+        GameManager.Instance.LoadAllLaws();
+        GameManager.Instance.StartGameSession();
+        m_currentLaw = GameManager.Instance.GetCurrentLaw();
 	}
 	
 	// Update is called once per frame
@@ -34,22 +35,29 @@ public class ManageEvent : MonoBehaviour {
 
     public void ClickValider()
     {
-        
-        Debug.Log("V");
+        UpdateGameSession(m_currentLaw.YesLawsToAdd, m_currentLaw.YesPropertyModifiers);
     }
 
     public void ClickAccentuer()
     {
-        Debug.Log("A");
+        UpdateGameSession(m_currentLaw.MaximizeLawsToAdd, m_currentLaw.MaximizePropertyModifiers);
     }
 
     public void ClickDiminuer()
     {
-        Debug.Log("D");
+        UpdateGameSession(m_currentLaw.MinimizeLawsToAdd, m_currentLaw.MinimizePropertyModifiers);
     }
 
     public void ClickRefuser()
     {
-        Debug.Log("R");
+        UpdateGameSession(m_currentLaw.NoLawsToAdd, m_currentLaw.NoPropertyModifiers);
+    }
+
+    private void UpdateGameSession(List<int> _lawIds, List<PropertyModifier> _modifiers)
+    {
+        foreach (int id in _lawIds)
+            GameManager.Instance.AddLawToPool(id);
+        foreach (PropertyModifier prop in _modifiers)
+            GameManager.Instance.ModifyGameProperty(prop.Property, prop.Value);
     }
 }

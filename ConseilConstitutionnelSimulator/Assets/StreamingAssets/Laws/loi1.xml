@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Bien faire attention a ce que chaque loi est un ID UNIQUE -->
+<Law xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Id="0">
+  
+  <!-- ici le titre de la loi -->
+  <Title>Titre 1</Title>
+  
+  <!-- Ici le corps de la loi a rédiger-->
+  <Description>Description Lorem Ipsum</Description>
+  
+  <!-- Bouton Oui Conséquences-->
+  <!-- liste des modifieurs de propriété internes du jeu -->
+  <YesPropertyModifiers>
+    
+    <!-- On peu en ajouter plusieurs-->
+    <PropertyModifier AttributeName="ECONOMY" Value="10" />
+    <PropertyModifier AttributeName="EMPLOYMENT" Value="9" />
+    <PropertyModifier AttributeName="GOVERNMENTOPINION" Value="53" />
+    
+  </YesPropertyModifiers>
+  
+  <!-- Lois qui seront potentiellement montrée au joueur pendant des phases ultérieures -->
+  <YesLawsToAdd>
+    
+    <!-- on peu en mettre plusieurs-->
+    <LawId>3</LawId>
+    <LawId>8</LawId>
+    
+  </YesLawsToAdd>
+
+  <!-- Bouton Non Conséquences-->
+  <NoPropertyModifiers>
+    <PropertyModifier AttributeName="PERSONALMONEY" Value="1000" />
+    <PropertyModifier AttributeName="POPULACEOPINION" Value="-90" />
+    <PropertyModifier AttributeName="RELIGION" Value="8" />
+  </NoPropertyModifiers>
+  
+  <NoLawsToAdd>
+    <LawId>5</LawId>
+    <LawId>8</LawId>
+  </NoLawsToAdd>
+
+  <!-- Bouton Diminuer Conséquences-->
+  <MinimizePropertyModifiers>
+    <PropertyModifier AttributeName="GOVERNMENTOPINION" Value="-60" />
+  </MinimizePropertyModifiers>
+  <MinimizeLawsToAdd>
+    <LawId>1</LawId>
+  </MinimizeLawsToAdd>
+
+  <!-- il n'y a pas de conséquences  pour le bouton accentuer-->
+  <MaximizePropertyModifiers />
+  <MaximizeLawsToAdd />
+  
+</Law>

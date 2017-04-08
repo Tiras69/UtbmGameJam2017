@@ -16,7 +16,7 @@ public class UIManager : MonoBehaviour {
     public void setSoundActivated(bool on)
     {
         this.soundActivated = on;
-        SoundManager.I.enabled = on;
+        SoundManager.Instance.enabled = on;
     }
 
     //public void disableSound()

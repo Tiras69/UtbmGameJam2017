@@ -23,15 +23,15 @@ public class TutoSoundUsage : MonoBehaviour {
     }
     /* Pour lancer une music, suffit d'appeller le SoundManager.
      * Comme c'est un singleton, on appel nos méthode sur l'instance,
-     * sobrement nommé I.
+     * sobrement nommé Instance.
      */
-   SoundManager.I.FadeMusicTo(sc["test_music"], 5);
+   SoundManager.Instance.FadeMusicTo(sc["test_music"], 5);
   }
 	
 	void Update () {
     if (sumTime > 6)
     {
-      SoundManager.I.PlaySound(sc["test_audio"]);
+      SoundManager.Instance.PlaySound(sc["test_audio"]);
       sumTime = 0;
     }
 
