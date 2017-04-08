@@ -5,14 +5,24 @@ using UnityEngine;
 public class ManageEvent : MonoBehaviour {
 
     private Law m_currentLaw;
+    public GameController control;
 
     // Use this for initialization
     void Start () {
         GameManager.Instance.LoadAllLaws();
         GameManager.Instance.StartGameSession();
         m_currentLaw = GameManager.Instance.GetCurrentLaw();
-	}
+
+        UpdateText();
+
+    }
 	
+    public void UpdateText()
+    {
+        control.title.text = m_currentLaw.Title;
+        control.law.text = m_currentLaw.Description;
+    }
+
 	// Update is called once per frame
 	void Update () {
         if (Input.GetKeyUp(KeyCode.UpArrow))
@@ -59,5 +69,8 @@ public class ManageEvent : MonoBehaviour {
             GameManager.Instance.AddLawToPool(id);
         foreach (PropertyModifier prop in _modifiers)
             GameManager.Instance.ModifyGameProperty(prop.Property, prop.Value);
+
+        //Change Law
+        UpdateText();
     }
 }

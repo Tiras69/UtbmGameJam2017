@@ -9,18 +9,10 @@ public class GameController : MonoBehaviour {
     public Text title;
     public Text law;
     private Law currentLaw;
-
-    public Law getLaw()
-  
-        {
-            return currentLaw;
-        }
-
-      
+    
 
     // Use this for initialization
     void Start () {
-        newEvent();
     }
 	
 	// Update is called once per frame

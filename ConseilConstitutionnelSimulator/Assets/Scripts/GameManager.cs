@@ -6,6 +6,7 @@ using System.IO;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public enum GameState
 {
@@ -25,6 +26,9 @@ public class GameManager : Singleton<GameManager> {
         m_allGameLaws = new List<Law>(100);                 // Set to 100 to avoid memory allocations.
         m_currentGameSessionLaws = new LinkedList<Law>();
         CurrentMonthInSemester = 0;
+        m_governmentOpinion = 50;
+        m_populaceOpinion = 50;
+        m_personalMoney = 50;
     }
     #endregion
 
@@ -175,6 +179,17 @@ public class GameManager : Singleton<GameManager> {
 
     public void StartGameSession()
     {
+        foreach(Slider s in FindObjectsOfType<Slider>()){
+            if (s.name == "Economie")
+                economy = s;
+            else if (s.name == "Emploi")
+                emploi = s;
+            else if (s.name == "Religion")
+                religion = s;
+            else
+                UnityEngine.Debug.Log("fds");
+        }
+
         m_currentGameState = GameState.GameState_BEGINSEMESTER;
         // Here we will add the first avaible laws for a start game.
         // But for debug purpose it's the entire law database.
@@ -191,7 +206,13 @@ public class GameManager : Singleton<GameManager> {
 
     public void GoToNextMonth()
     {
-
+       CurrentMonthInSemester++;
+        if (CurrentMonthInSemester == 6)
+        {
+            StartSemesterReport();
+            m_currentLaw = m_currentGameSessionLaws.ElementAt(UnityEngine.Random.Range(0, m_currentGameSessionLaws.Count - 1));
+        } else
+            m_currentLaw = m_currentGameSessionLaws.ElementAt(UnityEngine.Random.Range(0, m_currentGameSessionLaws.Count - 1));
     }
 
     public void StartSemesterReport()
@@ -201,41 +222,60 @@ public class GameManager : Singleton<GameManager> {
 
     public void ModifyGameProperty(GameProperty _property, int _value)
     {
+
         switch (_property)
         {
             case GameProperty.GameProperty_ECONOMY:
                 {
                     m_economy += _value;
+                    economy.GetComponent<ManageJauge>().ChangeValue(_value);
                 }
                 break;
 
             case GameProperty.GameProperty_EMPLOYMENT:
                 {
                     m_employement += _value;
+                    emploi.GetComponent<ManageJauge>().ChangeValue(_value);
                 }
                 break;
 
             case GameProperty.GameProperty_GOVERNMENTOPINION:
                 {
                     m_governmentOpinion += _value;
+
+                    if (m_governmentOpinion <= 0)
+                    {
+                        SceneManager.LoadScene("LoseScene");
+                    }
                 }
                 break;
 
             case GameProperty.GameProperty_PERSONALMONEY:
                 {
                     m_personalMoney += _value;
+
+                    if (m_personalMoney <= 0)
+                    {
+                        SceneManager.LoadScene("LoseScene");
+                    }
                 }
                 break;
 
             case GameProperty.GameProperty_POPULACEOPINION:
                 {
                     m_populaceOpinion += _value;
+
+                    if (m_populaceOpinion <= 0)
+                    {
+                        SceneManager.LoadScene("LoseScene");
+                    }
                 }
                 break;
 
             case GameProperty.GameProperty_RELIGION:
                 {
                     m_religion += _value;
+                    religion.GetComponent<ManageJauge>().ChangeValue(_value);
                 }
                 break;
 
