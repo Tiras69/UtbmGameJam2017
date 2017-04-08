@@ -62,9 +62,14 @@ public class ManageEvent : MonoBehaviour {
     public void ClickRefuser()
     {
         UpdateGameSession(m_currentLaw.NoLawsToAdd, m_currentLaw.NoPropertyModifiers);
+
+    }
+    public void ClickOk()
+    {
+        GameManager.Instance.EndSemesterReport();
     }
 
-    private void UpdateGameSession(List<int> _lawIds, List<PropertyModifier> _modifiers)
+        private void UpdateGameSession(List<int> _lawIds, List<PropertyModifier> _modifiers)
     {
         foreach (int id in _lawIds)
             GameManager.Instance.AddLawToPool(id);

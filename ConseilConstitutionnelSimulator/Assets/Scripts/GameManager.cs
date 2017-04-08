@@ -29,7 +29,10 @@ public class GameManager : Singleton<GameManager> {
         m_governmentOpinion = 50;
         m_populaceOpinion = 50;
         m_personalMoney = 50;
-    }
+        gouvOpinionSemestre=0;
+        populaceOpinionSemestre=0;
+        personalMoneySemestre=0;
+}
     #endregion
 
     /// <summary>
@@ -42,6 +45,9 @@ public class GameManager : Singleton<GameManager> {
     private int m_governmentOpinion;
     private int m_populaceOpinion;
     private int m_personalMoney;
+    private int gouvOpinionSemestre;
+    private int populaceOpinionSemestre;
+    private int personalMoneySemestre;
     private int m_economy;
     private int m_employement;
     private int m_religion;
@@ -53,6 +59,8 @@ public class GameManager : Singleton<GameManager> {
     public Slider economy;
     public Slider emploi;
     public Slider religion;
+    private Image report;
+
 
     #endregion
 
@@ -189,7 +197,20 @@ public class GameManager : Singleton<GameManager> {
             else
                 UnityEngine.Debug.Log("Slider Missing");
         }
-
+        foreach (Image s in FindObjectsOfType<Image>())
+        {
+            if (s.name == "Report")
+            {
+                UnityEngine.Debug.Log("Report Not Missing");
+                report = s;
+                report.enabled = false;
+                report.GetComponentInChildren<Text>().enabled = false;
+                report.GetComponentInChildren<Button>().enabled = false;
+                report.GetComponentInChildren<Button>().image.enabled = false;
+                report.GetComponentInChildren<Button>().GetComponentInChildren<Text>().enabled = false;
+            }
+               
+        }
         m_currentGameState = GameState.GameState_BEGINSEMESTER;
         // Here we will add the first avaible laws for a start game.
         // But for debug purpose it's the entire law database.
@@ -212,10 +233,11 @@ public class GameManager : Singleton<GameManager> {
        m_currentGameSessionLaws.Remove(m_currentLaw);
        if (m_currentGameSessionLaws.Count > 0)
        {
-            if (CurrentMonthInSemester == 6)
+            if (CurrentMonthInSemester == 1)
             {
                 StartSemesterReport();
                 m_currentLaw = m_currentGameSessionLaws.ElementAt(UnityEngine.Random.Range(0, m_currentGameSessionLaws.Count));
+                CurrentMonthInSemester = 0;
             } else
                 m_currentLaw = m_currentGameSessionLaws.ElementAt(UnityEngine.Random.Range(0, m_currentGameSessionLaws.Count));
        }else
@@ -226,8 +248,23 @@ public class GameManager : Singleton<GameManager> {
     public void StartSemesterReport()
     {
         m_currentGameState = GameState.GameState_SEMESTERREPORT;
+        report.GetComponentInChildren<Text>().text = "Rapport Semestriel : \n \n Opinion du gouvernement : " + m_governmentOpinion +  "\n Opinion du peuple : "+ m_populaceOpinion+"\n Relevé bancaire : " + m_personalMoney + "\n \n Changement de l'opinion du gouvernement ce semestre : " + gouvOpinionSemestre + "\n Changement de l'opinion du peuple ce semestre : " + populaceOpinionSemestre + "\n Changement du relevé bancaire ce semestre " + personalMoneySemestre;
+        report.enabled = true;
+        report.GetComponentInChildren<Text>().enabled = true;
+        report.GetComponentInChildren<Button>().enabled = true;
+        report.GetComponentInChildren<Button>().image.enabled = true;
+        report.GetComponentInChildren<Button>().GetComponentInChildren<Text>().enabled = true;
     }
-
+    public void EndSemesterReport()
+    {
+        report.enabled = false;
+        report.GetComponentInChildren<Text>().enabled = false;
+        report.GetComponentInChildren<Button>().image.enabled = false;
+        report.GetComponentInChildren<Button>().GetComponentInChildren<Text>().enabled = false;
+        gouvOpinionSemestre = 0;
+        populaceOpinionSemestre = 0;
+        personalMoneySemestre = 0;
+    }
     public void ModifyGameProperty(GameProperty _property, int _value)
     {
 
@@ -250,7 +287,7 @@ public class GameManager : Singleton<GameManager> {
             case GameProperty.GameProperty_GOVERNMENTOPINION:
                 {
                     m_governmentOpinion += _value;
-
+                    gouvOpinionSemestre += _value;
                     if (m_governmentOpinion <= 0)
                     {
                         UnityEngine.Debug.Log("GOuv");
@@ -262,7 +299,7 @@ public class GameManager : Singleton<GameManager> {
             case GameProperty.GameProperty_PERSONALMONEY:
                 {
                     m_personalMoney += _value;
-
+                    personalMoneySemestre += _value;
                     if (m_personalMoney <= 0)
                     {
                         UnityEngine.Debug.Log("Money");
@@ -274,7 +311,7 @@ public class GameManager : Singleton<GameManager> {
             case GameProperty.GameProperty_POPULACEOPINION:
                 {
                     m_populaceOpinion += _value;
-
+                    populaceOpinionSemestre += _value;
                     if (m_populaceOpinion <= 0)
                     {
                         UnityEngine.Debug.Log("peuple");
