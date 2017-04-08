@@ -14,10 +14,13 @@ public class GameController : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        this.newEvent();
 
         this.titles.Add("test");
         this.laws.Add("test");
+
+
+        this.newEvent();
+
     }
 	
 	// Update is called once per frame
