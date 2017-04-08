@@ -41,8 +41,6 @@ public class GameManager : Singleton<GameManager> {
     List<Law> m_currentGameSessionLaws;
     private int m_currentMonthInSemester;
 
-    private Random m_randomNumberGenerator = new Random();
-
     #endregion
 
     #region Methods
@@ -56,7 +54,7 @@ public class GameManager : Singleton<GameManager> {
         if (m_currentMonthInSemester < 6)
         {
             m_currentGameState = GameState.GameState_DECIDELAW;
-            int nextIndex = m_randomNumberGenerator.Next(0, m_currentGameSessionLaws.Count - 1);
+            int nextIndex = Random.Range(0, m_currentGameSessionLaws.Count - 1);
             m_currentMonthInSemester++;
             return m_currentGameSessionLaws[nextIndex];
         }
