@@ -14,7 +14,7 @@ public class LoadLoseScene : MonoBehaviour
     {
         // TODO get defeat type from GameManager
         //GameManager.I.getDefeatType();
-        // TODO depending the defeat type, assign the attributes (or remove them and the function) 
+        // TODO depending the defeat type, assign the attributes (or remove them and the function)
     }
 
     // Update is called once per frame
