@@ -233,7 +233,7 @@ public class GameManager : Singleton<GameManager> {
        m_currentGameSessionLaws.Remove(m_currentLaw);
        if (m_currentGameSessionLaws.Count > 0)
        {
-            if (CurrentMonthInSemester == 1)
+            if (CurrentMonthInSemester == 6)
             {
                 StartSemesterReport();
                 m_currentLaw = m_currentGameSessionLaws.ElementAt(UnityEngine.Random.Range(0, m_currentGameSessionLaws.Count));
