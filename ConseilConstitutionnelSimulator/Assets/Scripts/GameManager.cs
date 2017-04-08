@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public enum GameState
 {
@@ -19,7 +20,7 @@ public class GameManager : Singleton<GameManager> {
         m_currentGameState = GameState.GameState_MENU;
         m_allGameLaws = new List<Law>(100);
         m_currentGameSessionLaws = new List<Law>(100);
-        m_currentMonthInSemester = 0;
+        CurrentMonthInSemester = 0;
     }
     #endregion
 
@@ -36,10 +37,106 @@ public class GameManager : Singleton<GameManager> {
     private int m_economy;
     private int m_employement;
     private int m_religion;
-
     List<Law> m_allGameLaws;
     List<Law> m_currentGameSessionLaws;
     private int m_currentMonthInSemester;
+
+    public Slider economy;
+    public Slider emploi;
+    public Slider religion;
+
+    
+
+    public int GovernmentOpinion
+    {
+        get
+        {
+            return m_governmentOpinion;
+        }
+
+        set
+        {
+            m_governmentOpinion = value;
+        }
+    }
+
+    public int PopulaceOpinion
+    {
+        get
+        {
+            return m_populaceOpinion;
+        }
+
+        set
+        {
+            m_populaceOpinion = value;
+        }
+    }
+
+    public int PersonalMoney
+    {
+        get
+        {
+            return m_personalMoney;
+        }
+
+        set
+        {
+            m_personalMoney = value;
+        }
+    }
+
+    public int Economy
+    {
+        get
+        {
+            return m_economy;
+        }
+
+        set
+        {
+            m_economy = value;
+        }
+    }
+
+    public int Employement
+    {
+        get
+        {
+            return m_employement;
+        }
+
+        set
+        {
+            m_employement = value;
+        }
+    }
+
+    public int Religion
+    {
+        get
+        {
+            return m_religion;
+        }
+
+        set
+        {
+            m_religion = value;
+        }
+    }
+
+    public int CurrentMonthInSemester
+    {
+        get
+        {
+            return m_currentMonthInSemester;
+        }
+
+        set
+        {
+            m_currentMonthInSemester = value;
+        }
+    }
 
     #endregion
 
@@ -51,17 +148,17 @@ public class GameManager : Singleton<GameManager> {
 
     public Law GetNextLaw()
     {
-        if (m_currentMonthInSemester < 6)
+        if (CurrentMonthInSemester < 6)
         {
             m_currentGameState = GameState.GameState_DECIDELAW;
             int nextIndex = Random.Range(0, m_currentGameSessionLaws.Count - 1);
-            m_currentMonthInSemester++;
+            CurrentMonthInSemester++;
             return m_currentGameSessionLaws[nextIndex];
         }
         else
         {
             StartSemesterReport();
-            m_currentMonthInSemester = 0;
+            CurrentMonthInSemester = 0;
         }
         return null;
     }
@@ -73,6 +170,6 @@ public class GameManager : Singleton<GameManager> {
 
     #endregion
 
-
+ 
 
 }

@@ -8,19 +8,19 @@ public class GameController : MonoBehaviour {
 
     public Text title;
     public Text law;
+    private Law currentLaw;
 
-    public List<string> titles;
-    public List<string> laws;
+    public Law getLaw()
+  
+        {
+            return currentLaw;
+        }
+
+      
 
     // Use this for initialization
     void Start () {
-
-        this.titles.Add("test");
-        this.laws.Add("test");
-
-
-        this.newEvent();
-
+        newEvent();
     }
 	
 	// Update is called once per frame
@@ -30,11 +30,9 @@ public class GameController : MonoBehaviour {
 
     void newEvent()
     {
-        // inclusive , exclusive
-        int random = Random.Range(0, titles.Count);
 
-        this.title.text = titles[random];
-        this.law.text = laws[random];
+        this.title.text = currentLaw.Title;
+        this.law.text = currentLaw.Description;
 
     }
 }

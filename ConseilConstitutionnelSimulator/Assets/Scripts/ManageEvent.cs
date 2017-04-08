@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class ManageEvent : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
+    public GameManager game;
+    public GameController control;
+
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
@@ -31,6 +34,7 @@ public class ManageEvent : MonoBehaviour {
 
     public void ClickValider()
     {
+        
         Debug.Log("V");
     }
 
