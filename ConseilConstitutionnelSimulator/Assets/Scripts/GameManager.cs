@@ -215,9 +215,9 @@ public class GameManager : Singleton<GameManager> {
             if (CurrentMonthInSemester == 6)
             {
                 StartSemesterReport();
-                m_currentLaw = m_currentGameSessionLaws.ElementAt(UnityEngine.Random.Range(0, m_currentGameSessionLaws.Count - 1));
+                m_currentLaw = m_currentGameSessionLaws.ElementAt(UnityEngine.Random.Range(0, m_currentGameSessionLaws.Count));
             } else
-                m_currentLaw = m_currentGameSessionLaws.ElementAt(UnityEngine.Random.Range(0, m_currentGameSessionLaws.Count - 1));
+                m_currentLaw = m_currentGameSessionLaws.ElementAt(UnityEngine.Random.Range(0, m_currentGameSessionLaws.Count));
        }else
             UnityEngine.Debug.Log("No Law Left");
 
