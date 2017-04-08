@@ -187,16 +187,18 @@ public class GameManager : Singleton<GameManager> {
             else if (s.name == "Religion")
                 religion = s;
             else
-                UnityEngine.Debug.Log("fds");
+                UnityEngine.Debug.Log("Slider Missing");
         }
 
         m_currentGameState = GameState.GameState_BEGINSEMESTER;
         // Here we will add the first avaible laws for a start game.
         // But for debug purpose it's the entire law database.
         foreach (Law law in m_allGameLaws)
+        {
             m_currentGameSessionLaws.AddLast( law );
+        }
 
-        m_currentLaw = m_currentGameSessionLaws.ElementAt( UnityEngine.Random.Range(0, m_currentGameSessionLaws.Count - 1 ) );
+        m_currentLaw = m_currentGameSessionLaws.ElementAt( UnityEngine.Random.Range(0, m_currentGameSessionLaws.Count));
     }
 
     public Law GetCurrentLaw()
@@ -207,12 +209,18 @@ public class GameManager : Singleton<GameManager> {
     public void GoToNextMonth()
     {
        CurrentMonthInSemester++;
-        if (CurrentMonthInSemester == 6)
-        {
-            StartSemesterReport();
-            m_currentLaw = m_currentGameSessionLaws.ElementAt(UnityEngine.Random.Range(0, m_currentGameSessionLaws.Count - 1));
-        } else
-            m_currentLaw = m_currentGameSessionLaws.ElementAt(UnityEngine.Random.Range(0, m_currentGameSessionLaws.Count - 1));
+       m_currentGameSessionLaws.Remove(m_currentLaw);
+       if (m_currentGameSessionLaws.Count > 0)
+       {
+            if (CurrentMonthInSemester == 6)
+            {
+                StartSemesterReport();
+                m_currentLaw = m_currentGameSessionLaws.ElementAt(UnityEngine.Random.Range(0, m_currentGameSessionLaws.Count - 1));
+            } else
+                m_currentLaw = m_currentGameSessionLaws.ElementAt(UnityEngine.Random.Range(0, m_currentGameSessionLaws.Count - 1));
+       }else
+            UnityEngine.Debug.Log("No Law Left");
+
     }
 
     public void StartSemesterReport()
@@ -245,7 +253,8 @@ public class GameManager : Singleton<GameManager> {
 
                     if (m_governmentOpinion <= 0)
                     {
-                        SceneManager.LoadScene("LoseScene");
+                        UnityEngine.Debug.Log("GOuv");
+                        //SceneManager.LoadScene("LoseScene");
                     }
                 }
                 break;
@@ -256,7 +265,8 @@ public class GameManager : Singleton<GameManager> {
 
                     if (m_personalMoney <= 0)
                     {
-                        SceneManager.LoadScene("LoseScene");
+                        UnityEngine.Debug.Log("Money");
+                        //SceneManager.LoadScene("LoseScene");
                     }
                 }
                 break;
@@ -267,7 +277,8 @@ public class GameManager : Singleton<GameManager> {
 
                     if (m_populaceOpinion <= 0)
                     {
-                        SceneManager.LoadScene("LoseScene");
+                        UnityEngine.Debug.Log("peuple");
+                        //SceneManager.LoadScene("LoseScene");
                     }
                 }
                 break;
