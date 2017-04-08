@@ -19,6 +19,7 @@ public class ManageEvent : MonoBehaviour {
 	
     public void UpdateText()
     {
+        m_currentLaw = GameManager.Instance.GetCurrentLaw();
         control.title.text = m_currentLaw.Title;
         control.law.text = m_currentLaw.Description;
     }
@@ -70,7 +71,7 @@ public class ManageEvent : MonoBehaviour {
         foreach (PropertyModifier prop in _modifiers)
             GameManager.Instance.ModifyGameProperty(prop.Property, prop.Value);
 
-        //Change Law
+        GameManager.Instance.GoToNextMonth();
         UpdateText();
     }
 }
