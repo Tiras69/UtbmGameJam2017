@@ -39,3 +39,5 @@ Unity/ExportedObj/
 Icon?
 ehthumbs.db
 Thumbs.db
+
+*.meta

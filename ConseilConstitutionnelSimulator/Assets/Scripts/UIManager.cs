@@ -5,6 +5,22 @@ using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour {
 
+    private bool soundActivated = true;
+
+    public bool isSoundActivated()
+    {
+        return this.soundActivated;
+    }
+
+    public void setSoundActivated(bool on)
+    {
+        this.soundActivated = on;
+    }
+
+    //public void disableSound()
+    //{
+    //    this.soundActivated = false;
+    //}
 
     public void Quit()
     {
@@ -20,6 +36,11 @@ public class UIManager : MonoBehaviour {
         SceneManager.LoadScene(sceneName);
     }
 
+    public void resume()
+    {
+        this.LoadByName("WinScene");
+    }
+
     // Use this for initialization
     void Start () {
 		
@@ -29,4 +50,6 @@ public class UIManager : MonoBehaviour {
 	void Update () {
 		
 	}
+
+
 }
