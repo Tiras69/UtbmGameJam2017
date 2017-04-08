@@ -29,7 +29,7 @@ public class MainMenuUIManager : MonoBehaviour {
 
     public void LoadByName(string sceneName)
     {
-        SceneManager.LoadScene(sceneName);
+        LevelManager.Instance.LoadLevel(sceneName);
     }
 
     public void Resume()

@@ -62,7 +62,7 @@ public class PauseUIManager : Singleton<PauseUIManager>
 
     public void LoadByName(string sceneName)
     {
-        SceneManager.LoadScene(sceneName);
+        LevelManager.Instance.LoadLevel(sceneName);
     }
 
     public void Show()
