@@ -43,12 +43,12 @@ public class PauseUIManager : Singleton<PauseUIManager>
 
     public bool isSoundActivated()
     {
-        return SoundManager.Instance.enabled;
+        return SoundManager.Instance.IsActive;
     }
 
     public void setSoundActivated(bool on)
     {
-        SoundManager.Instance.enabled = on;
+        SoundManager.Instance.IsActive = on;
     }
 
     public void Quit()

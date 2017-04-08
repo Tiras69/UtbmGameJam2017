@@ -45,4 +45,16 @@ public class SoundPool {
     }
     return AddAudioSource();
   }
+
+  public void Stop()
+  {
+    foreach (AudioSource source in m_sources)
+    {
+      if (source.isPlaying)
+      {
+        source.Stop();
+      }
+    }
+
+  }
 }

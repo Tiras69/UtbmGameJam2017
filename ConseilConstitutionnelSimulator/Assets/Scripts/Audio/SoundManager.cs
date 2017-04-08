@@ -12,6 +12,22 @@ public class SoundManager : Singleton<SoundManager>
 
   private SoundPool m_soundPool;
 
+  public bool IsActive
+  {
+    get
+    {
+      return m_isActive;
+    }
+    set
+    {
+      SetActive(value);
+    }
+  }
+
+  private bool m_isActive;
+  private bool m_wasPlaying;
+  private float m_playTime;
+
   public void OnEnable()
   {
     if (Music == null)
@@ -102,6 +118,38 @@ public class SoundManager : Singleton<SoundManager>
   public void SetVolume(float volume)
   {
     Music.volume = volume;
+  }
+
+  public void Activate()
+  {
+    if (m_wasPlaying)
+    {
+      Music.time = m_playTime;
+      Music.Play();
+    }
+  }
+
+  public void Deactivate()
+  {
+    m_wasPlaying = Music.isPlaying;
+    if (m_wasPlaying)
+    {
+      m_playTime = Music.time;
+    }
+    Music.Stop();
+    m_soundPool.Stop();
+  }
+
+  public void SetActive(bool active)
+  {
+    if (active)
+    {
+      Activate();
+    }
+    else
+    {
+      Deactivate();
+    }
   }
 
   private IEnumerator FadeVolumeCoroutine(float volume, float fadeTime)
