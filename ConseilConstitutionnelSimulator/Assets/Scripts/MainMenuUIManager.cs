@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
-public class UIManager : MonoBehaviour {
+public class MainMenuUIManager : MonoBehaviour {
 
     private bool soundActivated = true;
 
@@ -18,11 +17,6 @@ public class UIManager : MonoBehaviour {
         this.soundActivated = on;
         SoundManager.Instance.enabled = on;
     }
-
-    //public void disableSound()
-    //{
-    //    this.soundActivated = false;
-    //}
 
     public void Quit()
     {
@@ -38,18 +32,9 @@ public class UIManager : MonoBehaviour {
         SceneManager.LoadScene(sceneName);
     }
 
-    public void resume()
+    public void Resume()
     {
         this.LoadByName("WinScene");
     }
 
-    // Use this for initialization
-    void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 }
