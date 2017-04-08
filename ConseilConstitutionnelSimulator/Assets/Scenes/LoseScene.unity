@@ -302,11 +302,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 199239176}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e14ae7d87931a84d94db3771224946e, type: 3}
+  m_Script: {fileID: 11500000, guid: d21179eb00ea37e448472ceb75616ec6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defeatText: {fileID: 1478854543}
-  defeatImage: {fileID: 139902833}
+  defeatText: {fileID: 0}
+  defeatImage: {fileID: 0}
 --- !u!4 &199239178
 Transform:
   m_ObjectHideFlags: 0
