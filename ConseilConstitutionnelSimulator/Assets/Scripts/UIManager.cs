@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour {
 
@@ -15,6 +16,7 @@ public class UIManager : MonoBehaviour {
     public void setSoundActivated(bool on)
     {
         this.soundActivated = on;
+        SoundManager.I.enabled = on;
     }
 
     //public void disableSound()
@@ -50,6 +52,4 @@ public class UIManager : MonoBehaviour {
 	void Update () {
 		
 	}
-
-
 }
