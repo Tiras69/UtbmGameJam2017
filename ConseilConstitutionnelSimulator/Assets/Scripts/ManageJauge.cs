@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ManageJauge : MonoBehaviour {
     public Slider ValueSlider;  //reference for slider
@@ -18,6 +19,10 @@ public class ManageJauge : MonoBehaviour {
     public void ChangeValue(int val)
     {
         ValueSlider.value += val;
+        if (ValueSlider.value <= 0)
+        {
+            SceneManager.LoadScene("LoseScene");
+        }
     }
    
 }
