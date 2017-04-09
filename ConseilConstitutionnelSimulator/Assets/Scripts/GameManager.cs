@@ -18,7 +18,17 @@ public enum GameState
     GameState_ENDSEMESTER
 }
 
+public enum LoseCondition
+{
+    NONE,
+    BANKRUPT,
+    JAIL,
+    REVOLUTION
+}
+
 public class GameManager : Singleton<GameManager> {
+
+    public LoseCondition loseCondition = LoseCondition.NONE;
 
     #region constructors
     protected GameManager()
