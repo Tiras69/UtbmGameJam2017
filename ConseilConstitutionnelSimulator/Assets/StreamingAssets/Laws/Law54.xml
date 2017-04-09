@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Law xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Id="54">
+  <Title>CV anonymisé obligatoire</Title>
+  <Description>Les entrerprises de plus de 10 salariés vont devoir pratiquer à l'anonymisation des CV, pour éviter que l'origine des candidats ne les influencent dans leur choix. Globalement appréciée, les employeurs font valoir une augmentation du coût de recrutement.</Description>
+  <YesPropertyModifiers>
+    <PropertyModifier AttributeName="GOVERNMENTOPINION" Value="0" />
+    <PropertyModifier AttributeName="POPULACEOPINION" Value="5" />
+    <PropertyModifier AttributeName="ECONOMY" Value="-5" />
+    <PropertyModifier AttributeName="EMPLOYMENT" Value="5" />
+    <PropertyModifier AttributeName="RELIGION" Value="0" />
+  </YesPropertyModifiers>
+  <YesLawsToAdd>
+    <LawId>55</LawId>
+  </YesLawsToAdd>
+  <NoPropertyModifiers />
+  <NoLawsToAdd />
+  <MinimizePropertyModifiers />
+  <MinimizeLawsToAdd>
+    <LawId>221</LawId>
+  </MinimizeLawsToAdd>
+  <MaximizePropertyModifiers />
+  <MaximizeLawsToAdd>
+    <LawId>388</LawId>
+  </MaximizeLawsToAdd>
+</Law>

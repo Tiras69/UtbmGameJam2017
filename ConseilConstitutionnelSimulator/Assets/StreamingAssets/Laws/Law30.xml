@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Law xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Id="30">
+  <Title>Plan d'embauche de 1 000 000 fonctionnaires</Title>
+  <Description>Un pays bien géré passe par une administration de premier plan : avec un 1 000 000 fonctionnaires supplémentaires, nous devrions enfin statistiquement pouvoir en trouver quelques uns qui travaillent !</Description>
+  <YesPropertyModifiers>
+    <PropertyModifier AttributeName="GOVERNMENTOPINION" Value="-15" />
+    <PropertyModifier AttributeName="POPULACEOPINION" Value="10" />
+    <PropertyModifier AttributeName="ECONOMY" Value="-15" />
+    <PropertyModifier AttributeName="EMPLOYMENT" Value="15" />
+    <PropertyModifier AttributeName="RELIGION" Value="0" />
+  </YesPropertyModifiers>
+  <YesLawsToAdd />
+  <NoPropertyModifiers>
+    <PropertyModifier AttributeName="GOVERNMENTOPINION" Value="-15" />
+    <PropertyModifier AttributeName="POPULACEOPINION" Value="-10" />
+    <PropertyModifier AttributeName="ECONOMY" Value="0" />
+    <PropertyModifier AttributeName="EMPLOYMENT" Value="0" />
+    <PropertyModifier AttributeName="RELIGION" Value="0" />
+  </NoPropertyModifiers>
+  <NoLawsToAdd />
+  <MinimizePropertyModifiers />
+  <MinimizeLawsToAdd>
+    <LawId>197</LawId>
+  </MinimizeLawsToAdd>
+  <MaximizePropertyModifiers />
+  <MaximizeLawsToAdd>
+    <LawId>364</LawId>
+  </MaximizeLawsToAdd>
+</Law>

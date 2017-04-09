@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Law xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Id="13">
+  <Title>Privatisation de l'armée</Title>
+  <Description>Nous devons nous y résoudre : l'armée française n'est plus que l'ombre d'elle même, car dépassée. En transférant ses compétences à des mercenaires, nous réduirons certainement notre force, mais nous pourrions conserver une petite force d'intervention en cas de besoins.</Description>
+  <YesPropertyModifiers>
+    <PropertyModifier AttributeName="GOVERNMENTOPINION" Value="20" />
+    <PropertyModifier AttributeName="POPULACEOPINION" Value="-25" />
+    <PropertyModifier AttributeName="ECONOMY" Value="20" />
+    <PropertyModifier AttributeName="EMPLOYMENT" Value="-15" />
+    <PropertyModifier AttributeName="RELIGION" Value="0" />
+  </YesPropertyModifiers>
+  <YesLawsToAdd>
+    <LawId>14</LawId>
+  </YesLawsToAdd>
+  <NoPropertyModifiers>
+    <PropertyModifier AttributeName="GOVERNMENTOPINION" Value="-15" />
+    <PropertyModifier AttributeName="POPULACEOPINION" Value="10" />
+    <PropertyModifier AttributeName="ECONOMY" Value="-5" />
+    <PropertyModifier AttributeName="EMPLOYMENT" Value="5" />
+    <PropertyModifier AttributeName="RELIGION" Value="0" />
+  </NoPropertyModifiers>
+  <NoLawsToAdd />
+  <MinimizePropertyModifiers />
+  <MinimizeLawsToAdd>
+    <LawId>180</LawId>
+  </MinimizeLawsToAdd>
+  <MaximizePropertyModifiers />
+  <MaximizeLawsToAdd>
+    <LawId>347</LawId>
+  </MaximizeLawsToAdd>
+</Law>

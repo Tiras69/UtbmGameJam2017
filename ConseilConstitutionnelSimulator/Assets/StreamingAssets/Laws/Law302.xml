@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Law xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Id="302">
+  <Title>Légalisation des drogues dures pour un usage récréatif</Title>
+  <Description />
+  <YesPropertyModifiers>
+    <PropertyModifier AttributeName="GOVERNMENTOPINION" Value="0" />
+    <PropertyModifier AttributeName="POPULACEOPINION" Value="10" />
+    <PropertyModifier AttributeName="ECONOMY" Value="-11" />
+    <PropertyModifier AttributeName="EMPLOYMENT" Value="0" />
+    <PropertyModifier AttributeName="RELIGION" Value="-11" />
+  </YesPropertyModifiers>
+  <YesLawsToAdd>
+    <LawId>303</LawId>
+  </YesLawsToAdd>
+  <NoPropertyModifiers>
+    <PropertyModifier AttributeName="GOVERNMENTOPINION" Value="10" />
+    <PropertyModifier AttributeName="POPULACEOPINION" Value="-4" />
+    <PropertyModifier AttributeName="ECONOMY" Value="-7" />
+    <PropertyModifier AttributeName="EMPLOYMENT" Value="-4" />
+    <PropertyModifier AttributeName="RELIGION" Value="3" />
+  </NoPropertyModifiers>
+  <NoLawsToAdd />
+  <MinimizePropertyModifiers />
+  <MinimizeLawsToAdd />
+  <MaximizePropertyModifiers />
+  <MaximizeLawsToAdd />
+</Law>

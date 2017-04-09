@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Law xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Id="19">
+  <Title>Interdiction des licenciements</Title>
+  <Description>Pourquoi un employeur pourrait-il avoir la légitimité de renvoyer un de ses employés, alors que ceux-ci ne peuvent renvoyer leur patron ? C'est de se constat qu'est né ce projet de loi, qui devrait satisfaire le peuple à défaut d'augementer les embauches</Description>
+  <YesPropertyModifiers>
+    <PropertyModifier AttributeName="GOVERNMENTOPINION" Value="-15" />
+    <PropertyModifier AttributeName="POPULACEOPINION" Value="15" />
+    <PropertyModifier AttributeName="ECONOMY" Value="-20" />
+    <PropertyModifier AttributeName="EMPLOYMENT" Value="-10" />
+    <PropertyModifier AttributeName="RELIGION" Value="0" />
+  </YesPropertyModifiers>
+  <YesLawsToAdd />
+  <NoPropertyModifiers>
+    <PropertyModifier AttributeName="GOVERNMENTOPINION" Value="5" />
+    <PropertyModifier AttributeName="POPULACEOPINION" Value="-10" />
+    <PropertyModifier AttributeName="ECONOMY" Value="5" />
+    <PropertyModifier AttributeName="EMPLOYMENT" Value="0" />
+    <PropertyModifier AttributeName="RELIGION" Value="0" />
+  </NoPropertyModifiers>
+  <NoLawsToAdd />
+  <MinimizePropertyModifiers />
+  <MinimizeLawsToAdd>
+    <LawId>186</LawId>
+  </MinimizeLawsToAdd>
+  <MaximizePropertyModifiers />
+  <MaximizeLawsToAdd>
+    <LawId>353</LawId>
+  </MaximizeLawsToAdd>
+</Law>

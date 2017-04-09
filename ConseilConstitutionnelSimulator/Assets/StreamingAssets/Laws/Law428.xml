@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Law xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Id="428">
+  <Title>Privatisation de l'enseignement supérieur</Title>
+  <Description />
+  <YesPropertyModifiers>
+    <PropertyModifier AttributeName="GOVERNMENTOPINION" Value="33" />
+    <PropertyModifier AttributeName="POPULACEOPINION" Value="-27" />
+    <PropertyModifier AttributeName="ECONOMY" Value="26" />
+    <PropertyModifier AttributeName="EMPLOYMENT" Value="-27" />
+    <PropertyModifier AttributeName="RELIGION" Value="6" />
+  </YesPropertyModifiers>
+  <YesLawsToAdd />
+  <NoPropertyModifiers>
+    <PropertyModifier AttributeName="GOVERNMENTOPINION" Value="19" />
+    <PropertyModifier AttributeName="POPULACEOPINION" Value="-27" />
+    <PropertyModifier AttributeName="ECONOMY" Value="26" />
+    <PropertyModifier AttributeName="EMPLOYMENT" Value="6" />
+    <PropertyModifier AttributeName="RELIGION" Value="0" />
+  </NoPropertyModifiers>
+  <NoLawsToAdd />
+  <MinimizePropertyModifiers />
+  <MinimizeLawsToAdd />
+  <MaximizePropertyModifiers />
+  <MaximizeLawsToAdd />
+</Law>

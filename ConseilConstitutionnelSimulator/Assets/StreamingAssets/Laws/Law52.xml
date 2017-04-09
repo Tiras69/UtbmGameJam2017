@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Law xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Id="52">
+  <Title>Loi Martiale permanente</Title>
+  <Description>L'ennemi est partout autour de nous, voire infiltré parmis nous. Nos concitoyens sont en danger, c'est donc la mort dans l'âme que nous vous implorons de bien vouloir nous laisser mettre en oeuvre une loi martiale permanente ... Mais soyez assurés que notre détermination n'a jamais été plus grande.</Description>
+  <YesPropertyModifiers>
+    <PropertyModifier AttributeName="GOVERNMENTOPINION" Value="25" />
+    <PropertyModifier AttributeName="POPULACEOPINION" Value="-20" />
+    <PropertyModifier AttributeName="ECONOMY" Value="30" />
+    <PropertyModifier AttributeName="EMPLOYMENT" Value="30" />
+    <PropertyModifier AttributeName="RELIGION" Value="5" />
+  </YesPropertyModifiers>
+  <YesLawsToAdd />
+  <NoPropertyModifiers />
+  <NoLawsToAdd />
+  <MinimizePropertyModifiers />
+  <MinimizeLawsToAdd>
+    <LawId>219</LawId>
+  </MinimizeLawsToAdd>
+  <MaximizePropertyModifiers />
+  <MaximizeLawsToAdd>
+    <LawId>386</LawId>
+  </MaximizeLawsToAdd>
+</Law>

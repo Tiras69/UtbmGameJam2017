@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Law xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Id="32">
+  <Title>Nationalisation du secteur privé</Title>
+  <Description>Le marché libre est une abération qui doit être bouttée hors du sol français ... Les entrepreneurs n'aimerons pas, mais ils n'ont plus d'importance à nos yeux.</Description>
+  <YesPropertyModifiers>
+    <PropertyModifier AttributeName="GOVERNMENTOPINION" Value="-25" />
+    <PropertyModifier AttributeName="POPULACEOPINION" Value="15" />
+    <PropertyModifier AttributeName="ECONOMY" Value="-25" />
+    <PropertyModifier AttributeName="EMPLOYMENT" Value="25" />
+    <PropertyModifier AttributeName="RELIGION" Value="0" />
+  </YesPropertyModifiers>
+  <YesLawsToAdd>
+    <LawId>31</LawId>
+  </YesLawsToAdd>
+  <NoPropertyModifiers>
+    <PropertyModifier AttributeName="GOVERNMENTOPINION" Value="-20" />
+    <PropertyModifier AttributeName="POPULACEOPINION" Value="-10" />
+    <PropertyModifier AttributeName="ECONOMY" Value="10" />
+    <PropertyModifier AttributeName="EMPLOYMENT" Value="5" />
+    <PropertyModifier AttributeName="RELIGION" Value="0" />
+  </NoPropertyModifiers>
+  <NoLawsToAdd />
+  <MinimizePropertyModifiers />
+  <MinimizeLawsToAdd>
+    <LawId>199</LawId>
+  </MinimizeLawsToAdd>
+  <MaximizePropertyModifiers />
+  <MaximizeLawsToAdd>
+    <LawId>366</LawId>
+  </MaximizeLawsToAdd>
+</Law>
