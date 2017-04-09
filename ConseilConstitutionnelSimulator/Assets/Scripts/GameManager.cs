@@ -7,6 +7,7 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEditor;
 
 public enum GameState
 {
@@ -333,6 +334,80 @@ public class GameManager : Singleton<GameManager> {
                 }
                 break;
         }
+    }
+
+    public void loadGameFile()
+    {
+        UnityEngine.Debug.Log(Application.dataPath);
+
+        // Get files with the xml extension
+        string path = EditorUtility.OpenFilePanel("Load game", "", "xml");
+
+        // TODO gestion d'erreur
+        if (path.Length != 0)
+        {
+            try
+            {
+                LoadAndSave loadAndSave = XmlSerializerHelper<LoadAndSave>.DeserializeXmlFile(path);
+
+                this.loadGame(loadAndSave);
+            }
+            catch (Exception e)
+            {
+                // Trigger a breakpoint if Visual is attached to UNITY
+                #if UNITY_EDITOR
+                if (Debugger.IsAttached)
+                    Debugger.Break();
+                #endif
+                UnityEngine.Debug.Log(e.Message);
+            }
+
+            StartGameSession();
+        }
+
+    }
+
+    private void loadGame(LoadAndSave loadAndSave)
+    {
+
+        this.m_governmentOpinion = loadAndSave.GovernementOpinion;
+        this.m_populaceOpinion = loadAndSave.PopulaceOpinion;
+        this.m_personalMoney = loadAndSave.MoneyValue;
+        this.m_economy = loadAndSave.EconomyValue;
+        this.m_employement = loadAndSave.EmploymentValue;
+        this.m_religion = loadAndSave.ReligionValue;
+
+        foreach (int id in loadAndSave.ListCurrentLawId)
+        {
+            this.m_currentGameSessionLaws.AddLast(this.FindLawById(id));
+        }
+
+        this.m_currentLaw = this.FindLawById(loadAndSave.CurrentLawId);
+        this.m_currentMonthInSemester = loadAndSave.CurrentMonthInSemester;
+
+    }
+
+    public void saveGame()
+    {
+        LoadAndSave loadAndSave = new LoadAndSave();
+
+        foreach (Law law in this.m_currentGameSessionLaws)
+        {
+            loadAndSave.ListCurrentLawId.Add(law.Id);
+        }
+
+        loadAndSave.CurrentLawId = this.m_currentLaw.Id;
+
+        loadAndSave.GovernementOpinion = loadAndSave.GovernementOpinion;
+        loadAndSave.PopulaceOpinion = loadAndSave.PopulaceOpinion;
+        loadAndSave.MoneyValue = loadAndSave.MoneyValue;
+        loadAndSave.EconomyValue = loadAndSave.EconomyValue;
+        loadAndSave.EmploymentValue = loadAndSave.EmploymentValue;
+        loadAndSave.ReligionValue = loadAndSave.ReligionValue;
+
+        loadAndSave.CurrentMonthInSemester = loadAndSave.CurrentMonthInSemester;
+
+        XmlSerializerHelper<LoadAndSave>.SerializeXmlFile("save.xml", loadAndSave);
     }
 
     public void AddLawToPool(int _id)
