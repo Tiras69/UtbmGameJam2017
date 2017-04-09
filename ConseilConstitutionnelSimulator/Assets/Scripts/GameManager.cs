@@ -387,7 +387,7 @@ public class GameManager : Singleton<GameManager> {
 
     }
 
-    public void saveGame()
+    public void saveGame(Button buttonSave)
     {
         LoadAndSave loadAndSave = new LoadAndSave();
 
@@ -408,6 +408,9 @@ public class GameManager : Singleton<GameManager> {
         loadAndSave.CurrentMonthInSemester = loadAndSave.CurrentMonthInSemester;
 
         XmlSerializerHelper<LoadAndSave>.SerializeXmlFile("save.xml", loadAndSave);
+
+
+        buttonSave.GetComponentInChildren<Text>().text = "Game Saved";
     }
 
     public void AddLawToPool(int _id)
