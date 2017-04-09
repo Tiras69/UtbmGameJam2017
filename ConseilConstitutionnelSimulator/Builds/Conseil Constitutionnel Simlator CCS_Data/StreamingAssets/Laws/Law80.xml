@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Law xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Id="80">
+  <Title>Interdiction des importations issue d'un commerce non-équitable</Title>
+  <Description>Parce que finalement, c'est trop compliqué à gérer. Une mesure protectionniste efficace dont l'effet sera une forte hausse des prix, voire la disparition de certains produits.</Description>
+  <YesPropertyModifiers>
+    <PropertyModifier AttributeName="GOVERNMENTOPINION" Value="-8" />
+    <PropertyModifier AttributeName="POPULACEOPINION" Value="-15" />
+    <PropertyModifier AttributeName="ECONOMY" Value="25" />
+    <PropertyModifier AttributeName="EMPLOYMENT" Value="14" />
+    <PropertyModifier AttributeName="RELIGION" Value="3" />
+    <PropertyModifier AttributeName="PERSONALMONEY" Value="1000" />
+  </YesPropertyModifiers>
+  <YesLawsToAdd />
+  <NoPropertyModifiers>
+    <PropertyModifier AttributeName="GOVERNMENTOPINION" Value="-8" />
+    <PropertyModifier AttributeName="POPULACEOPINION" Value="30" />
+    <PropertyModifier AttributeName="ECONOMY" Value="10" />
+    <PropertyModifier AttributeName="EMPLOYMENT" Value="0" />
+    <PropertyModifier AttributeName="RELIGION" Value="0" />
+    <PropertyModifier AttributeName="PERSONALMONEY" Value="8000" />
+  </NoPropertyModifiers>
+  <NoLawsToAdd />
+  <MinimizePropertyModifiers />
+  <MinimizeLawsToAdd>
+    <LawId>247</LawId>
+  </MinimizeLawsToAdd>
+  <MaximizePropertyModifiers />
+  <MaximizeLawsToAdd>
+    <LawId>414</LawId>
+  </MaximizeLawsToAdd>
+</Law>

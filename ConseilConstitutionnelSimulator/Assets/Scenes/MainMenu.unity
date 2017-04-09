@@ -385,6 +385,9 @@ MonoBehaviour:
   - tag: loseMenu
     audio: {fileID: 8300000, guid: 0981d39f1cd02a541bfee06e26460714, type: 3}
     mixer: {fileID: 0}
+  - tag: WinMenu
+    audio: {fileID: 8300000, guid: d7015fd4927f1104097c08593fdc11cb, type: 3}
+    mixer: {fileID: 0}
 --- !u!114 &147099476
 MonoBehaviour:
   m_ObjectHideFlags: 0

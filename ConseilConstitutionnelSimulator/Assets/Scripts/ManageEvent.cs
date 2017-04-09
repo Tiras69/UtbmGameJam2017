@@ -32,7 +32,7 @@ public class ManageEvent : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetKeyUp(KeyCode.UpArrow))
+        /*if (Input.GetKeyUp(KeyCode.UpArrow))
         {
             this.ClickAccentuer();
         }
@@ -47,7 +47,7 @@ public class ManageEvent : MonoBehaviour {
         if (Input.GetKeyUp(KeyCode.RightArrow))
         {
             this.ClickRefuser();
-        }
+        }*/
     }
 
     public void ClickValider()

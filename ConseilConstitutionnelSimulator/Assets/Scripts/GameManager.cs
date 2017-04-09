@@ -7,7 +7,6 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-using UnityEditor;
 
 public enum GameState
 {
@@ -73,6 +72,10 @@ public class GameManager : Singleton<GameManager> {
 
     public delegate void SetButtonStateHandler(bool _isActive);
     public event SetButtonStateHandler OnNewLawLoaded;
+    public void resetOnNewLawLoaded()
+    {
+        OnNewLawLoaded = null;
+    }
     public void FireOnNewLawLoaded(bool _isActive)
     {
         OnNewLawLoaded(_isActive);
@@ -231,12 +234,151 @@ public class GameManager : Singleton<GameManager> {
         m_currentGameState = GameState.GameState_BEGINSEMESTER;
         // Here we will add the first avaible laws for a start game.
         // But for debug purpose it's the entire law database.
-        foreach (Law law in m_allGameLaws)
-        {
-            m_currentGameSessionLaws.AddLast( law );
-        }
+        AddInitialLaws();
 
         m_currentLaw = m_currentGameSessionLaws.ElementAt( UnityEngine.Random.Range(0, m_currentGameSessionLaws.Count));
+    }
+
+    private void AddInitialLaws()
+    {
+        m_currentGameSessionLaws.AddLast(FindLawById(0));
+        m_currentGameSessionLaws.AddLast(FindLawById(5));
+        m_currentGameSessionLaws.AddLast(FindLawById(10));
+        m_currentGameSessionLaws.AddLast(FindLawById(15));
+        m_currentGameSessionLaws.AddLast(FindLawById(20));
+        m_currentGameSessionLaws.AddLast(FindLawById(25));
+        m_currentGameSessionLaws.AddLast(FindLawById(28));
+        m_currentGameSessionLaws.AddLast(FindLawById(33));
+        m_currentGameSessionLaws.AddLast(FindLawById(38));
+        m_currentGameSessionLaws.AddLast(FindLawById(43));
+        m_currentGameSessionLaws.AddLast(FindLawById(48));
+        m_currentGameSessionLaws.AddLast(FindLawById(53));
+        m_currentGameSessionLaws.AddLast(FindLawById(57));
+        m_currentGameSessionLaws.AddLast(FindLawById(61));
+        m_currentGameSessionLaws.AddLast(FindLawById(66));
+        m_currentGameSessionLaws.AddLast(FindLawById(70));
+        m_currentGameSessionLaws.AddLast(FindLawById(75));
+        m_currentGameSessionLaws.AddLast(FindLawById(79));
+        m_currentGameSessionLaws.AddLast(FindLawById(81));
+        m_currentGameSessionLaws.AddLast(FindLawById(82));
+        m_currentGameSessionLaws.AddLast(FindLawById(85));
+        m_currentGameSessionLaws.AddLast(FindLawById(90));
+        m_currentGameSessionLaws.AddLast(FindLawById(95));
+        m_currentGameSessionLaws.AddLast(FindLawById(97));
+        m_currentGameSessionLaws.AddLast(FindLawById(99));
+        m_currentGameSessionLaws.AddLast(FindLawById(104));
+        m_currentGameSessionLaws.AddLast(FindLawById(109));
+        m_currentGameSessionLaws.AddLast(FindLawById(111));
+        m_currentGameSessionLaws.AddLast(FindLawById(113));
+        m_currentGameSessionLaws.AddLast(FindLawById(117));
+        m_currentGameSessionLaws.AddLast(FindLawById(118));
+        m_currentGameSessionLaws.AddLast(FindLawById(120));
+        m_currentGameSessionLaws.AddLast(FindLawById(123));
+        m_currentGameSessionLaws.AddLast(FindLawById(126));
+        m_currentGameSessionLaws.AddLast(FindLawById(127));
+        m_currentGameSessionLaws.AddLast(FindLawById(129));
+        m_currentGameSessionLaws.AddLast(FindLawById(133));
+        m_currentGameSessionLaws.AddLast(FindLawById(138));
+        m_currentGameSessionLaws.AddLast(FindLawById(139));
+        m_currentGameSessionLaws.AddLast(FindLawById(142));
+        m_currentGameSessionLaws.AddLast(FindLawById(147));
+        m_currentGameSessionLaws.AddLast(FindLawById(151));
+        m_currentGameSessionLaws.AddLast(FindLawById(156));
+        m_currentGameSessionLaws.AddLast(FindLawById(160));
+        m_currentGameSessionLaws.AddLast(FindLawById(163));
+        m_currentGameSessionLaws.AddLast(FindLawById(167));
+        m_currentGameSessionLaws.AddLast(FindLawById(172));
+        m_currentGameSessionLaws.AddLast(FindLawById(177));
+        m_currentGameSessionLaws.AddLast(FindLawById(182));
+        m_currentGameSessionLaws.AddLast(FindLawById(187));
+        m_currentGameSessionLaws.AddLast(FindLawById(188));
+        m_currentGameSessionLaws.AddLast(FindLawById(192));
+        m_currentGameSessionLaws.AddLast(FindLawById(195));
+        m_currentGameSessionLaws.AddLast(FindLawById(200));
+        m_currentGameSessionLaws.AddLast(FindLawById(205));
+        m_currentGameSessionLaws.AddLast(FindLawById(210));
+        m_currentGameSessionLaws.AddLast(FindLawById(215));
+        m_currentGameSessionLaws.AddLast(FindLawById(220));
+        m_currentGameSessionLaws.AddLast(FindLawById(224));
+        m_currentGameSessionLaws.AddLast(FindLawById(228));
+        m_currentGameSessionLaws.AddLast(FindLawById(233));
+        m_currentGameSessionLaws.AddLast(FindLawById(237));
+        m_currentGameSessionLaws.AddLast(FindLawById(242));
+        m_currentGameSessionLaws.AddLast(FindLawById(246));
+        m_currentGameSessionLaws.AddLast(FindLawById(248));
+        m_currentGameSessionLaws.AddLast(FindLawById(249));
+        m_currentGameSessionLaws.AddLast(FindLawById(252));
+        m_currentGameSessionLaws.AddLast(FindLawById(257));
+        m_currentGameSessionLaws.AddLast(FindLawById(262));
+        m_currentGameSessionLaws.AddLast(FindLawById(264));
+        m_currentGameSessionLaws.AddLast(FindLawById(266));
+        m_currentGameSessionLaws.AddLast(FindLawById(271));
+        m_currentGameSessionLaws.AddLast(FindLawById(276));
+        m_currentGameSessionLaws.AddLast(FindLawById(278));
+        m_currentGameSessionLaws.AddLast(FindLawById(280));
+        m_currentGameSessionLaws.AddLast(FindLawById(284));
+        m_currentGameSessionLaws.AddLast(FindLawById(285));
+        m_currentGameSessionLaws.AddLast(FindLawById(287));
+        m_currentGameSessionLaws.AddLast(FindLawById(290));
+        m_currentGameSessionLaws.AddLast(FindLawById(293));
+        m_currentGameSessionLaws.AddLast(FindLawById(294));
+        m_currentGameSessionLaws.AddLast(FindLawById(296));
+        m_currentGameSessionLaws.AddLast(FindLawById(300));
+        m_currentGameSessionLaws.AddLast(FindLawById(305));
+        m_currentGameSessionLaws.AddLast(FindLawById(306));
+        m_currentGameSessionLaws.AddLast(FindLawById(309));
+        m_currentGameSessionLaws.AddLast(FindLawById(314));
+        m_currentGameSessionLaws.AddLast(FindLawById(318));
+        m_currentGameSessionLaws.AddLast(FindLawById(323));
+        m_currentGameSessionLaws.AddLast(FindLawById(327));
+        m_currentGameSessionLaws.AddLast(FindLawById(330));
+        m_currentGameSessionLaws.AddLast(FindLawById(334));
+        m_currentGameSessionLaws.AddLast(FindLawById(339));
+        m_currentGameSessionLaws.AddLast(FindLawById(344));
+        m_currentGameSessionLaws.AddLast(FindLawById(349));
+        m_currentGameSessionLaws.AddLast(FindLawById(354));
+        m_currentGameSessionLaws.AddLast(FindLawById(355));
+        m_currentGameSessionLaws.AddLast(FindLawById(359));
+        m_currentGameSessionLaws.AddLast(FindLawById(362));
+        m_currentGameSessionLaws.AddLast(FindLawById(367));
+        m_currentGameSessionLaws.AddLast(FindLawById(372));
+        m_currentGameSessionLaws.AddLast(FindLawById(377));
+        m_currentGameSessionLaws.AddLast(FindLawById(382));
+        m_currentGameSessionLaws.AddLast(FindLawById(387));
+        m_currentGameSessionLaws.AddLast(FindLawById(391));
+        m_currentGameSessionLaws.AddLast(FindLawById(395));
+        m_currentGameSessionLaws.AddLast(FindLawById(400));
+        m_currentGameSessionLaws.AddLast(FindLawById(404));
+        m_currentGameSessionLaws.AddLast(FindLawById(409));
+        m_currentGameSessionLaws.AddLast(FindLawById(413));
+        m_currentGameSessionLaws.AddLast(FindLawById(415));
+        m_currentGameSessionLaws.AddLast(FindLawById(416));
+        m_currentGameSessionLaws.AddLast(FindLawById(419));
+        m_currentGameSessionLaws.AddLast(FindLawById(424));
+        m_currentGameSessionLaws.AddLast(FindLawById(429));
+        m_currentGameSessionLaws.AddLast(FindLawById(431));
+        m_currentGameSessionLaws.AddLast(FindLawById(433));
+        m_currentGameSessionLaws.AddLast(FindLawById(438));
+        m_currentGameSessionLaws.AddLast(FindLawById(443));
+        m_currentGameSessionLaws.AddLast(FindLawById(445));
+        m_currentGameSessionLaws.AddLast(FindLawById(447));
+        m_currentGameSessionLaws.AddLast(FindLawById(451));
+        m_currentGameSessionLaws.AddLast(FindLawById(452));
+        m_currentGameSessionLaws.AddLast(FindLawById(454));
+        m_currentGameSessionLaws.AddLast(FindLawById(457));
+        m_currentGameSessionLaws.AddLast(FindLawById(460));
+        m_currentGameSessionLaws.AddLast(FindLawById(461));
+        m_currentGameSessionLaws.AddLast(FindLawById(463));
+        m_currentGameSessionLaws.AddLast(FindLawById(467));
+        m_currentGameSessionLaws.AddLast(FindLawById(472));
+        m_currentGameSessionLaws.AddLast(FindLawById(473));
+        m_currentGameSessionLaws.AddLast(FindLawById(476));
+        m_currentGameSessionLaws.AddLast(FindLawById(481));
+        m_currentGameSessionLaws.AddLast(FindLawById(485));
+        m_currentGameSessionLaws.AddLast(FindLawById(490));
+        m_currentGameSessionLaws.AddLast(FindLawById(494));
+        m_currentGameSessionLaws.AddLast(FindLawById(497));
+
     }
 
     public Law GetCurrentLaw()
@@ -275,6 +417,10 @@ public class GameManager : Singleton<GameManager> {
     }
     public void EndSemesterReport()
     {
+        if( m_personalMoney > 3000000)
+        {
+            LevelManager.Instance.LoadLevel("WinScene");
+        }
         report.enabled = false;
         report.GetComponentInChildren<Text>().enabled = false;
         report.GetComponentInChildren<Button>().image.enabled = false;
@@ -355,33 +501,39 @@ public class GameManager : Singleton<GameManager> {
 
     public void loadGameFile()
     {
-        UnityEngine.Debug.Log(Application.dataPath);
+        //---------------------------------------------------
+        //
+        //  FIND A SOLUTION WITHOUT EDITOR FEATURES !!!
+        //
+        //---------------------------------------------------
 
-        // Get files with the xml extension
-        string path = EditorUtility.OpenFilePanel("Load game", "", "xml");
-
-        // TODO gestion d'erreur
-        if (path.Length != 0)
-        {
-            try
-            {
-                LoadAndSave loadAndSave = XmlSerializerHelper<LoadAndSave>.DeserializeXmlFile(path);
-
-                this.loadGame(loadAndSave);
-            }
-            catch (Exception e)
-            {
-                // Trigger a breakpoint if Visual is attached to UNITY
-                #if UNITY_EDITOR
-                if (Debugger.IsAttached)
-                    Debugger.Break();
-                #endif
-                UnityEngine.Debug.Log(e.Message);
-            }
-
-            StartGameSession();
-        }
-
+        //UnityEngine.Debug.Log(Application.dataPath);
+        //
+        //// Get files with the xml extension
+        //string path = EditorUtility.OpenFilePanel("Load game", "", "xml");
+        //
+        //// TODO gestion d'erreur
+        //if (path.Length != 0)
+        //{
+        //    try
+        //    {
+        //        LoadAndSave loadAndSave = XmlSerializerHelper<LoadAndSave>.DeserializeXmlFile(path);
+        //
+        //        this.loadGame(loadAndSave);
+        //    }
+        //    catch (Exception e)
+        //    {
+        //        // Trigger a breakpoint if Visual is attached to UNITY
+        //        #if UNITY_EDITOR
+        //        if (Debugger.IsAttached)
+        //            Debugger.Break();
+        //        #endif
+        //        UnityEngine.Debug.Log(e.Message);
+        //    }
+        //
+        //    StartGameSession();
+        //}
+        //
     }
 
     private void loadGame(LoadAndSave loadAndSave)
