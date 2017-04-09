@@ -21,7 +21,7 @@ public class ManageJauge : MonoBehaviour {
         ValueSlider.value += val;
         if (ValueSlider.value <= 0)
         {
-            SceneManager.LoadScene("LoseScene");
+            LevelManager.Instance.LoadLevel("LoseScene");
         }
     }
    

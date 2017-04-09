@@ -8,7 +8,7 @@ public class FadeScreenAutoRef : MonoBehaviour
   private Image fadeScreen;
   private Color _transparentColor;
   private Color _opaqueColor;
-  public float _fadeTime = 3.5f;
+  public float _fadeTime = 2.5f;
   private float _fadeTimer;
 
   // Use this for initialization
@@ -69,10 +69,12 @@ public class FadeScreenAutoRef : MonoBehaviour
   {
     while (_fadeTimer < _fadeTime)
     {
-      _fadeTimer = _fadeTimer + Time.deltaTime;
-      fadeScreen.color = Color.Lerp(_transparentColor, _opaqueColor, _fadeTimer / _fadeTime);
-      yield return new WaitForEndOfFrame();
+            yield return new WaitForEndOfFrame();
+            _fadeTimer = _fadeTimer + Time.deltaTime;
+            fadeScreen.color = Color.Lerp(_transparentColor, _opaqueColor, _fadeTimer / _fadeTime);
+      
     }
-  }
+        fadeScreen.color = _opaqueColor;
+    }
 
 }
