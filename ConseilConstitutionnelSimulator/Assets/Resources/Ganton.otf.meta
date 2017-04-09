@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 1fbd266eab5e3d6429a2818f9d7849d4
-timeCreated: 1491696475
+guid: b4093c5b7b86c1346aae078c8c0a5b8f
+timeCreated: 1491697931
 licenseType: Free
 TrueTypeFontImporter:
   serializedVersion: 4
@@ -9,9 +9,9 @@ TrueTypeFontImporter:
   characterSpacing: 0
   characterPadding: 1
   includeFontData: 1
-  fontName: Adon Black
+  fontName: Ganton
   fontNames:
-  - Adon Black
+  - Ganton
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
