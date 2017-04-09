@@ -996,6 +996,12 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 510056996}
+--- !u!114 &519947172 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114183133203417692, guid: dc2f562a557b794409b87a9646689133,
+    type: 2}
+  m_PrefabInternal: {fileID: 898974086}
+  m_Script: {fileID: 1392445389, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
 --- !u!1001 &563018347
 Prefab:
   m_ObjectHideFlags: 0
@@ -1142,12 +1148,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &657284398 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114002157363889524, guid: dc2f562a557b794409b87a9646689133,
-    type: 2}
-  m_PrefabInternal: {fileID: 898974086}
-  m_Script: {fileID: 1392445389, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
 --- !u!1 &771767679
 GameObject:
   m_ObjectHideFlags: 0
@@ -1557,7 +1557,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e2bface6c9111b4ab506762ee9250e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  yourButton: {fileID: 657284398}
+  yourButton: {fileID: 519947172}
 --- !u!114 &903134124
 MonoBehaviour:
   m_ObjectHideFlags: 0
