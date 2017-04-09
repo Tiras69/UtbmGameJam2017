@@ -266,7 +266,7 @@ public class GameManager : Singleton<GameManager> {
     public void StartSemesterReport()
     {
         m_currentGameState = GameState.GameState_SEMESTERREPORT;
-        report.GetComponentInChildren<Text>().text = "Rapport Semestriel : \n \n Opinion du gouvernement : " + m_governmentOpinion +  "\n Opinion du peuple : "+ m_populaceOpinion+"\n Relevé bancaire : " + m_personalMoney + "\n \n Changement de l'opinion du gouvernement ce semestre : " + gouvOpinionSemestre + "\n Changement de l'opinion du peuple ce semestre : " + populaceOpinionSemestre + "\n Changement du relevé bancaire ce semestre " + personalMoneySemestre;
+        report.GetComponentInChildren<Text>().text = "Rapport Semestriel : \n \n \n Opinion du gouvernement : " + m_governmentOpinion +  "\n Opinion du peuple : "+ m_populaceOpinion+"\n Relevé bancaire : " + m_personalMoney + "\n \n \n Changement de l'opinion du gouvernement ce semestre : " + gouvOpinionSemestre + "\n Changement de l'opinion du peuple ce semestre : " + populaceOpinionSemestre + "\n Changement du relevé bancaire ce semestre " + personalMoneySemestre;
         report.enabled = true;
         report.GetComponentInChildren<Text>().enabled = true;
         report.GetComponentInChildren<Button>().enabled = true;
