@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Law xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Id="369">
+  <Title>Interdiction du travail dominical (sauf pour les métiers de première nécessité)</Title>
+  <Description>Certains employeurs exercant des pressions sur les fidèles qui refusent de travailler le dimanche, l'interdiction générale du travail dominical devrait suffire, exception faîte des métiers de première nécessité tels que ceux de la Santé.</Description>
+  <YesPropertyModifiers>
+    <PropertyModifier AttributeName="GOVERNMENTOPINION" Value="0" />
+    <PropertyModifier AttributeName="POPULACEOPINION" Value="12" />
+    <PropertyModifier AttributeName="ECONOMY" Value="-13" />
+    <PropertyModifier AttributeName="EMPLOYMENT" Value="-7" />
+    <PropertyModifier AttributeName="RELIGION" Value="25" />
+    <PropertyModifier AttributeName="PERSONALMONEY" Value="7500" />
+  </YesPropertyModifiers>
+  <YesLawsToAdd>
+    <LawId>36</LawId>
+  </YesLawsToAdd>
+  <NoPropertyModifiers>
+    <PropertyModifier AttributeName="GOVERNMENTOPINION" Value="9" />
+    <PropertyModifier AttributeName="POPULACEOPINION" Value="0" />
+    <PropertyModifier AttributeName="ECONOMY" Value="0" />
+    <PropertyModifier AttributeName="EMPLOYMENT" Value="3" />
+    <PropertyModifier AttributeName="RELIGION" Value="-11" />
+    <PropertyModifier AttributeName="PERSONALMONEY" Value="1500" />
+  </NoPropertyModifiers>
+  <NoLawsToAdd />
+  <MinimizePropertyModifiers />
+  <MinimizeLawsToAdd>
+    <LawId>-1</LawId>
+  </MinimizeLawsToAdd>
+  <MaximizePropertyModifiers />
+  <MaximizeLawsToAdd>
+    <LawId>-1</LawId>
+  </MaximizeLawsToAdd>
+</Law>

@@ -6,6 +6,7 @@ public class GoToMainMenuHelper : MonoBehaviour {
 
 	public void GoToMainMenu()
     {
+        GameManager.Instance.resetOnNewLawLoaded();
         LevelManager.Instance.LoadLevel("MainMenu");
     }
 }

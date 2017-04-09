@@ -44,6 +44,12 @@ public class LevelManager : Singleton<LevelManager> {
                 }
                 break;
 
+            case "WinScene":
+                {
+                    SoundManager.Instance.PlayMusic(_controller["WinMenu"]);
+                }
+                break;
+
             default:
                 {
 
