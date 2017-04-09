@@ -34,19 +34,19 @@ public class ManageEvent : MonoBehaviour {
 	void Update () {
         if (Input.GetKeyUp(KeyCode.UpArrow))
         {
-            this.ClickValider();
+            this.ClickAccentuer();
         }
         if (Input.GetKeyUp(KeyCode.DownArrow))
         {
-            this.ClickRefuser();
+            this.ClickDiminuer();
         }
         if (Input.GetKeyUp(KeyCode.LeftArrow))
         {
-            this.ClickAccentuer();
+            this.ClickValider();
         }
         if (Input.GetKeyUp(KeyCode.RightArrow))
         {
-            this.ClickDiminuer();
+            this.ClickRefuser();
         }
     }
 
