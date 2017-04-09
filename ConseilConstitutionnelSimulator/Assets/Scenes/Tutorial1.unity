@@ -297,7 +297,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 9, y: 59}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &186879079
@@ -433,10 +433,10 @@ RectTransform:
   m_Father: {fileID: 1226558717}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -280, y: -320}
-  m_SizeDelta: {x: 50, y: 50}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -293, y: -252.5}
+  m_SizeDelta: {x: -686, y: -545}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &482928126
 MonoBehaviour:
@@ -675,10 +675,10 @@ RectTransform:
   m_Father: {fileID: 1226558717}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 270, y: -260}
-  m_SizeDelta: {x: 50, y: 50}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 293, y: -252.5}
+  m_SizeDelta: {x: -686, y: -545}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &971815187
 MonoBehaviour:
@@ -796,10 +796,10 @@ RectTransform:
   m_Father: {fileID: 1226558717}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: -124}
-  m_SizeDelta: {x: 420, y: 200}
+  m_SizeDelta: {x: -316, y: -396}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1020442492
 MonoBehaviour:
@@ -901,8 +901,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Vous disposez de trois jauges qui vous indique l'opinion du gouvernement
-    (rose) et de la population (vert), ainsi que votre fortune personnelle (jaune).
+  m_Text: "Vous disposez de trois jauges qui vous indiquent l'opinion du gouvernement
+    (vert), de la population (bleu), et des communaut\xE9s religieuses (jaune)."
 --- !u!222 &1034806504
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1001,10 +1001,10 @@ RectTransform:
   m_Father: {fileID: 1226558717}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 9, y: -2}
-  m_SizeDelta: {x: 700, y: 60}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: -535}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1068646759
 MonoBehaviour:
@@ -1294,10 +1294,10 @@ RectTransform:
   m_Father: {fileID: 1226558717}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 11, y: -4}
-  m_SizeDelta: {x: 700, y: 60}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 2, y: -2}
+  m_SizeDelta: {x: 0, y: -535}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1835667644
 MonoBehaviour:
@@ -1369,10 +1369,10 @@ RectTransform:
   m_Father: {fileID: 1226558717}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 76}
-  m_SizeDelta: {x: 420, y: 200}
+  m_SizeDelta: {x: -316, y: -396}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1908863017
 MonoBehaviour:
