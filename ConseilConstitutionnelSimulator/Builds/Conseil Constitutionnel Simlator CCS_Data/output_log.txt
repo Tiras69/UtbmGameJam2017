@@ -15,14 +15,14 @@ Platform assembly: D:\Unity Projects\UtbmGameJam2017Repo\ConseilConstitutionnelS
 Loading D:\Unity Projects\UtbmGameJam2017Repo\ConseilConstitutionnelSimulator\Builds\Conseil Constitutionnel Simlator CCS_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
 Platform assembly: D:\Unity Projects\UtbmGameJam2017Repo\ConseilConstitutionnelSimulator\Builds\Conseil Constitutionnel Simlator CCS_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
 Loading D:\Unity Projects\UtbmGameJam2017Repo\ConseilConstitutionnelSimulator\Builds\Conseil Constitutionnel Simlator CCS_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-- Completed reload, in  0.051 seconds
+- Completed reload, in  0.030 seconds
 Platform assembly: D:\Unity Projects\UtbmGameJam2017Repo\ConseilConstitutionnelSimulator\Builds\Conseil Constitutionnel Simlator CCS_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: D:\Unity Projects\UtbmGameJam2017Repo\ConseilConstitutionnelSimulator\Builds\Conseil Constitutionnel Simlator CCS_Data\Managed\System.dll (this message is harmless)
 desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 1.944178 ms
+UnloadTime: 1.670611 ms
 [Singleton] An instance of SoundManager is needed in the scene, so '(singleton) SoundManager (UnityEngine.GameObject)' was created with DontDestroyOnLoad.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
@@ -32,34 +32,102 @@ UnloadTime: 1.944178 ms
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 Unloading 7 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 5.082496 ms
+UnloadTime: 7.425379 ms
 
 Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 345.
-Total: 0.358439 ms (FindLiveObjects: 0.031975 ms CreateObjectMapping: 0.022895 ms MarkObjects: 0.282646 ms  DeleteObjects: 0.019737 ms)
+Total: 0.386072 ms (FindLiveObjects: 0.041844 ms CreateObjectMapping: 0.035133 ms MarkObjects: 0.287383 ms  DeleteObjects: 0.021316 ms)
 
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.831752 ms
+UnloadTime: 0.651743 ms
 
 Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 345.
-Total: 0.320147 ms (FindLiveObjects: 0.041054 ms CreateObjectMapping: 0.024869 ms MarkObjects: 0.248302 ms  DeleteObjects: 0.005131 ms)
+Total: 0.358439 ms (FindLiveObjects: 0.044607 ms CreateObjectMapping: 0.037896 ms MarkObjects: 0.269619 ms  DeleteObjects: 0.005131 ms)
 
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.532921 ms
+UnloadTime: 0.513184 ms
 
 Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 337.
-Total: 0.338306 ms (FindLiveObjects: 0.060397 ms CreateObjectMapping: 0.025264 ms MarkObjects: 0.245933 ms  DeleteObjects: 0.005526 ms)
+Total: 0.395546 ms (FindLiveObjects: 0.040265 ms CreateObjectMapping: 0.030001 ms MarkObjects: 0.316200 ms  DeleteObjects: 0.007500 ms)
 
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.581871 ms
+UnloadTime: 0.595293 ms
 
 Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 553.
-Total: 0.644243 ms (FindLiveObjects: 0.083293 ms CreateObjectMapping: 0.041449 ms MarkObjects: 0.483577 ms  DeleteObjects: 0.034738 ms)
+Total: 0.591345 ms (FindLiveObjects: 0.063555 ms CreateObjectMapping: 0.028817 ms MarkObjects: 0.463839 ms  DeleteObjects: 0.033949 ms)
 
 [Singleton] An instance of GameManager is needed in the scene, so '(singleton) GameManager (UnityEngine.GameObject)' was created with DontDestroyOnLoad.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 Platform assembly: D:\Unity Projects\UtbmGameJam2017Repo\ConseilConstitutionnelSimulator\Builds\Conseil Constitutionnel Simlator CCS_Data\Managed\System.Xml.dll (this message is harmless)
+GOuv
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+GOuv
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+GOuv
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+GOuv
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+GOuv
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+GOuv
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+GOuv
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+GOuv
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+GOuv
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+GOuv
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+GOuv
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+GOuv
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+GOuv
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+GOuv
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+GOuv
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+GOuv
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+GOuv
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 2498 -> priority: 1 
-  Thread -> id: 14b8 -> priority: 1 
+  Thread -> id: 37b8 -> priority: 1 
+  Thread -> id: 29dc -> priority: 1 

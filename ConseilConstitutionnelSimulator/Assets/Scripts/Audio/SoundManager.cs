@@ -87,7 +87,10 @@ public class SoundManager : Singleton<SoundManager>
       Music.outputAudioMixerGroup = null;
     }
 
+    Music.loop = true;
+    Music.playOnAwake = true;
     Music.Play();
+
   }
 
   /// <summary>
