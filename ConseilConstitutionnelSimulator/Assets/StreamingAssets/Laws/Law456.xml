@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Law xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Id="456">
+  <Title>Allocations religieuses versées au Baptême, puis à la confirmation</Title>
+  <Description />
+  <YesPropertyModifiers>
+    <PropertyModifier AttributeName="GOVERNMENTOPINION" Value="-20" />
+    <PropertyModifier AttributeName="POPULACEOPINION" Value="6" />
+    <PropertyModifier AttributeName="ECONOMY" Value="19" />
+    <PropertyModifier AttributeName="EMPLOYMENT" Value="0" />
+    <PropertyModifier AttributeName="RELIGION" Value="33" />
+  </YesPropertyModifiers>
+  <YesLawsToAdd />
+  <NoPropertyModifiers>
+    <PropertyModifier AttributeName="GOVERNMENTOPINION" Value="19" />
+    <PropertyModifier AttributeName="POPULACEOPINION" Value="0" />
+    <PropertyModifier AttributeName="ECONOMY" Value="0" />
+    <PropertyModifier AttributeName="EMPLOYMENT" Value="0" />
+    <PropertyModifier AttributeName="RELIGION" Value="-27" />
+  </NoPropertyModifiers>
+  <NoLawsToAdd />
+  <MinimizePropertyModifiers />
+  <MinimizeLawsToAdd />
+  <MaximizePropertyModifiers />
+  <MaximizeLawsToAdd />
+</Law>

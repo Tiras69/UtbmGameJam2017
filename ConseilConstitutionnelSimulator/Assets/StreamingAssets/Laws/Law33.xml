@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Law xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Id="33">
+  <Title>Droit de conscience sur le travail dominical et les jours de fêtes</Title>
+  <Description>Dans un pays laïque comme le notre, nous ne saurions imposer les fêtes catholiques. Néanmoins, il semble normal de permettre à ceux qui le souhaite de pouvoir exercer un droit de conscience sur le travail dominical et les jours de fêtes.</Description>
+  <YesPropertyModifiers>
+    <PropertyModifier AttributeName="GOVERNMENTOPINION" Value="0" />
+    <PropertyModifier AttributeName="POPULACEOPINION" Value="5" />
+    <PropertyModifier AttributeName="ECONOMY" Value="-5" />
+    <PropertyModifier AttributeName="EMPLOYMENT" Value="5" />
+    <PropertyModifier AttributeName="RELIGION" Value="15" />
+  </YesPropertyModifiers>
+  <YesLawsToAdd>
+    <LawId>34</LawId>
+  </YesLawsToAdd>
+  <NoPropertyModifiers>
+    <PropertyModifier AttributeName="RELIGION" Value="-5" />
+  </NoPropertyModifiers>
+  <NoLawsToAdd />
+  <MinimizePropertyModifiers />
+  <MinimizeLawsToAdd>
+    <LawId>200</LawId>
+  </MinimizeLawsToAdd>
+  <MaximizePropertyModifiers />
+  <MaximizeLawsToAdd>
+    <LawId>367</LawId>
+  </MaximizeLawsToAdd>
+</Law>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Law xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Id="17">
+  <Title>Week-end de trois jours</Title>
+  <Description>Malgré tous nos efforts, le chômage reste important : nous devons limiter d'avantage la semaine de travail en lui supprimant un jour, ce fameux lundi que personne n'a jamais aimé.</Description>
+  <YesPropertyModifiers>
+    <PropertyModifier AttributeName="GOVERNMENTOPINION" Value="-5" />
+    <PropertyModifier AttributeName="POPULACEOPINION" Value="10" />
+    <PropertyModifier AttributeName="ECONOMY" Value="-15" />
+    <PropertyModifier AttributeName="EMPLOYMENT" Value="10" />
+    <PropertyModifier AttributeName="RELIGION" Value="5" />
+  </YesPropertyModifiers>
+  <YesLawsToAdd>
+    <LawId>18</LawId>
+  </YesLawsToAdd>
+  <NoPropertyModifiers>
+    <PropertyModifier AttributeName="GOVERNMENTOPINION" Value="5" />
+    <PropertyModifier AttributeName="POPULACEOPINION" Value="-5" />
+    <PropertyModifier AttributeName="ECONOMY" Value="5" />
+    <PropertyModifier AttributeName="EMPLOYMENT" Value="0" />
+    <PropertyModifier AttributeName="RELIGION" Value="0" />
+  </NoPropertyModifiers>
+  <NoLawsToAdd />
+  <MinimizePropertyModifiers />
+  <MinimizeLawsToAdd>
+    <LawId>184</LawId>
+  </MinimizeLawsToAdd>
+  <MaximizePropertyModifiers />
+  <MaximizeLawsToAdd>
+    <LawId>351</LawId>
+  </MaximizeLawsToAdd>
+</Law>

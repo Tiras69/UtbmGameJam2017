@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Law xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Id="301">
+  <Title>Légalisation du Cannabis pour un usage récréatif</Title>
+  <Description />
+  <YesPropertyModifiers>
+    <PropertyModifier AttributeName="GOVERNMENTOPINION" Value="0" />
+    <PropertyModifier AttributeName="POPULACEOPINION" Value="6" />
+    <PropertyModifier AttributeName="ECONOMY" Value="6" />
+    <PropertyModifier AttributeName="EMPLOYMENT" Value="3" />
+    <PropertyModifier AttributeName="RELIGION" Value="-7" />
+  </YesPropertyModifiers>
+  <YesLawsToAdd>
+    <LawId>302</LawId>
+  </YesLawsToAdd>
+  <NoPropertyModifiers>
+    <PropertyModifier AttributeName="GOVERNMENTOPINION" Value="6" />
+    <PropertyModifier AttributeName="POPULACEOPINION" Value="-11" />
+    <PropertyModifier AttributeName="ECONOMY" Value="-4" />
+    <PropertyModifier AttributeName="EMPLOYMENT" Value="3" />
+    <PropertyModifier AttributeName="RELIGION" Value="3" />
+  </NoPropertyModifiers>
+  <NoLawsToAdd />
+  <MinimizePropertyModifiers />
+  <MinimizeLawsToAdd />
+  <MaximizePropertyModifiers />
+  <MaximizeLawsToAdd />
+</Law>

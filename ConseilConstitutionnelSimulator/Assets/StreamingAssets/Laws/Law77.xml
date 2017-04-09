@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Law xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Id="77">
+  <Title>Collectivisation des moyens de productions pour les employés</Title>
+  <Description />
+  <YesPropertyModifiers>
+    <PropertyModifier AttributeName="GOVERNMENTOPINION" Value="10" />
+    <PropertyModifier AttributeName="POPULACEOPINION" Value="20" />
+    <PropertyModifier AttributeName="ECONOMY" Value="15" />
+    <PropertyModifier AttributeName="EMPLOYMENT" Value="10" />
+    <PropertyModifier AttributeName="RELIGION" Value="0" />
+  </YesPropertyModifiers>
+  <YesLawsToAdd>
+    <LawId>77</LawId>
+  </YesLawsToAdd>
+  <NoPropertyModifiers>
+    <PropertyModifier AttributeName="RELIGION" Value="0" />
+  </NoPropertyModifiers>
+  <NoLawsToAdd />
+  <MinimizePropertyModifiers />
+  <MinimizeLawsToAdd>
+    <LawId>244</LawId>
+  </MinimizeLawsToAdd>
+  <MaximizePropertyModifiers />
+  <MaximizeLawsToAdd>
+    <LawId>411</LawId>
+  </MaximizeLawsToAdd>
+</Law>

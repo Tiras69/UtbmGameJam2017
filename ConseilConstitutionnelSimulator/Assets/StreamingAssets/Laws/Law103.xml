@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Law xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Id="103">
+  <Title>Confessions en latin obligatoires avant les cours</Title>
+  <Description />
+  <YesPropertyModifiers>
+    <PropertyModifier AttributeName="GOVERNMENTOPINION" Value="-5" />
+    <PropertyModifier AttributeName="POPULACEOPINION" Value="-25" />
+    <PropertyModifier AttributeName="ECONOMY" Value="0" />
+    <PropertyModifier AttributeName="EMPLOYMENT" Value="0" />
+    <PropertyModifier AttributeName="RELIGION" Value="25" />
+  </YesPropertyModifiers>
+  <YesLawsToAdd />
+  <NoPropertyModifiers>
+    <PropertyModifier AttributeName="GOVERNMENTOPINION" Value="5" />
+    <PropertyModifier AttributeName="POPULACEOPINION" Value="10" />
+    <PropertyModifier AttributeName="ECONOMY" Value="0" />
+    <PropertyModifier AttributeName="EMPLOYMENT" Value="0" />
+    <PropertyModifier AttributeName="RELIGION" Value="-20" />
+  </NoPropertyModifiers>
+  <NoLawsToAdd />
+  <MinimizePropertyModifiers />
+  <MinimizeLawsToAdd>
+    <LawId>270</LawId>
+  </MinimizeLawsToAdd>
+  <MaximizePropertyModifiers />
+  <MaximizeLawsToAdd>
+    <LawId>437</LawId>
+  </MaximizeLawsToAdd>
+</Law>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Law xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Id="64">
+  <Title>Légalisation des stages gratuits</Title>
+  <Description />
+  <YesPropertyModifiers>
+    <PropertyModifier AttributeName="GOVERNMENTOPINION" Value="0" />
+    <PropertyModifier AttributeName="POPULACEOPINION" Value="-15" />
+    <PropertyModifier AttributeName="ECONOMY" Value="15" />
+    <PropertyModifier AttributeName="EMPLOYMENT" Value="20" />
+    <PropertyModifier AttributeName="RELIGION" Value="-5" />
+  </YesPropertyModifiers>
+  <YesLawsToAdd>
+    <LawId>65</LawId>
+  </YesLawsToAdd>
+  <NoPropertyModifiers />
+  <NoLawsToAdd />
+  <MinimizePropertyModifiers />
+  <MinimizeLawsToAdd>
+    <LawId>231</LawId>
+  </MinimizeLawsToAdd>
+  <MaximizePropertyModifiers />
+  <MaximizeLawsToAdd>
+    <LawId>398</LawId>
+  </MaximizeLawsToAdd>
+</Law>

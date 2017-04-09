@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Law xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Id="90">
+  <Title>Classe bilingues</Title>
+  <Description />
+  <YesPropertyModifiers>
+    <PropertyModifier AttributeName="GOVERNMENTOPINION" Value="-5" />
+    <PropertyModifier AttributeName="POPULACEOPINION" Value="5" />
+    <PropertyModifier AttributeName="ECONOMY" Value="5" />
+    <PropertyModifier AttributeName="EMPLOYMENT" Value="5" />
+    <PropertyModifier AttributeName="RELIGION" Value="5" />
+  </YesPropertyModifiers>
+  <YesLawsToAdd>
+    <LawId>91</LawId>
+  </YesLawsToAdd>
+  <NoPropertyModifiers>
+    <PropertyModifier AttributeName="GOVERNMENTOPINION" Value="10" />
+    <PropertyModifier AttributeName="POPULACEOPINION" Value="-10" />
+    <PropertyModifier AttributeName="ECONOMY" Value="5" />
+    <PropertyModifier AttributeName="EMPLOYMENT" Value="-5" />
+    <PropertyModifier AttributeName="RELIGION" Value="0" />
+  </NoPropertyModifiers>
+  <NoLawsToAdd />
+  <MinimizePropertyModifiers />
+  <MinimizeLawsToAdd>
+    <LawId>257</LawId>
+  </MinimizeLawsToAdd>
+  <MaximizePropertyModifiers />
+  <MaximizeLawsToAdd>
+    <LawId>424</LawId>
+  </MaximizeLawsToAdd>
+</Law>

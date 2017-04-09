@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Law xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Id="247">
+  <Title>Interdiction des importations issue d'un commerce non-équitable</Title>
+  <Description />
+  <YesPropertyModifiers>
+    <PropertyModifier AttributeName="GOVERNMENTOPINION" Value="-7" />
+    <PropertyModifier AttributeName="POPULACEOPINION" Value="-11" />
+    <PropertyModifier AttributeName="ECONOMY" Value="16" />
+    <PropertyModifier AttributeName="EMPLOYMENT" Value="13" />
+    <PropertyModifier AttributeName="RELIGION" Value="3" />
+  </YesPropertyModifiers>
+  <YesLawsToAdd />
+  <NoPropertyModifiers>
+    <PropertyModifier AttributeName="GOVERNMENTOPINION" Value="0" />
+    <PropertyModifier AttributeName="POPULACEOPINION" Value="-21" />
+    <PropertyModifier AttributeName="ECONOMY" Value="-7" />
+    <PropertyModifier AttributeName="EMPLOYMENT" Value="0" />
+    <PropertyModifier AttributeName="RELIGION" Value="0" />
+  </NoPropertyModifiers>
+  <NoLawsToAdd />
+  <MinimizePropertyModifiers />
+  <MinimizeLawsToAdd />
+  <MaximizePropertyModifiers />
+  <MaximizeLawsToAdd />
+</Law>

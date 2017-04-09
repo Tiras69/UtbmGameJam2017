@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Law xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Id="493">
+  <Title>Fermeture totale des frontières</Title>
+  <Description />
+  <YesPropertyModifiers>
+    <PropertyModifier AttributeName="GOVERNMENTOPINION" Value="-14" />
+    <PropertyModifier AttributeName="POPULACEOPINION" Value="26" />
+    <PropertyModifier AttributeName="ECONOMY" Value="-14" />
+    <PropertyModifier AttributeName="EMPLOYMENT" Value="6" />
+    <PropertyModifier AttributeName="RELIGION" Value="0" />
+  </YesPropertyModifiers>
+  <YesLawsToAdd />
+  <NoPropertyModifiers>
+    <PropertyModifier AttributeName="GOVERNMENTOPINION" Value="13" />
+    <PropertyModifier AttributeName="POPULACEOPINION" Value="0" />
+    <PropertyModifier AttributeName="ECONOMY" Value="13" />
+    <PropertyModifier AttributeName="EMPLOYMENT" Value="6" />
+    <PropertyModifier AttributeName="RELIGION" Value="13" />
+  </NoPropertyModifiers>
+  <NoLawsToAdd />
+  <MinimizePropertyModifiers />
+  <MinimizeLawsToAdd />
+  <MaximizePropertyModifiers />
+  <MaximizeLawsToAdd />
+</Law>

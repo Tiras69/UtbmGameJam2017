@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Law xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Id="426">
+  <Title>Subvention des lycées privés</Title>
+  <Description />
+  <YesPropertyModifiers>
+    <PropertyModifier AttributeName="GOVERNMENTOPINION" Value="-14" />
+    <PropertyModifier AttributeName="POPULACEOPINION" Value="6" />
+    <PropertyModifier AttributeName="ECONOMY" Value="6" />
+    <PropertyModifier AttributeName="EMPLOYMENT" Value="-7" />
+    <PropertyModifier AttributeName="RELIGION" Value="6" />
+  </YesPropertyModifiers>
+  <YesLawsToAdd>
+    <LawId>427</LawId>
+  </YesLawsToAdd>
+  <NoPropertyModifiers>
+    <PropertyModifier AttributeName="GOVERNMENTOPINION" Value="13" />
+    <PropertyModifier AttributeName="POPULACEOPINION" Value="-7" />
+    <PropertyModifier AttributeName="ECONOMY" Value="6" />
+    <PropertyModifier AttributeName="EMPLOYMENT" Value="6" />
+    <PropertyModifier AttributeName="RELIGION" Value="0" />
+  </NoPropertyModifiers>
+  <NoLawsToAdd>
+    <LawId>427</LawId>
+  </NoLawsToAdd>
+  <MinimizePropertyModifiers />
+  <MinimizeLawsToAdd />
+  <MaximizePropertyModifiers />
+  <MaximizeLawsToAdd />
+</Law>

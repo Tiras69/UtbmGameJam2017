@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Law xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Id="353">
+  <Title>Interdiction des licenciements</Title>
+  <Description />
+  <YesPropertyModifiers>
+    <PropertyModifier AttributeName="GOVERNMENTOPINION" Value="-20" />
+    <PropertyModifier AttributeName="POPULACEOPINION" Value="19" />
+    <PropertyModifier AttributeName="ECONOMY" Value="-27" />
+    <PropertyModifier AttributeName="EMPLOYMENT" Value="-14" />
+    <PropertyModifier AttributeName="RELIGION" Value="0" />
+  </YesPropertyModifiers>
+  <YesLawsToAdd />
+  <NoPropertyModifiers>
+    <PropertyModifier AttributeName="GOVERNMENTOPINION" Value="6" />
+    <PropertyModifier AttributeName="POPULACEOPINION" Value="-14" />
+    <PropertyModifier AttributeName="ECONOMY" Value="6" />
+    <PropertyModifier AttributeName="EMPLOYMENT" Value="0" />
+    <PropertyModifier AttributeName="RELIGION" Value="0" />
+  </NoPropertyModifiers>
+  <NoLawsToAdd />
+  <MinimizePropertyModifiers />
+  <MinimizeLawsToAdd />
+  <MaximizePropertyModifiers />
+  <MaximizeLawsToAdd />
+</Law>

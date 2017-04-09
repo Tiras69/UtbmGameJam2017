@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Law xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Id="110">
+  <Title>Gratuité de l'Enseignement Supérieur pour tous</Title>
+  <Description />
+  <YesPropertyModifiers>
+    <PropertyModifier AttributeName="GOVERNMENTOPINION" Value="-25" />
+    <PropertyModifier AttributeName="POPULACEOPINION" Value="25" />
+    <PropertyModifier AttributeName="ECONOMY" Value="15" />
+    <PropertyModifier AttributeName="EMPLOYMENT" Value="20" />
+    <PropertyModifier AttributeName="RELIGION" Value="0" />
+  </YesPropertyModifiers>
+  <YesLawsToAdd />
+  <NoPropertyModifiers>
+    <PropertyModifier AttributeName="RELIGION" Value="0" />
+  </NoPropertyModifiers>
+  <NoLawsToAdd />
+  <MinimizePropertyModifiers />
+  <MinimizeLawsToAdd>
+    <LawId>277</LawId>
+  </MinimizeLawsToAdd>
+  <MaximizePropertyModifiers />
+  <MaximizeLawsToAdd>
+    <LawId>444</LawId>
+  </MaximizeLawsToAdd>
+</Law>

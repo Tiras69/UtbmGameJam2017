@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Law xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Id="208">
+  <Title>Baptême obligatoire pour embauche</Title>
+  <Description />
+  <YesPropertyModifiers>
+    <PropertyModifier AttributeName="GOVERNMENTOPINION" Value="0" />
+    <PropertyModifier AttributeName="POPULACEOPINION" Value="-7" />
+    <PropertyModifier AttributeName="ECONOMY" Value="-11" />
+    <PropertyModifier AttributeName="EMPLOYMENT" Value="3" />
+    <PropertyModifier AttributeName="RELIGION" Value="13" />
+  </YesPropertyModifiers>
+  <YesLawsToAdd>
+    <LawId>209</LawId>
+  </YesLawsToAdd>
+  <NoPropertyModifiers>
+    <PropertyModifier AttributeName="GOVERNMENTOPINION" Value="0" />
+    <PropertyModifier AttributeName="POPULACEOPINION" Value="0" />
+    <PropertyModifier AttributeName="ECONOMY" Value="0" />
+    <PropertyModifier AttributeName="EMPLOYMENT" Value="0" />
+    <PropertyModifier AttributeName="RELIGION" Value="-11" />
+  </NoPropertyModifiers>
+  <NoLawsToAdd />
+  <MinimizePropertyModifiers />
+  <MinimizeLawsToAdd />
+  <MaximizePropertyModifiers />
+  <MaximizeLawsToAdd />
+</Law>

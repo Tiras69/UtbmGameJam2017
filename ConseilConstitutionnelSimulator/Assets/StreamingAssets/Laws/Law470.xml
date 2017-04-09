@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Law xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Id="470">
+  <Title>Légalisation de l'alcool au travail</Title>
+  <Description />
+  <YesPropertyModifiers>
+    <PropertyModifier AttributeName="GOVERNMENTOPINION" Value="-7" />
+    <PropertyModifier AttributeName="POPULACEOPINION" Value="26" />
+    <PropertyModifier AttributeName="ECONOMY" Value="-27" />
+    <PropertyModifier AttributeName="EMPLOYMENT" Value="-7" />
+    <PropertyModifier AttributeName="RELIGION" Value="-27" />
+  </YesPropertyModifiers>
+  <YesLawsToAdd>
+    <LawId>471</LawId>
+  </YesLawsToAdd>
+  <NoPropertyModifiers>
+    <PropertyModifier AttributeName="GOVERNMENTOPINION" Value="19" />
+    <PropertyModifier AttributeName="POPULACEOPINION" Value="-7" />
+    <PropertyModifier AttributeName="ECONOMY" Value="-14" />
+    <PropertyModifier AttributeName="EMPLOYMENT" Value="-7" />
+    <PropertyModifier AttributeName="RELIGION" Value="19" />
+  </NoPropertyModifiers>
+  <NoLawsToAdd />
+  <MinimizePropertyModifiers />
+  <MinimizeLawsToAdd />
+  <MaximizePropertyModifiers />
+  <MaximizeLawsToAdd />
+</Law>

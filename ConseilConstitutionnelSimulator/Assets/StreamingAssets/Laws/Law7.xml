@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Law xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Id="7">
+  <Title>Suppression des allocations chômage</Title>
+  <Description>Les chômeurs sont coupables de ne pas trouver d'emplois par eux-même : ils n'avaient pour commencer pas à perdre le leur ! Très impopulaire, une telle mesure devrait néanmoins diminuer le chômage et grandement baisser les chiffres du chômage.</Description>
+  <YesPropertyModifiers>
+    <PropertyModifier AttributeName="GOVERNMENTOPINION" Value="15" />
+    <PropertyModifier AttributeName="POPULACEOPINION" Value="-10" />
+    <PropertyModifier AttributeName="ECONOMY" Value="0" />
+    <PropertyModifier AttributeName="EMPLOYMENT" Value="10" />
+    <PropertyModifier AttributeName="RELIGION" Value="0" />
+  </YesPropertyModifiers>
+  <YesLawsToAdd>
+    <LawId>8</LawId>
+  </YesLawsToAdd>
+  <NoPropertyModifiers>
+    <PropertyModifier AttributeName="GOVERNMENTOPINION" Value="-15" />
+    <PropertyModifier AttributeName="POPULACEOPINION" Value="10" />
+    <PropertyModifier AttributeName="ECONOMY" Value="-5" />
+    <PropertyModifier AttributeName="EMPLOYMENT" Value="5" />
+    <PropertyModifier AttributeName="RELIGION" Value="0" />
+  </NoPropertyModifiers>
+  <NoLawsToAdd />
+  <MinimizePropertyModifiers />
+  <MinimizeLawsToAdd>
+    <LawId>174</LawId>
+  </MinimizeLawsToAdd>
+  <MaximizePropertyModifiers />
+  <MaximizeLawsToAdd>
+    <LawId>341</LawId>
+  </MaximizeLawsToAdd>
+</Law>

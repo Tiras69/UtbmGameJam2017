@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Law xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Id="22">
+  <Title>Interdiction du travail des seniors</Title>
+  <Description>Parce qu'il y a un âge où le travail devient trop dur, libérons nos ainés de cette charge. Une mesure humaine selon les communistes, honteuse selon les employeurs.</Description>
+  <YesPropertyModifiers>
+    <PropertyModifier AttributeName="GOVERNMENTOPINION" Value="-15" />
+    <PropertyModifier AttributeName="POPULACEOPINION" Value="15" />
+    <PropertyModifier AttributeName="ECONOMY" Value="-15" />
+    <PropertyModifier AttributeName="EMPLOYMENT" Value="15" />
+    <PropertyModifier AttributeName="RELIGION" Value="0" />
+  </YesPropertyModifiers>
+  <YesLawsToAdd>
+    <LawId>23</LawId>
+  </YesLawsToAdd>
+  <NoPropertyModifiers>
+    <PropertyModifier AttributeName="GOVERNMENTOPINION" Value="5" />
+    <PropertyModifier AttributeName="POPULACEOPINION" Value="0" />
+    <PropertyModifier AttributeName="ECONOMY" Value="5" />
+    <PropertyModifier AttributeName="EMPLOYMENT" Value="5" />
+    <PropertyModifier AttributeName="RELIGION" Value="5" />
+  </NoPropertyModifiers>
+  <NoLawsToAdd />
+  <MinimizePropertyModifiers />
+  <MinimizeLawsToAdd>
+    <LawId>189</LawId>
+  </MinimizeLawsToAdd>
+  <MaximizePropertyModifiers />
+  <MaximizeLawsToAdd>
+    <LawId>356</LawId>
+  </MaximizeLawsToAdd>
+</Law>
