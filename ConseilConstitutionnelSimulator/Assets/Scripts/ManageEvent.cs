@@ -20,9 +20,15 @@ public class ManageEvent : MonoBehaviour {
     public void UpdateText()
     {
         m_currentLaw = GameManager.Instance.GetCurrentLaw();
+        
+        // We took the inverse value because its only when its a modified value 
+        // We want to change the state.
+        GameManager.Instance.FireOnNewLawLoaded(!m_currentLaw.IsAModifiedLaw);
+
         control.title.text = m_currentLaw.Title;
         control.law.text = m_currentLaw.Description;
     }
+    
 
 	// Update is called once per frame
 	void Update () {
@@ -46,22 +52,22 @@ public class ManageEvent : MonoBehaviour {
 
     public void ClickValider()
     {
-        UpdateGameSession(m_currentLaw.YesLawsToAdd, m_currentLaw.YesPropertyModifiers);
+        UpdateGameSession(m_currentLaw.YesLawsToAdd, m_currentLaw.YesPropertyModifiers, false);
     }
 
     public void ClickAccentuer()
     {
-        UpdateGameSession(m_currentLaw.MaximizeLawsToAdd, m_currentLaw.MaximizePropertyModifiers);
+        UpdateGameSession(m_currentLaw.MaximizeLawsToAdd, m_currentLaw.MaximizePropertyModifiers, true);
     }
 
     public void ClickDiminuer()
     {
-        UpdateGameSession(m_currentLaw.MinimizeLawsToAdd, m_currentLaw.MinimizePropertyModifiers);
+        UpdateGameSession(m_currentLaw.MinimizeLawsToAdd, m_currentLaw.MinimizePropertyModifiers, true);
     }
 
     public void ClickRefuser()
     {
-        UpdateGameSession(m_currentLaw.NoLawsToAdd, m_currentLaw.NoPropertyModifiers);
+        UpdateGameSession(m_currentLaw.NoLawsToAdd, m_currentLaw.NoPropertyModifiers, false);
 
     }
     public void ClickOk()
@@ -69,10 +75,10 @@ public class ManageEvent : MonoBehaviour {
         GameManager.Instance.EndSemesterReport();
     }
 
-        private void UpdateGameSession(List<int> _lawIds, List<PropertyModifier> _modifiers)
+    private void UpdateGameSession(List<int> _lawIds, List<PropertyModifier> _modifiers, bool _isAddedLawsAreModified)
     {
         foreach (int id in _lawIds)
-            GameManager.Instance.AddLawToPool(id);
+            GameManager.Instance.AddLawToPool(id, _isAddedLawsAreModified);
         foreach (PropertyModifier prop in _modifiers)
             GameManager.Instance.ModifyGameProperty(prop.Property, prop.Value);
 

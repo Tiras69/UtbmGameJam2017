@@ -15,6 +15,6 @@ public class SaveOnClick : MonoBehaviour {
 
     void TaskOnClick()
     {
-        GameManager.Instance.saveGame();
+        GameManager.Instance.saveGame(yourButton);
     }
 }
