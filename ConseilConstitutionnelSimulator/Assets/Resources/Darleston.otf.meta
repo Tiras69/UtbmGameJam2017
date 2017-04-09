@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 0d3ff2880a7e22b47b574d78f0500fd4
+timeCreated: 1491696475
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Darleston
+  fontNames:
+  - Darleston
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

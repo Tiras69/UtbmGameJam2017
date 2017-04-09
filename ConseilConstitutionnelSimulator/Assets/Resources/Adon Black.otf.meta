@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 1fbd266eab5e3d6429a2818f9d7849d4
+timeCreated: 1491696475
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Adon Black
+  fontNames:
+  - Adon Black
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
