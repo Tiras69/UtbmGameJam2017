@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LoadAndSave xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ListCurrentLawId>
+    <int>1</int>
+    <int>2</int>
+  </ListCurrentLawId>
+  <GovernementOpinion>0</GovernementOpinion>
+  <PopulaceOpinion>0</PopulaceOpinion>
+  <Economy>5</Economy>
+  <Employment>10</Employment>
+  <Religion>20</Religion>
+  <Money>5000</Money>
+  <CurrentMonthInSemester>0</CurrentMonthInSemester>
+  <CurrentLawId>0</CurrentLawId>
+</LoadAndSave>
