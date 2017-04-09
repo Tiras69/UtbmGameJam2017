@@ -8,13 +8,13 @@ public class SetButtonStateCallBack : MonoBehaviour {
 
     private Button m_button;
     private Image m_image;
-    private Text m_text;
+    //private Text m_text;
 
 	// Use this for initialization
 	void Start () {
         m_button = this.GetComponent<Button>();
         m_image = this.GetComponent<Image>();
-        m_text = this.GetComponentInChildren<Text>();
+        //m_text = this.GetComponentInChildren<Text>();
 
         GameManager.Instance.OnNewLawLoaded += ButtonStateCallBack;
 	}
@@ -23,6 +23,6 @@ public class SetButtonStateCallBack : MonoBehaviour {
     {
         m_button.enabled = _isActive;
         m_image.enabled = _isActive;
-        m_text.enabled = _isActive;
+        //m_text.enabled = _isActive;
     }
 }

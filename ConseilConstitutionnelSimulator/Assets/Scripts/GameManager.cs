@@ -179,7 +179,6 @@ public class GameManager : Singleton<GameManager> {
     #region Methods
     public void LoadAllLaws()
     {
-        UnityEngine.Debug.Log(Application.dataPath);
 
         // Get files with the xml extension
         string[] files = Directory.GetFiles(Application.streamingAssetsPath+"/Laws", "*.xml");
@@ -220,7 +219,6 @@ public class GameManager : Singleton<GameManager> {
         {
             if (s.name == "Report")
             {
-                UnityEngine.Debug.Log("Report Not Missing");
                 report = s;
                 report.enabled = false;
                 report.GetComponentInChildren<Text>().enabled = false;
@@ -266,7 +264,9 @@ public class GameManager : Singleton<GameManager> {
     public void StartSemesterReport()
     {
         m_currentGameState = GameState.GameState_SEMESTERREPORT;
-        report.GetComponentInChildren<Text>().text = "Rapport Semestriel : \n \n \n Opinion du gouvernement : " + m_governmentOpinion +  "\n Opinion du peuple : "+ m_populaceOpinion+"\n Relevé bancaire : " + m_personalMoney + "\n \n \n Changement de l'opinion du gouvernement ce semestre : " + gouvOpinionSemestre + "\n Changement de l'opinion du peuple ce semestre : " + populaceOpinionSemestre + "\n Changement du relevé bancaire ce semestre " + personalMoneySemestre;
+
+        Text reportText = report.GetComponentInChildren<Text>();
+        reportText.text = "Rapport Semestriel : \n \n \n Opinion du gouvernement : " + m_governmentOpinion + "\n Opinion du peuple : " + m_populaceOpinion + "\n Relevé bancaire : " + m_personalMoney + "\n \n \n Changement de l'opinion du gouvernement ce semestre : " + gouvOpinionSemestre + "\n Changement de l'opinion du peuple ce semestre : " + populaceOpinionSemestre + "\n Changement du relevé bancaire ce semestre " + personalMoneySemestre;
         report.enabled = true;
         report.GetComponentInChildren<Text>().enabled = true;
         report.GetComponentInChildren<Button>().enabled = true;
@@ -439,11 +439,13 @@ public class GameManager : Singleton<GameManager> {
                 law.IsAModifiedLaw = true;
             m_currentGameSessionLaws.AddLast(law);
         }
+#if UNITY_EDITOR
         else
         {
+
             UnityEngine.Debug.Log("law " + _id + "doesn't exists");
         }
-
+#endif
     }
 
     private Law FindLawById(int _id)
