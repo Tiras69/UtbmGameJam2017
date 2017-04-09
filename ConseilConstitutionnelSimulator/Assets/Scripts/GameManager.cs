@@ -60,6 +60,14 @@ public class GameManager : Singleton<GameManager> {
     public Slider economy;
     public Slider emploi;
     public Slider religion;
+
+    public delegate void SetButtonStateHandler(bool _isActive);
+    public event SetButtonStateHandler OnNewLawLoaded;
+    public void FireOnNewLawLoaded(bool _isActive)
+    {
+        OnNewLawLoaded(_isActive);
+    }
+
     private Image report;
 
 
@@ -236,11 +244,10 @@ public class GameManager : Singleton<GameManager> {
        {
             if (CurrentMonthInSemester == 6)
             {
-                StartSemesterReport();
-                m_currentLaw = m_currentGameSessionLaws.ElementAt(UnityEngine.Random.Range(0, m_currentGameSessionLaws.Count));
+                StartSemesterReport();    
                 CurrentMonthInSemester = 0;
-            } else
-                m_currentLaw = m_currentGameSessionLaws.ElementAt(UnityEngine.Random.Range(0, m_currentGameSessionLaws.Count));
+            }
+            m_currentLaw = m_currentGameSessionLaws.ElementAt(UnityEngine.Random.Range(0, m_currentGameSessionLaws.Count));
        }else
             UnityEngine.Debug.Log("No Law Left");
 
@@ -410,13 +417,20 @@ public class GameManager : Singleton<GameManager> {
         XmlSerializerHelper<LoadAndSave>.SerializeXmlFile("save.xml", loadAndSave);
     }
 
-    public void AddLawToPool(int _id)
+    public void AddLawToPool(int _id, bool _isAddedLawsAreModified)
     {
         Law law = FindLawById(_id);
-        if( law != null)
-            m_currentGameSessionLaws.AddLast( law );
+        if (law != null)
+        {
+            if (_isAddedLawsAreModified)
+                law.IsAModifiedLaw = true;
+            m_currentGameSessionLaws.AddLast(law);
+        }
         else
+        {
             UnityEngine.Debug.Log("law " + _id + "doesn't exists");
+        }
+
     }
 
     private Law FindLawById(int _id)

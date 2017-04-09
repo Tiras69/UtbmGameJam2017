@@ -50,6 +50,8 @@ public class Law {
 
     [XmlElement("Description")]
     public string Description { get; set; }
+
+    public bool IsAModifiedLaw = false;
     #endregion
 
     #region Yes Data
