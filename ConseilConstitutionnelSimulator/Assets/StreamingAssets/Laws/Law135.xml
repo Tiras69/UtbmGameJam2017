@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Law xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Id="135">
+  <Title>Légalisation des drogues dures pour un usage récréatif</Title>
+  <Description>Les drogues douces sont controllées et encadrées. Le gouvernement propose d'étendre la loi précédente aux drogues dures, de façon a enfin pouvoir consommer légalement.</Description>
+  <YesPropertyModifiers>
+    <PropertyModifier AttributeName="GOVERNMENTOPINION" Value="0" />
+    <PropertyModifier AttributeName="POPULACEOPINION" Value="15" />
+    <PropertyModifier AttributeName="ECONOMY" Value="-15" />
+    <PropertyModifier AttributeName="EMPLOYMENT" Value="0" />
+    <PropertyModifier AttributeName="RELIGION" Value="-12" />
+    <PropertyModifier AttributeName="PERSONALMONEY" Value="20000" />
+  </YesPropertyModifiers>
+  <YesLawsToAdd>
+    <LawId>136</LawId>
+  </YesLawsToAdd>
+  <NoPropertyModifiers>
+    <PropertyModifier AttributeName="GOVERNMENTOPINION" Value="8" />
+    <PropertyModifier AttributeName="POPULACEOPINION" Value="-5" />
+    <PropertyModifier AttributeName="ECONOMY" Value="-10" />
+    <PropertyModifier AttributeName="EMPLOYMENT" Value="-5" />
+    <PropertyModifier AttributeName="RELIGION" Value="5" />
+    <PropertyModifier AttributeName="PERSONALMONEY" Value="0" />
+  </NoPropertyModifiers>
+  <NoLawsToAdd />
+  <MinimizePropertyModifiers />
+  <MinimizeLawsToAdd>
+    <LawId>302</LawId>
+  </MinimizeLawsToAdd>
+  <MaximizePropertyModifiers />
+  <MaximizeLawsToAdd>
+    <LawId>469</LawId>
+  </MaximizeLawsToAdd>
+</Law>

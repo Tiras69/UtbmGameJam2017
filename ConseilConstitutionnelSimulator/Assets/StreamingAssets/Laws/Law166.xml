@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Law xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Id="166">
+  <Title>Crédits culture pour tous les citoyens</Title>
+  <Description>La mise à disposition d'un crédit culture à dépenser sur les plate-formes culturelles est un bon moyen de pousser nos concitoyen à consommer, c'est donc un moyen efficace de leur donner satisfaction.</Description>
+  <YesPropertyModifiers>
+    <PropertyModifier AttributeName="GOVERNMENTOPINION" Value="-13" />
+    <PropertyModifier AttributeName="POPULACEOPINION" Value="17" />
+    <PropertyModifier AttributeName="ECONOMY" Value="10" />
+    <PropertyModifier AttributeName="EMPLOYMENT" Value="5" />
+    <PropertyModifier AttributeName="RELIGION" Value="0" />
+    <PropertyModifier AttributeName="PERSONALMONEY" Value="2000" />
+  </YesPropertyModifiers>
+  <YesLawsToAdd />
+  <NoPropertyModifiers>
+    <PropertyModifier AttributeName="GOVERNMENTOPINION" Value="7" />
+    <PropertyModifier AttributeName="POPULACEOPINION" Value="-20" />
+    <PropertyModifier AttributeName="ECONOMY" Value="-5" />
+    <PropertyModifier AttributeName="EMPLOYMENT" Value="0" />
+    <PropertyModifier AttributeName="RELIGION" Value="0" />
+    <PropertyModifier AttributeName="PERSONALMONEY" Value="4000" />
+  </NoPropertyModifiers>
+  <NoLawsToAdd />
+  <MinimizePropertyModifiers />
+  <MinimizeLawsToAdd>
+    <LawId>333</LawId>
+  </MinimizeLawsToAdd>
+  <MaximizePropertyModifiers />
+  <MaximizeLawsToAdd>
+    <LawId>500</LawId>
+  </MaximizeLawsToAdd>
+</Law>

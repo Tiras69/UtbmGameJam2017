@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Law xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Id="246">
+  <Title>Taxation des importations issue d'un commerce non-équitable</Title>
+  <Description>Car la France doit éclairer le monde de ses Lumières. Une mesure protectionniste efficace dont l'effet sera une hausse des prix.</Description>
+  <YesPropertyModifiers>
+    <PropertyModifier AttributeName="GOVERNMENTOPINION" Value="6" />
+    <PropertyModifier AttributeName="POPULACEOPINION" Value="-8" />
+    <PropertyModifier AttributeName="ECONOMY" Value="11" />
+    <PropertyModifier AttributeName="EMPLOYMENT" Value="3" />
+    <PropertyModifier AttributeName="RELIGION" Value="2" />
+    <PropertyModifier AttributeName="PERSONALMONEY" Value="1000" />
+  </YesPropertyModifiers>
+  <YesLawsToAdd>
+    <LawId>80</LawId>
+  </YesLawsToAdd>
+  <NoPropertyModifiers>
+    <PropertyModifier AttributeName="GOVERNMENTOPINION" Value="-6" />
+    <PropertyModifier AttributeName="POPULACEOPINION" Value="-13" />
+    <PropertyModifier AttributeName="ECONOMY" Value="6" />
+    <PropertyModifier AttributeName="EMPLOYMENT" Value="3" />
+    <PropertyModifier AttributeName="RELIGION" Value="0" />
+    <PropertyModifier AttributeName="PERSONALMONEY" Value="4800" />
+  </NoPropertyModifiers>
+  <NoLawsToAdd />
+  <MinimizePropertyModifiers />
+  <MinimizeLawsToAdd>
+    <LawId>-1</LawId>
+  </MinimizeLawsToAdd>
+  <MaximizePropertyModifiers />
+  <MaximizeLawsToAdd>
+    <LawId>-1</LawId>
+  </MaximizeLawsToAdd>
+</Law>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Law xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Id="8">
+  <Title>Impôt sur le chômage (taxe sur la non productivité)</Title>
+  <Description>Malgré toutes nos mesures, certains osent encore rester dans l'oisiveté. Très impopulaire, une telle mesure devrait cependant être assez bonne pour les chiffres.</Description>
+  <YesPropertyModifiers>
+    <PropertyModifier AttributeName="GOVERNMENTOPINION" Value="11" />
+    <PropertyModifier AttributeName="POPULACEOPINION" Value="-7" />
+    <PropertyModifier AttributeName="ECONOMY" Value="5" />
+    <PropertyModifier AttributeName="EMPLOYMENT" Value="5" />
+    <PropertyModifier AttributeName="RELIGION" Value="0" />
+    <PropertyModifier AttributeName="PERSONALMONEY" Value="4000" />
+  </YesPropertyModifiers>
+  <YesLawsToAdd>
+    <LawId>9</LawId>
+  </YesLawsToAdd>
+  <NoPropertyModifiers>
+    <PropertyModifier AttributeName="GOVERNMENTOPINION" Value="-7" />
+    <PropertyModifier AttributeName="POPULACEOPINION" Value="7" />
+    <PropertyModifier AttributeName="ECONOMY" Value="-5" />
+    <PropertyModifier AttributeName="EMPLOYMENT" Value="3" />
+    <PropertyModifier AttributeName="RELIGION" Value="0" />
+    <PropertyModifier AttributeName="PERSONALMONEY" Value="0" />
+  </NoPropertyModifiers>
+  <NoLawsToAdd />
+  <MinimizePropertyModifiers />
+  <MinimizeLawsToAdd>
+    <LawId>175</LawId>
+  </MinimizeLawsToAdd>
+  <MaximizePropertyModifiers />
+  <MaximizeLawsToAdd>
+    <LawId>342</LawId>
+  </MaximizeLawsToAdd>
+</Law>

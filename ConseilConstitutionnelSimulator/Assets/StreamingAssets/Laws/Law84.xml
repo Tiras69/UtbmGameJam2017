@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Law xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Id="84">
+  <Title>Interdiction des importations</Title>
+  <Description>De toute façon, les téléphones Samsung n'arrêtent pas d'exploser ... ça ne serait jamais arrivé avec un Alcatel !</Description>
+  <YesPropertyModifiers>
+    <PropertyModifier AttributeName="GOVERNMENTOPINION" Value="-3" />
+    <PropertyModifier AttributeName="POPULACEOPINION" Value="-17" />
+    <PropertyModifier AttributeName="ECONOMY" Value="20" />
+    <PropertyModifier AttributeName="EMPLOYMENT" Value="14" />
+    <PropertyModifier AttributeName="RELIGION" Value="0" />
+    <PropertyModifier AttributeName="PERSONALMONEY" Value="0" />
+  </YesPropertyModifiers>
+  <YesLawsToAdd />
+  <NoPropertyModifiers>
+    <PropertyModifier AttributeName="GOVERNMENTOPINION" Value="-8" />
+    <PropertyModifier AttributeName="POPULACEOPINION" Value="20" />
+    <PropertyModifier AttributeName="ECONOMY" Value="-20" />
+    <PropertyModifier AttributeName="EMPLOYMENT" Value="-20" />
+    <PropertyModifier AttributeName="RELIGION" Value="0" />
+    <PropertyModifier AttributeName="PERSONALMONEY" Value="4000" />
+  </NoPropertyModifiers>
+  <NoLawsToAdd />
+  <MinimizePropertyModifiers />
+  <MinimizeLawsToAdd>
+    <LawId>251</LawId>
+  </MinimizeLawsToAdd>
+  <MaximizePropertyModifiers />
+  <MaximizeLawsToAdd>
+    <LawId>418</LawId>
+  </MaximizeLawsToAdd>
+</Law>

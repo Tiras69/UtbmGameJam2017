@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Law xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Id="204">
+  <Title>Obligation de présence à la messe le dimanche</Title>
+  <Description>Certains infidèles osent ne pas venir à la messe le dimanche malgré l'interdiction du travail ce jour là, créons des milices citoyennes pour les y conduire !</Description>
+  <YesPropertyModifiers>
+    <PropertyModifier AttributeName="GOVERNMENTOPINION" Value="0" />
+    <PropertyModifier AttributeName="POPULACEOPINION" Value="-12" />
+    <PropertyModifier AttributeName="ECONOMY" Value="0" />
+    <PropertyModifier AttributeName="EMPLOYMENT" Value="-4" />
+    <PropertyModifier AttributeName="RELIGION" Value="12" />
+    <PropertyModifier AttributeName="PERSONALMONEY" Value="8000" />
+  </YesPropertyModifiers>
+  <YesLawsToAdd />
+  <NoPropertyModifiers>
+    <PropertyModifier AttributeName="GOVERNMENTOPINION" Value="2" />
+    <PropertyModifier AttributeName="POPULACEOPINION" Value="6" />
+    <PropertyModifier AttributeName="ECONOMY" Value="0" />
+    <PropertyModifier AttributeName="EMPLOYMENT" Value="2" />
+    <PropertyModifier AttributeName="RELIGION" Value="-6" />
+    <PropertyModifier AttributeName="PERSONALMONEY" Value="1000" />
+  </NoPropertyModifiers>
+  <NoLawsToAdd />
+  <MinimizePropertyModifiers />
+  <MinimizeLawsToAdd>
+    <LawId>-1</LawId>
+  </MinimizeLawsToAdd>
+  <MaximizePropertyModifiers />
+  <MaximizeLawsToAdd>
+    <LawId>-1</LawId>
+  </MaximizeLawsToAdd>
+</Law>

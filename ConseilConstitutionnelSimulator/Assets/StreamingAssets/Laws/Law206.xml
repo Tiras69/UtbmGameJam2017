@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Law xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Id="206">
+  <Title>Prières obligatoires sur le lieu de travail</Title>
+  <Description>Bonne pour le morales des fidèles, celles-ci seront assez impopulaire pour les autres.</Description>
+  <YesPropertyModifiers>
+    <PropertyModifier AttributeName="GOVERNMENTOPINION" Value="0" />
+    <PropertyModifier AttributeName="POPULACEOPINION" Value="-8" />
+    <PropertyModifier AttributeName="ECONOMY" Value="-4" />
+    <PropertyModifier AttributeName="EMPLOYMENT" Value="0" />
+    <PropertyModifier AttributeName="RELIGION" Value="9" />
+    <PropertyModifier AttributeName="PERSONALMONEY" Value="3200" />
+  </YesPropertyModifiers>
+  <YesLawsToAdd>
+    <LawId>40</LawId>
+  </YesLawsToAdd>
+  <NoPropertyModifiers>
+    <PropertyModifier AttributeName="GOVERNMENTOPINION" Value="-3" />
+    <PropertyModifier AttributeName="POPULACEOPINION" Value="3" />
+    <PropertyModifier AttributeName="ECONOMY" Value="0" />
+    <PropertyModifier AttributeName="EMPLOYMENT" Value="-4" />
+    <PropertyModifier AttributeName="RELIGION" Value="-6" />
+    <PropertyModifier AttributeName="PERSONALMONEY" Value="2400" />
+  </NoPropertyModifiers>
+  <NoLawsToAdd />
+  <MinimizePropertyModifiers />
+  <MinimizeLawsToAdd>
+    <LawId>-1</LawId>
+  </MinimizeLawsToAdd>
+  <MaximizePropertyModifiers />
+  <MaximizeLawsToAdd>
+    <LawId>-1</LawId>
+  </MaximizeLawsToAdd>
+</Law>

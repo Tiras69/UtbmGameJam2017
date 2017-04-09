@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Law xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Id="159">
+  <Title>Fermeture totale des frontières</Title>
+  <Description>Les patriotes estiment que l'ont doit sauver les emplois des français en fermant les frontières le temps qu'il faudra, peut-être toujours. Une telle mesure pourrait pour un gain économique intérieur faible nous exposer à de lourdes pertes extérieures.</Description>
+  <YesPropertyModifiers>
+    <PropertyModifier AttributeName="GOVERNMENTOPINION" Value="-8" />
+    <PropertyModifier AttributeName="POPULACEOPINION" Value="17" />
+    <PropertyModifier AttributeName="ECONOMY" Value="-35" />
+    <PropertyModifier AttributeName="EMPLOYMENT" Value="-10" />
+    <PropertyModifier AttributeName="RELIGION" Value="0" />
+    <PropertyModifier AttributeName="PERSONALMONEY" Value="4000" />
+  </YesPropertyModifiers>
+  <YesLawsToAdd />
+  <NoPropertyModifiers>
+    <PropertyModifier AttributeName="GOVERNMENTOPINION" Value="7" />
+    <PropertyModifier AttributeName="POPULACEOPINION" Value="-3" />
+    <PropertyModifier AttributeName="ECONOMY" Value="10" />
+    <PropertyModifier AttributeName="EMPLOYMENT" Value="5" />
+    <PropertyModifier AttributeName="RELIGION" Value="8" />
+    <PropertyModifier AttributeName="PERSONALMONEY" Value="5000" />
+  </NoPropertyModifiers>
+  <NoLawsToAdd />
+  <MinimizePropertyModifiers />
+  <MinimizeLawsToAdd>
+    <LawId>326</LawId>
+  </MinimizeLawsToAdd>
+  <MaximizePropertyModifiers />
+  <MaximizeLawsToAdd>
+    <LawId>493</LawId>
+  </MaximizeLawsToAdd>
+</Law>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Law xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Id="115">
+  <Title>Financement systématique des jeunes entreprises</Title>
+  <Description>Permet un boom économique au prix de très lourdes dépenses publiques.</Description>
+  <YesPropertyModifiers>
+    <PropertyModifier AttributeName="GOVERNMENTOPINION" Value="-13" />
+    <PropertyModifier AttributeName="POPULACEOPINION" Value="-2" />
+    <PropertyModifier AttributeName="ECONOMY" Value="20" />
+    <PropertyModifier AttributeName="EMPLOYMENT" Value="8" />
+    <PropertyModifier AttributeName="RELIGION" Value="0" />
+    <PropertyModifier AttributeName="PERSONALMONEY" Value="2000" />
+  </YesPropertyModifiers>
+  <YesLawsToAdd>
+    <LawId>116</LawId>
+  </YesLawsToAdd>
+  <NoPropertyModifiers>
+    <PropertyModifier AttributeName="GOVERNMENTOPINION" Value="16" />
+    <PropertyModifier AttributeName="POPULACEOPINION" Value="-5" />
+    <PropertyModifier AttributeName="ECONOMY" Value="-20" />
+    <PropertyModifier AttributeName="EMPLOYMENT" Value="-10" />
+    <PropertyModifier AttributeName="RELIGION" Value="0" />
+    <PropertyModifier AttributeName="PERSONALMONEY" Value="20000" />
+  </NoPropertyModifiers>
+  <NoLawsToAdd />
+  <MinimizePropertyModifiers />
+  <MinimizeLawsToAdd>
+    <LawId>282</LawId>
+  </MinimizeLawsToAdd>
+  <MaximizePropertyModifiers />
+  <MaximizeLawsToAdd>
+    <LawId>449</LawId>
+  </MaximizeLawsToAdd>
+</Law>

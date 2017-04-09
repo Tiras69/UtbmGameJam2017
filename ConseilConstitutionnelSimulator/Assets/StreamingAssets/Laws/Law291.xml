@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Law xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Id="291">
+  <Title>Revenu de solidarité pour les anciens combattants</Title>
+  <Description>Populaire auprès des patriotes, cette mesure aura un impact certain sur leur pouvoir d'achat.</Description>
+  <YesPropertyModifiers>
+    <PropertyModifier AttributeName="GOVERNMENTOPINION" Value="-6" />
+    <PropertyModifier AttributeName="POPULACEOPINION" Value="3" />
+    <PropertyModifier AttributeName="ECONOMY" Value="3" />
+    <PropertyModifier AttributeName="EMPLOYMENT" Value="-4" />
+    <PropertyModifier AttributeName="RELIGION" Value="0" />
+    <PropertyModifier AttributeName="PERSONALMONEY" Value="1600" />
+  </YesPropertyModifiers>
+  <YesLawsToAdd>
+    <LawId>125</LawId>
+  </YesLawsToAdd>
+  <NoPropertyModifiers>
+    <PropertyModifier AttributeName="GOVERNMENTOPINION" Value="4" />
+    <PropertyModifier AttributeName="POPULACEOPINION" Value="-4" />
+    <PropertyModifier AttributeName="ECONOMY" Value="-4" />
+    <PropertyModifier AttributeName="EMPLOYMENT" Value="3" />
+    <PropertyModifier AttributeName="RELIGION" Value="-4" />
+    <PropertyModifier AttributeName="PERSONALMONEY" Value="3200" />
+  </NoPropertyModifiers>
+  <NoLawsToAdd />
+  <MinimizePropertyModifiers />
+  <MinimizeLawsToAdd>
+    <LawId>-1</LawId>
+  </MinimizeLawsToAdd>
+  <MaximizePropertyModifiers />
+  <MaximizeLawsToAdd>
+    <LawId>-1</LawId>
+  </MaximizeLawsToAdd>
+</Law>
