@@ -507,33 +507,28 @@ public class GameManager : Singleton<GameManager> {
         //
         //---------------------------------------------------
 
-        //UnityEngine.Debug.Log(Application.dataPath);
-        //
-        //// Get files with the xml extension
-        //string path = EditorUtility.OpenFilePanel("Load game", "", "xml");
-        //
-        //// TODO gestion d'erreur
-        //if (path.Length != 0)
-        //{
-        //    try
-        //    {
-        //        LoadAndSave loadAndSave = XmlSerializerHelper<LoadAndSave>.DeserializeXmlFile(path);
-        //
-        //        this.loadGame(loadAndSave);
-        //    }
-        //    catch (Exception e)
-        //    {
-        //        // Trigger a breakpoint if Visual is attached to UNITY
-        //        #if UNITY_EDITOR
-        //        if (Debugger.IsAttached)
-        //            Debugger.Break();
-        //        #endif
-        //        UnityEngine.Debug.Log(e.Message);
-        //    }
-        //
-        //    StartGameSession();
-        //}
-        //
+        // Get files with the xml extension
+
+        string[] file = Directory.GetFiles(Application.streamingAssetsPath + "/../../", "*.xml");
+
+        try
+        {
+            LoadAndSave loadAndSave = XmlSerializerHelper<LoadAndSave>.DeserializeXmlFile(file[0]);
+            
+            this.loadGame(loadAndSave);
+        }
+        catch (Exception e)
+        {
+            // Trigger a breakpoint if Visual is attached to UNITY
+            #if UNITY_EDITOR
+            if (Debugger.IsAttached)
+                Debugger.Break();
+            #endif
+            UnityEngine.Debug.Log(e.Message);
+        }
+        
+        StartGameSession();
+        
     }
 
     private void loadGame(LoadAndSave loadAndSave)
@@ -554,6 +549,10 @@ public class GameManager : Singleton<GameManager> {
         this.m_currentLaw = this.FindLawById(loadAndSave.CurrentLawId);
         this.m_currentMonthInSemester = loadAndSave.CurrentMonthInSemester;
 
+        economy.GetComponent<ManageJauge>().ChangeValue(m_economy);
+        emploi.GetComponent<ManageJauge>().ChangeValue(m_employement);
+        religion.GetComponent<ManageJauge>().ChangeValue(m_religion);
+
     }
 
     public void saveGame(Button buttonSave)
@@ -567,17 +566,16 @@ public class GameManager : Singleton<GameManager> {
 
         loadAndSave.CurrentLawId = this.m_currentLaw.Id;
 
-        loadAndSave.GovernementOpinion = loadAndSave.GovernementOpinion;
-        loadAndSave.PopulaceOpinion = loadAndSave.PopulaceOpinion;
-        loadAndSave.MoneyValue = loadAndSave.MoneyValue;
-        loadAndSave.EconomyValue = loadAndSave.EconomyValue;
-        loadAndSave.EmploymentValue = loadAndSave.EmploymentValue;
-        loadAndSave.ReligionValue = loadAndSave.ReligionValue;
+        loadAndSave.GovernementOpinion = this.m_governmentOpinion;
+        loadAndSave.PopulaceOpinion = this.m_populaceOpinion;
+        loadAndSave.MoneyValue = this.m_personalMoney;
+        loadAndSave.EconomyValue = this.m_economy;
+        loadAndSave.EmploymentValue = this.m_employement;
+        loadAndSave.ReligionValue = this.m_religion;
 
-        loadAndSave.CurrentMonthInSemester = loadAndSave.CurrentMonthInSemester;
+        loadAndSave.CurrentMonthInSemester = this.m_currentMonthInSemester;
 
         XmlSerializerHelper<LoadAndSave>.SerializeXmlFile("save.xml", loadAndSave);
-
 
         buttonSave.GetComponentInChildren<Text>().text = "Game Saved";
     }
