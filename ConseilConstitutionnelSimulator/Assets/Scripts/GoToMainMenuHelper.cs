@@ -1,12 +1,35 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GoToMainMenuHelper : MonoBehaviour {
+public class GoToMainMenuHelper : MonoBehaviour, IPausable{
+
+    private bool m_isPaused = true;
+    public void Start()
+    {
+        GameManager.Instance.OnPause += OnPauseCallBack;
+        GameManager.Instance.OnResume += OnResumeCallBack;
+    }
 
 	public void GoToMainMenu()
     {
-        GameManager.Instance.resetOnNewLawLoaded();
-        LevelManager.Instance.LoadLevel("MainMenu");
+        if (!m_isPaused)
+        {
+            GameManager.Instance.resetOnNewLawLoaded();
+            LevelManager.Instance.LoadLevel("MainMenu");
+        }
+    }
+
+    public PauseEventResult OnPauseCallBack(PauseEventArgs _args)
+    {
+        m_isPaused = true;
+        return null;
+    }
+
+    public PauseEventResult OnResumeCallBack(PauseEventArgs _args)
+    {
+        m_isPaused = false;
+        return null;
     }
 }

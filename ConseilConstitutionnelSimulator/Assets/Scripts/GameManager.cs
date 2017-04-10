@@ -25,7 +25,7 @@ public enum LoseCondition
     REVOLUTION
 }
 
-public class GameManager : Singleton<GameManager> {
+public class GameManager : Singleton<GameManager>, INotifyPause {
 
     public LoseCondition loseCondition = LoseCondition.NONE;
 
@@ -72,6 +72,20 @@ public class GameManager : Singleton<GameManager> {
 
     public delegate void SetButtonStateHandler(bool _isActive);
     public event SetButtonStateHandler OnNewLawLoaded;
+
+    public event NotifyPauseHandler OnPause;
+    public event NotifyPauseHandler OnResume;
+
+    public void FireOnPause()
+    {
+        OnPause(new PauseEventArgs(this, "Fired from the Game Manager"));
+    }
+
+    public void FireOnResume()
+    {
+        OnResume(new PauseEventArgs(this, "Fired from the Game Manager"));
+    }
+
     public void resetOnNewLawLoaded()
     {
         OnNewLawLoaded = null;
@@ -405,6 +419,7 @@ public class GameManager : Singleton<GameManager> {
 
     public void StartSemesterReport()
     {
+        FireOnPause();
         m_currentGameState = GameState.GameState_SEMESTERREPORT;
 
         Text reportText = report.GetComponentInChildren<Text>();
@@ -417,7 +432,7 @@ public class GameManager : Singleton<GameManager> {
     }
     public void EndSemesterReport()
     {
-        if( m_personalMoney > 3000000)
+        if( m_personalMoney > 1000000)
         {
             LevelManager.Instance.LoadLevel("WinScene");
         }
@@ -428,6 +443,7 @@ public class GameManager : Singleton<GameManager> {
         gouvOpinionSemestre = 0;
         populaceOpinionSemestre = 0;
         personalMoneySemestre = 0;
+        FireOnResume();
     }
     public void ModifyGameProperty(GameProperty _property, int _value)
     {

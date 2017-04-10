@@ -1,11 +1,20 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MainMenuUIManager : MonoBehaviour {
+public class MainMenuUIManager : MonoBehaviour, IPausable {
 
     private bool soundActivated = true;
+    private bool m_isPaused = true;
+
+
+    public void Start()
+    {
+        GameManager.Instance.OnPause += OnPauseCallBack;
+        GameManager.Instance.OnResume += OnResumeCallBack;
+    }
 
     public bool isSoundActivated()
     {
@@ -20,16 +29,20 @@ public class MainMenuUIManager : MonoBehaviour {
 
     public void Quit()
     {
-#if UNITY_EDITOR
-        UnityEditor.EditorApplication.isPlaying = false;
-#else
-        Application.Quit ();
-#endif
+        if (!m_isPaused)
+        {
+            #if UNITY_EDITOR
+                UnityEditor.EditorApplication.isPlaying = false;
+            #else
+                Application.Quit ();
+            #endif
+        }
     }
 
     public void LoadByName(string sceneName)
     {
-        LevelManager.Instance.LoadLevel(sceneName);
+        if( !m_isPaused)
+            LevelManager.Instance.LoadLevel(sceneName);
     }
 
     public void Resume()
@@ -37,4 +50,15 @@ public class MainMenuUIManager : MonoBehaviour {
         this.LoadByName("WinScene");
     }
 
+    public PauseEventResult OnPauseCallBack(PauseEventArgs _args)
+    {
+        m_isPaused = true;
+        return null;
+    }
+
+    public PauseEventResult OnResumeCallBack(PauseEventArgs _args)
+    {
+        m_isPaused = false;
+        return null;
+    }
 }

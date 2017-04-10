@@ -8,7 +8,7 @@ public class FadeScreenAutoRef : MonoBehaviour
   private Image fadeScreen;
   private Color _transparentColor;
   private Color _opaqueColor;
-  public float _fadeTime = 2.5f;
+  private float _fadeTime;
   private float _fadeTimer;
 
   // Use this for initialization
@@ -16,6 +16,7 @@ public class FadeScreenAutoRef : MonoBehaviour
   {
     LevelManager.Instance.fadeScreen = this;
     fadeScreen = GetComponent<Image>();
+    _fadeTime = 1.0f;
     FadeIn();
   }
 
@@ -45,6 +46,7 @@ public class FadeScreenAutoRef : MonoBehaviour
       fadeScreen.color = Color.Lerp(_opaqueColor, _transparentColor, _fadeTimer / _fadeTime);
       yield return new WaitForEndOfFrame();
     }
+    GameManager.Instance.FireOnResume();
   }
 
   public void FadeOut()

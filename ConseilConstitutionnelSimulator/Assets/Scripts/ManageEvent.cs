@@ -1,18 +1,20 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ManageEvent : MonoBehaviour {
+public class ManageEvent : MonoBehaviour, IPausable {
 
     private Law m_currentLaw;
     public GameController control;
-
+    private bool m_isPaused = true;
     // Use this for initialization
     void Start () {
         GameManager.Instance.LoadAllLaws();
         GameManager.Instance.StartGameSession();
         m_currentLaw = GameManager.Instance.GetCurrentLaw();
-
+        GameManager.Instance.OnPause += OnPauseCallBack;
+        GameManager.Instance.OnResume += OnResumeCallBack;  
         UpdateText();
 
     }
@@ -32,22 +34,18 @@ public class ManageEvent : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-        /*if (Input.GetKeyUp(KeyCode.UpArrow))
+
+        if (!m_isPaused)
         {
-            this.ClickAccentuer();
+            if (Input.GetKeyUp(KeyCode.UpArrow))
+                this.ClickAccentuer();
+            if (Input.GetKeyUp(KeyCode.DownArrow))
+                this.ClickDiminuer();
+            if (Input.GetKeyUp(KeyCode.LeftArrow))
+                this.ClickValider();
+            if (Input.GetKeyUp(KeyCode.RightArrow))
+                this.ClickRefuser();
         }
-        if (Input.GetKeyUp(KeyCode.DownArrow))
-        {
-            this.ClickDiminuer();
-        }
-        if (Input.GetKeyUp(KeyCode.LeftArrow))
-        {
-            this.ClickValider();
-        }
-        if (Input.GetKeyUp(KeyCode.RightArrow))
-        {
-            this.ClickRefuser();
-        }*/
     }
 
     public void ClickValider()
@@ -77,12 +75,27 @@ public class ManageEvent : MonoBehaviour {
 
     private void UpdateGameSession(List<int> _lawIds, List<PropertyModifier> _modifiers, bool _isAddedLawsAreModified)
     {
-        foreach (int id in _lawIds)
-            GameManager.Instance.AddLawToPool(id, _isAddedLawsAreModified);
-        foreach (PropertyModifier prop in _modifiers)
-            GameManager.Instance.ModifyGameProperty(prop.Property, prop.Value);
+        if (!m_isPaused)
+        {
+            foreach (int id in _lawIds)
+                GameManager.Instance.AddLawToPool(id, _isAddedLawsAreModified);
+            foreach (PropertyModifier prop in _modifiers)
+                GameManager.Instance.ModifyGameProperty(prop.Property, prop.Value);
 
-        GameManager.Instance.GoToNextMonth();
-        UpdateText();
+            GameManager.Instance.GoToNextMonth();
+            UpdateText();
+        }
+    }
+
+    public PauseEventResult OnPauseCallBack(PauseEventArgs _args)
+    {
+        m_isPaused = true;
+        return null;
+    }
+
+    public PauseEventResult OnResumeCallBack(PauseEventArgs _args)
+    {
+        m_isPaused = false;
+        return null;
     }
 }
