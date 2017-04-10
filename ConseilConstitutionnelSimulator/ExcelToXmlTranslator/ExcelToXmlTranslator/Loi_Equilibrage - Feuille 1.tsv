@@ -1,0 +1,581 @@
+						Accept Condition						Refuse Condition						Soften Condition	Harden Condition
+							Modifiers						Modifiers						
+ID	Loi Name	Loi Type	Law Text	Law Level	Need Law ID	Add Law ID	Governement Opinion	Populace Opinion	Economy	Employment	Religion	Add Law ID	Governement Opinion	Populace Opinion	Economy	Employment	Religion	Add Law ID	Add Law ID
+0	Augmentation de la durée du travail à 39h	Liberals	Ajout de 4 heures au temps de travail minimum d'un contrat standard, les heures ajoutées n'entrainent bien évidemment aucune hausse de salaire pour le salarié. Peu populaire, une telle réforme devrait néanmoins relancer l'économie.	0		1	0	-10	10	-5	0		-15	10	-5	5	0	167	334
+1	Suppression de la durée légale du travail	Liberals	En supprimant la durée légale du travail, les employeurs pourront donc moduler selon les besoins du marché le travail de leurs employés. Les mauvaises langues diront qu'une telle dérégulation est dangereuse pour les conditions salariales, mais qui oserait douter que les employeurs pourraient penser à mal ?	1	0	2	0	-15	10	-5	0		-15	10	-5	5	0	168	335
+2	Limitation du code du travail	Liberals	Suppression de tous les articles du code du travail, sauf les mentions sur l'obligation de résultat des employés. Pour tout vote "Oui" : un bisou de Pierre Gataz.	2	1	3	0	-20	15	-5	0		-15	10	-5	5	0	169	336
+3	Interdiction des pauses	Liberals	Suppression des pauses lors de la journée de travail : pauses intermédiaires, pauses repas, absence d'attention, ... Certains syndicalistes revanchards risquent de se plaindre, mais leur absence de reconnaissance ne saurait égaler les bénéfices économiques d'une telle mesure.	3	2	4	0	-20	20	-5	0		-15	10	-5	5	0	170	337
+4	Autorisation de l’enfermement en cages des employés 	Liberals	Pour maximiser la productivité du pays, l'enfermement en cage des esclaves ... EMPLOYÉS ! est une solution idéale. Les ONG œuvrant pour les droits de l'Homme risquent de venir en aide au syndicalistes, mais qui s'en inquiète ?	4	3		0	-25	25	-10	0		-15	10	-5	5	0	171	338
+5	Contrôle strict des allocations chômage	Liberals	Certains de nos concitoyens profitent du laxisme du système pour détourner les aides dédiées aux chômeurs et non aux profiteurs ! Il y a bien sûr des risques de mettre en difficultés d'honnêtes citoyens avec un tel dispositif, mais les gains pour le budget public sauront se faire sentir.	0		6	10	-5	0	5	0		-15	10	-5	5	0	172	339
+6	Limitation de la durée des allocations chômage	Liberals	Un citoyen qui ne trouve pas d'emploi dans un pays si bien géré ne peut être autre chose qu'un profiteur ... Limitons donc les allocations chômages dans le temps pour pousser les profiteurs à rechercher un emploi ... ou tout au moins à diminuer les dépenses publics !	1	5	7	10	-5	0	5	0		-15	10	-5	5	0	173	340
+7	Suppression des allocations chômage	Liberals	Les chômeurs sont coupables de ne pas trouver d'emplois par eux-même : ils n'avaient pour commencer pas à perdre le leur ! Très impopulaire, une telle mesure devrait néanmoins diminuer le chômage et grandement baisser les chiffres du chômage.	2	6	8	15	-10	0	10	0		-15	10	-5	5	0	174	341
+8	Impôt sur le chômage (taxe sur la non productivité)	Liberals	Malgré toutes nos mesures, certains osent encore rester dans l'oisiveté. Très impopulaire, une telle mesure devrait cependant être assez bonne pour les chiffres.	3	7	9	15	-15	5	15	0		-15	10	-5	5	0	175	342
+9	Emploi imposé par l'Etat	Liberals	Certains emplois restent malgré tous nos efforts non pourvu ... Si les chômeurs ne veulent pas travailler quand on leur demande gentillement, alors c'est la police qui les amenera à l'usine !	4	8		-15	-25	10	25	0		-15	10	-5	5	0	176	343
+10	Privatisation des entreprises d'État	Liberals	Pourquoi diable l'Etat devrait-il employer des fonctionnaires dans des entreprises déficitaires, alors que le libre marché pourrait nous soulager de cette peine, non sans nous avoir donné un pécule non négligeable. Plutôt impopulaire, une telle mesure devrait néanmoins offrir une respiration dans le budget de l'État.	0		11	10	-10	10	-5	0		-15	10	-5	5	0	177	344
+11	Plan de réduction de 100 000 fonctionnaires	Liberals	Cela n'est jamais agréable, ni bon pour les chiffres du chômage, mais il semblerait que nous devions nous résoudre à nous séparer de 100 000 fonctionnaires. Nous devrions ainsi pouvoir réaliser des économies non négligeables dans les dépenses publiques.	1	10	12	10	-15	10	-5	0		-15	10	-5	5	0	178	345
+12	Privatisation de l'Éducation Nationale	Liberals	Depuis un siècle, l'Éducation Nationale forme la jeunesse de notre patrie ; néanmoins, son coût n'est aujourd'hui plus supportable. En transférant ses compétances aux écoles privées, nous réaliserions des économies indispensables.	2	11	13	15	-20	15	-10	0		-15	10	-5	5	0	179	346
+13	Privatisation de l'armée	Liberals	Nous devons nous y résoudre : l'armée française n'est plus que l'ombre d'elle même, car dépassée. En transférant ses compétences à des mercenaires, nous réduirons certainement notre force, mais nous pourrions conserver une petite force d'intervention en cas de besoins.	3	12	14	20	-25	20	-15	0		-15	10	-5	5	0	180	347
+14	Privatisation du gouvernement	Liberals	Le Gouvernement est aujourd'hui une source de dépenses importantes, en le privatisant, nous confronterions celui-ci à l'économie de marché et pourrions pourquoi pas espérer, que ses actionnaires touchent enfin des dividendes.	4	13		25	-25	25	-20	0		-15	10	-5	5	0	181	348
+15	Diminution de la durée du travail à 30h	Socialist	Comme tout à chacun le sait : l'emploi disparaît. Si nous voulons que tout à chacun puisse y accéder, il nous faut diminuer de la durée du travail à 30h. Peu populaire auprès des patrons, cette mesure sera plutôt bien acceuillie par tous les autres.	0		16	-5	5	-5	10	0		5	5	5	0	0	182	349
+16	Interdiction des licenciements pour les entreprises en bonne santé	Socialist	Il est innaceptable qu'une entreprise qui réalise des bénéfices puisse renvoyer ses salariés. Peu pénalisante pour l'économie, cette mesure sera plutôt bien acceuillie.	1	15	17	-5	5	-5	5	0		5	-5	5	0	0	183	350
+17	Week-end de trois jours	Socialist	Malgré tous nos efforts, le chômage reste important : nous devons limiter d'avantage la semaine de travail en lui supprimant un jour, ce fameux lundi que personne n'a jamais aimé.	2	16	18	-5	10	-15	10	5		5	-5	5	0	0	184	351
+18	Interdiction du travail nocturne	Socialist	Encore un fléau à éliminer !	3	17	19	-5	10	-15	5	0		5	-5	5	0	0	185	352
+19	Interdiction des licenciements	Socialist	Pourquoi un employeur pourrait-il avoir la légitimité de renvoyer un de ses employés, alors que ceux-ci ne peuvent renvoyer leur patron ? C'est de se constat qu'est né ce projet de loi, qui devrait satisfaire le peuple à défaut d'augementer les embauches	4	18		-15	15	-20	-10	0		5	-10	5	0	0	186	353
+20	Reconnaissance de la pénibilité du travail	Socialist	Mise en place d'une retraite anticipée pour les métiers à risque (5 ans plus tôt que pour les autres). Une mesure humaine selon les humains, honteuse selon les employeurs.	0	19		-10	5	-5	5	0		5	0	5	5	0	187	354
+21	Retraite à 60 ans	Socialist	Nos jeunes ne trouvent plus d'emploi, libérons ceux de nos méritants ainés afin d'offrir à tous un moyen de subsister. Une mesure humaine selon les socialistes, honteuse selon les employeurs.	0		22	-10	10	-10	10	0		5	-5	5	5	0	188	355
+22	Interdiction du travail des seniors	Socialist	Parce qu'il y a un âge où le travail devient trop dur, libérons nos ainés de cette charge. Une mesure humaine selon les communistes, honteuse selon les employeurs.	1	21	23	-15	15	-15	15	0		5	0	5	5	5	189	356
+23	Interdiction des travaux pénibles	Socialist	À l'heure de la robotisation, pourquoi devrait-on encore laisser de telles tâches au hommes ?	2	22	24	-15	20	-20	20	0		5	0	5	5	0	190	357
+24	Interdiction du travail	Socialist	Les robots n'ont qu'à le faire à notre place ...	3	23		-20	25	-25	-40	0		20	-5	10	5	0	191	358
+25	Revalorisation des allocations chômage	Socialist	À une heure où la pauvreté ne cesse de grandir dans notre pays, revaloriser les allocations chômages est une nécessité. Globalement négative pour les chiffres du chômage, cette mesure devrait au moins avoir un effet positif pour ceux à qui elle est destinée.	0		26	-10	10	-5	-10	0		10	-5	5	5	0	192	359
+26	Revenu universel	Socialist	Utopie socialiste, le revenu universel est l'évolution logique des allocations chômages, permettant aux étudiants et aux originaux de s'en aller à leur besogne le ventre plein sans la distraction du confort.	1	25	27	-15	15	-10	-15	0		0	-20	5	5	0	193	360
+27	Revenu universel revalorisé	Socialist	Dans un monde où l'emploi disparaît, laissons les emplois restant aux quelques fous assez motivés pour les occuper !	2	26		-15	20	-10	-20	0		5	-10	5	5	0	194	361
+28	Plan d'embauche de 100 000 fonctionnaires	Socialist	Les queues se multiplient dans les administrations, les classes sont en sureffectifs, ... Rien ne va plus ! Recrutons 100 000 fonctionnaires pour sauver la fonction publique ! Le privé n'aimera pas, mais tant pis pour lui !	0		29	-10	5	-5	5	0		-5	-5	0	0	0	195	362
+29	Renationalisation des entreprises privatisées par les précédents gouvernements	Socialist	Les précédants gouvernements ont revendu de véritables fleurons nationnaux à des sociétés privées qui ont su les rendre rentables, investissont et rachetons-les !	1	28	30	-10	5	-10	10	0		-10	-15	0	0	0	196	363
+30	Plan d'embauche de 1 000 000 fonctionnaires	Socialist	Un pays bien géré passe par une administration de premier plan : avec un 1 000 000 fonctionnaires supplémentaires, nous devrions enfin statistiquement pouvoir en trouver quelques uns qui travaillent !	2	29		-15	10	-15	15	0		-15	-10	0	0	0	197	364
+31	Nationalisation d'entreprises clés	Socialist	Certains secteurs clés de notre économies ne saurait être laissés sur le libre marché, en les nationalisant, nous nous assurerons qu'ils restent sous pavillon français.	2	29	30	-20	15	-20	20	0		-20	-10	5	5	0	198	365
+32	Nationalisation du secteur privé	Socialist	Le marché libre est une abération qui doit être bouttée hors du sol français ... Les entrepreneurs n'aimerons pas, mais ils n'ont plus d'importance à nos yeux.	3	31	31	-25	15	-25	25	0		-20	-10	10	5	0	199	366
+33	Droit de conscience sur le travail dominical et les jours de fêtes	Religious	Dans un pays laïque comme le notre, nous ne saurions imposer les fêtes catholiques. Néanmoins, il semble normal de permettre à ceux qui le souhaite de pouvoir exercer un droit de conscience sur le travail dominical et les jours de fêtes.	0		34	0	5	-5	5	15						-5	200	367
+34	Interdiction du travail les jours de fêtes	Religious	Certains employeurs exercant des pressions sur les fidèles qui refusent de travailler les jours de fêtes, l'interdiction générale du travail les jours de fêtes devrait permettre d'y remédier	1	33	35	0	5	-5	5	15						-5	201	368
+35	Interdiction du travail dominical (sauf pour les métiers de première nécessité)	Religious	Certains employeurs exercant des pressions sur les fidèles qui refusent de travailler le dimanche, l'interdiction générale du travail dominical devrait suffire, exception faîte des métiers de première nécessité tels que ceux de la Santé.	1	34	36	0	10	-10	5	20						-10	202	369
+36	Interdiction absolue du travail dominical	Religious	Le Seigneur se reposa le septième jour, comment pourrions-nous le demander à notre prochain. Nous n'aurons peut-être pas d'électricité ce jour là, mais le Seigneur sera avec nous !	2	35	37	0	10	-15	10	20						-10	203	370
+37	Obligation de présence à la messe le dimanche	Religious	Certains infidèles osent ne pas venir à la messe le dimanche malgré l'interdiction du travail ce jour là, créons des milices citoyennes pour les y conduire !	2	36		0	-15	0	10	25						-10	204	371
+38	Adaptation des menus des restaurants d'entreprises lors du carême	Religious	Et puis admettons-le, c'est aussi un bon moyen de maigrir avant l'été ...	0		39	0	5	-5	5	15						-5	205	372
+39	Prières obligatoires sur le lieu de travail	Religious	Bonne pour le morales des fidèles, celles-ci seront assez impopulaire pour les autres.	1	38	40	0	-10	-5	5	15						-10	206	373
+40	Présence d'un prêtre du travail obligatoire	Religious	Utile si jamais les employés ont besoins de se confesser sur leurs mauvais chiffres hebdomadaires, il pourra également venir pratiquer l'onction extrême si nécessaire.	2	39	41	0	5	-10	5	15						-10	207	374
+41	Baptême obligatoire pour embauche	Religious	Un bon chrétien saura être fidèle à son seigneur.	2	39	42	0	-10	-15	5	20						-15	208	375
+42	Bénédiction quotidienne de la production par le prêtre du travail	Religious	Garantie sans mauvais esprit.	2	40		0	-10	-20	5	25						-15	209	376
+43	Statut d'agent de l'Etat non-rémunéré pour les prêtres	Religious	Comme au bon vieux temps. Les croyant apprécieront, là où les impies resteront dans leur ignorance.	0		44	0	5	0	5	15		0	-5	0	0	-10	210	377
+44	Statut de fonctionnaire rémunéré pour les prêtres	Religious	Un bon moyen de lutter contre le chômage tout en satisfaisant les fidèles, mais un scandale pour les autres	1	43	45	-10	5	0	5	15		5	-5	0	0	-10	211	378
+45	Revalorisation salariale de la prêtrise (création d'un barème de rémunération)	Religious	Car notre prêtre ne doivent pas avoir à se soucier des basses nécessitudes de la vie, rémunérons les confortablement.	2	44	46	-10	5	0	5	15		5	-5	0	0	-10	212	379
+46	Plan d'embauche de 100 000 prêtres	Religious	Un prêtre pour 500 habitants, c'est bien le minimum que nous puissions faire.	2	44	47	-10	5	0	10	20		5	-5	0	0	-15	213	380
+47	Obligation pour les aînés de rentrer dans les ordres	Religious	Face au manque de vocation, provoquons le destin ... Ce que nous leur prenons, le Seigneur le leur rendra.	3	45		0	5	0	10	25		0	-5	0	0	-15	214	381
+48	Campagne de recrutement pour l'Armée de Terre	Militarist	Grande campagne publicitaire, des milliers de postes à pourvoir, ... Cela devrait accroitre la force de frappe gouvernementale tout en abaissant le chômage. Le peuple n'aime pas la guerre, nous ne comprenons pas bien pourquoi ...	0		49	5	-5	0	5	0							215	382
+49	Renforcement des budgets militaires	Militarist	Il devrait relancer notre économie, créer des embauches, ... Comment le peuple ne peut-il pas voir que la guerre est une chance pour lui ?	1	48	51	5	-5	10	5	0							216	383
+50	Mobilisation de 500 000 hommes	Militarist	Ils partiront 500 000, et reviendront probablement moins nombreux mais courronés de gloire ! Leurs parents nous détesterons, mais quelle opportunité pour abaisser le chômage !	2	49	52	15	-10	5	20	0							217	384
+51	Taxe sur l'Effort de Guerre	Militarist	Notre économies et nos citoyens doivent soutenir ceux qui défendent la France à travers le Monde, pour pallier à l'augmentation des dépenses miliaires, cette taxe est un impératif absolu !	1	48	50	20	-10	15	0	0							218	385
+52	Loi Martiale permanente	Militarist	L'ennemi est partout autour de nous, voire infiltré parmis nous. Nos concitoyens sont en danger, c'est donc la mort dans l'âme que nous vous implorons de bien vouloir nous laisser mettre en oeuvre une loi martiale permanente ... Mais soyez assurés que notre détermination n'a jamais été plus grande.	3	50		25	-20	30	30	5							219	386
+53	Création d'une autorité de contrôle des discriminations à l'embauche	Liberals	Mise en place de contrôles aléatoire sur les entrerprises soupsonnées de discriminations à l'embauche. Globalement appréciée, les employeurs font valoir une augmentation du coût de recrutement au vu de l'examen drastique auquel ils sont contraints.	0		54	0	5	-5	5	0							220	387
+54	CV anonymisé obligatoire	Liberals	Les entrerprises de plus de 10 salariés vont devoir pratiquer à l'anonymisation des CV, pour éviter que l'origine des candidats ne les influencent dans leur choix. Globalement appréciée, les employeurs font valoir une augmentation du coût de recrutement.	1	53	55	0	5	-5	5	0							221	388
+55	Quotas d'employés issus de minorités	Liberals	Critiqués pour leur propention à récriminer la discrimination en la pratiquant, ils sont néanmoins utiles pour insérer massivement des minorités mise sur le côté. On ne connaît pas leurs effets à moyen terme.	2	54	56	0	10	-10	10	0							222	389
+56	Peines de prison pour discriminations à l'embauche	Liberals	Radical, l'emprisonnement des fautifs de dicrimination à l'embauche devrait grandement réduire le phénomène.	3	55		-5	15	-15	5	0							223	390
+57	Reconnaissance du Burn-out comme maladie professionnelle	Liberals		0		58	0	5	-5	5	0							224	391
+58	Taxe anti Burn-out	Liberals		1	57	59	0	10	-10	10	0							225	392
+59	Pénalisation du Burn-out pour l'employeur	Liberals		2	58	60	0	15	-15	15	0							226	393
+60	Peines de prison pour cadre de travail inhumain	Liberals		3	59		0	20	-20	20	0							227	394
+61	Défiscalisation des heures supplémentaires	Liberals		0		62	-5	10	5	-5	0							228	395
+62	Suppressions des charges patronales	Liberals		1	61	63	-15	10	5	10	0							229	396
+63	Suppression des minimums salariaux	Liberals		1	62	64	0	-15	10	15	0							230	397
+64	Légalisation des stages gratuits	Liberals		2	63	65	0	-15	15	20	-5							231	398
+65	Légalisation du travail gratuit	Liberals		3	64		0	-20	25	25	-5							232	399
+66	Réduction de l'imposition sur le bénéfice	Liberals		0		67	-5	0	5	5	0							233	400
+67	Suppression de l'impôt sur les sociétés	Liberals		1	66	68	-10	0	10	5	0							234	401
+68	Suppression de la TVA	Liberals		2	67	69	-20	15	20	5	0							235	402
+69	Suppression de la notion d'Impôts	Liberals		3	68		-35	30	-35	5	0							236	403
+70	TVA augmentée sur les produits de luxe	Socialist		0		71	5	-5	-5	0	0							237	404
+71	Augmentation de l'impôt sur la fortune	Socialist		1	70	72	10	-10	-5	0	0							238	405
+72	Augmentation de l'impôt successoral (jusqu'à 80 % par paliers)	Socialist		2	71	73	15	-15	0	0	0							239	406
+73	Limitation du capital privé	Socialist		3	72	74	20	-20	-15	0	0							240	407
+74	Interdiction de la propriété privée	Socialist		4	73		30	-30	-25	0	0							241	408
+75	Participation obligatoire des employés dans leur entreprise (actions)	Socialist		0		75	0	10	5	0	0						0	242	409
+76	Actions à prix réduits pour les employés	Socialist		1	75	76	0	15	-5	0	0						0	243	410
+77	Collectivisation des moyens de productions pour les employés	Socialist		2	76	77	10	20	15	10	0						0	244	411
+78	Nationalisation des moyens de productions	Socialist		3	77	78	25	-10	25	5	0				15		0	245	412
+79	Taxation des importations issue d'un commerce non-équitable	Socialist		0		80	10	-10	15	10	5			-20	-10	-5	0	246	413
+80	Interdiction des importations issue d'un commerce non-équitable	Socialist		1	79		-10	-15	25	20	5			-30	-10	0	0	247	414
+81	Taxation des importations étrangères	Militarist		0			10	10	10	5	0						0	248	415
+82	Préférence nationale pour les marchés publics	Militarist		0	81	83	0	10	10	10	0						0	249	416
+83	Limitations des importations	Militarist		1	82	84	-5	10	10	15	0						0	250	417
+84	Interdiction des importations	Militarist		2	83		-5	-20	20	20	0						0	251	418
+85	Subventions aux énergies renouvelables	Ecologist		0		86	-5	5	10	5	0		10	-15	10	10	0	252	419
+86	Taxe aux énergies fossiles	Ecologist		1	85	87	5	-5	-5	-5	0		10	-15	15	10	0	253	420
+87	Taxe carbone	Ecologist		2	86	88	10	-10	-10	-5	0		25	-20	10	10	0	254	421
+88	Sortie du Nucléaire	Ecologist		3	87	89	-10	10	0	15	0		20	-20	25	15	0	255	422
+89	Tout renouvelable	Ecologist		4	88		-10	20	0	20	0		20	-20	25	15	0	256	423
+90	Classe bilingues	Liberals		0		91	-5	5	5	5	5		10	-10	5	-5	0	257	424
+91	Classe de 6ème option Médecine Nucléaire	Liberals		1	90	92	-5	10	5	5	5		10	0	5	-5	0	258	425
+92	Subvention des lycées privés	Liberals		1	91	93	-10	5	5	-5	5	93	10	-5	5	5	0	259	426
+93	Privatisation de l'enseignement secondaire	Liberals		2	92	94	15	-10	15	-10	5		15	-10	10	5	0	260	427
+94	Privatisation de l'enseignement supérieur	Liberals		3	93		25	-20	20	-20	5		15	-20	20	5	0	261	428
+95	Enseignement du créationnisme	Religious		0		96	0	-10	0	0	10		5	5	0	0	-20	262	429
+96	Interdiction de l'enseignement de la théorie de l'évolution	Religious		1	95		0	-15	0	0	15		5	5	0	0	-25	263	430
+97	Prière scolaire obligatoire	Religious		0	96	98	0	-20	0	0	20		5	5	0	0	-35	264	431
+98	Enseignement par les moines	Religious		1	97		0	-25	0	0	25		5	15	0	0	-35	265	432
+99	Enseignement optionnel du Latin	Religious		0		100	-5	10	0	0	5		-5	-5	0	5	-5	266	433
+100	Enseignement obligatoire du Latin	Religious		1	99	101	-5	-5	0	0	10		5	5	0	5	-5	267	434
+101	Etudes bibliques en latin obligatoire	Religious		2	100		-5	-15	0	0	15		5	5	0	5	-15	268	435
+102	Messe en latin obligatoire à l'école	Religious		2	101	103	-5	-20	0	0	20		5	5	0	0	-15	269	436
+103	Confessions en latin obligatoires avant les cours	Religious		3	102		-5	-25	0	0	25		5	10	0	0	-20	270	437
+104	Service civique obligatoire	Militarist		0		105	10	-10	-5	5	0		-5	5	5	0	0	271	438
+105	Service militaire obligatoire (6 mois)	Militarist		1	104	106	10	-10	-5	5	0		-10	10	5	0	0	272	439
+106	Service militaire obligatoire (2 ans)	Militarist		2	105	107	15	-15	-5	5	0		-10	10	5	0	0	273	440
+107	Conscription volontaire	Militarist		2	106	108	20	-20	-5	5	0		-10	20	10	5	0	274	441
+108	Conscription forcée	Militarist		3	107		25	-25	-5	5	5		-10	30	10	5	0	275	442
+109	Revalorisation du montant des bourses universitaires	Socialist		0		110	-15	15	10	10	0						0	276	443
+110	Gratuité de l'Enseignement Supérieur pour tous	Socialist		1	109		-25	25	15	20	0						0	277	444
+111	Enseignement du tri sélectif	Ecologist		0		112	-10	10	10	5	0						0	278	445
+112	Bourses d'études pour les énergies renouvelables	Ecologist		1	111		-20	20	25	15	0						0	279	446
+113	Revalorisation des aides à la création d'entreprise	Liberals		0		114	-10	0	10	5	0						0	280	447
+114	Défiscalisation des jeunes entreprises	Liberals		1	113	115	-15	0	15	5	0						0	281	448
+115	Financement systématique des jeunes entreprises	Liberals		2	114	116	-20	0	20	10	0						0	282	449
+116	Subvention à l'envie de créer une entreprise	Liberals		3	115		-25	5	25	10	0						0	283	450
+117	Suppression de la Sécurité Sociale	Liberals		0			30	-30	20	-10	0						15	284	451
+118	Limitation des allocations familiales	Liberals		0		119	10	-10	-10	0	-5		10	-10	5	0	-5	285	452
+119	Suppression des allocations familiales	Liberals		1	118		20	-20	-15	0	-10		10	-15	5	0	-5	286	453
+120	Universalité des allocations familiales	Religious		0		121	-5	5	5	0	5		15	-5	5	0	-10	287	454
+121	Revalorisations des allocations familiales pour les familles nombreuses	Religious		1	120	122	-10	10	10	0	10		15	-10	5	0	-15	288	455
+122	Allocations religieuses versées au Baptême, puis à la confirmation	Religious		2	121		-15	5	15	0	25		15	0	0	0	-20	289	456
+123	Financement des associations d'anciens combattants	Militarist		0		124	-5	5	5	0	0						-5	290	457
+124	Revenu de solidarité pour les anciens combattants	Militarist		1	123	125	-10	5	5	-5	0						-5	291	458
+125	Gratuité du coût de la vie pour les anciens combattants	Militarist		2	124		-15	5	5	-10	0						-15	292	459
+126	Remédier aux déserts médicaux	Socialist		0			-10	15	10	15	0						5	293	460
+127	Limitation des aides à la création d'entreprise	Socialist		0		128	10	0	-10	-5	0						0	294	461
+128	Suppression des aides à la création d'entreprise	Socialist		1	127		15	0	-20	-10	0						0	295	462
+129	Création de prisons privées	Socialist		0		130	5	-5	5	-5	0						0	296	463
+130	Privatisation des prisons publiques lourdement endettées	Socialist		1	129	131	10	-5	10	-10	0						0	297	464
+131	Privatisation des prisons publiques	Socialist		2	130	132	15	-10	15	-15	-5						0	298	465
+132	Privatisation des tribunaux	Socialist		3	131		20	-25	20	-20	-10						0	299	466
+133	Légalisation du Cannabis pour un usage médical	Socialist		0		134	0	5	5	5	-5		10	-10	-5	5	5	300	467
+134	Légalisation du Cannabis pour un usage récréatif	Socialist		1	133	135	0	10	10	5	-10		10	-15	-5	5	5	301	468
+135	Légalisation des drogues dures pour un usage récréatif	Socialist		2	134	136	0	15	-15	0	-15		15	-5	-10	-5	5	302	469
+136	Légalisation de l'alcool au travail	Socialist		1	134	137	-5	20	-20	-5	-20		15	-5	-10	-5	15	303	470
+137	Légalisation des drogues au volant	Socialist		2	134		-5	25	-25	-5	-25		15	-5	-10	-5	15	304	471
+138	Augmentation des effectifs pour le traitement des demandes d'asile	Socialist		0			-5	-5	5	0	0						0	305	472
+139	Permis de séjour facilité	Socialist		0	138	140	-10	-10	10	-5	0						0	306	473
+140	Naturalisation facilité	Socialist		1	139	141	-15	-15	20	-5	0						0	307	474
+141	Distribution dans la rue de passeports français	Socialist		2	140		-20	-20	30	-5	0						0	308	475
+142	Reconnaissance officielle de la culture judéo-chrétienne de la France comme culture nationale	Religious		0		143	0	-5	0	0	5		0	5	0	0	-25	309	476
+143	Reconnaissance officielle de la culture catholique de la France comme culture nationale	Religious		1	142	144	0	-10	0	0	10		0	10	0	0	-20	310	477
+144	Reconnaissance officielle de la religion catholique comme religion d'état	Religious		2	143	145	0	-15	0	0	20		-5	10	0	0	-25	311	478
+145	Interdiction des religions non officielles	Religious		3	144	146	0	-20	0	0	30		-5	15	0	0	-30	312	479
+146	Inquisition	Religious		4	145		-10	-25	0	10	35		-5	15	0	0	-30	313	480
+147	Interdiction de l'IVG	Religious		0		148	0	-10	0	0	10				5	0	-15	314	481
+148	Interdiction du mariage homosexuel	Religious		1	147	149	0	-15	0	0	20				5	0	-15	315	482
+149	Interdiction de l'homosexualité	Religious		2	148	150	0	-20	0	0	20				5	0	-20	316	483
+150	Baptême catholique obligatoire	Religious		3	149		0	-25	0	0	30				5	0	-30	317	484
+151	Déchéance de nationalité pour les binationaux pour les crimes contre la nation	Militarist		0		152	0	5	0	0	0		-15	5	0	0	0	318	485
+152	Déchéance de nationalité systématique pour les crimes contre la nation	Militarist		1	151	153	0	10	0	0	0		-5	5	0	0	0	319	486
+153	Déchéance de nationalité systématique pour les crimes graves	Militarist		1	152	154	0	5	0	0	0		-5	5	0	0	0	320	487
+154	Déchéance de nationalité sur ordonnance du Président	Militarist		2	153	155	0	5	0	0	0		-5	10	0	0	0	321	488
+155	Déchéance de nationalité pour les délits mineurs	Militarist		3	154		0	-15	0	0	0		-5	10	0	0	0	322	489
+156	Sortie des accords de Schengen	Militarist		0			0	5	0	0	0		5	0	10	5	0	323	490
+157	Test de citoyenneté	Militarist		1	156	158	0	10	0	0	0		5	0	10	5	0	324	491
+158	Quotas d'immigration	Militarist		1	157	159	-5	15	-5	0	0		10	0	10	5	5	325	492
+159	Fermeture totale des frontières	Militarist		2	158		-10	20	-10	5	0		10	0	10	5	10	326	493
+160	Légalisation limitée de l'euthanasie	Liberals		0		161	0	15	-5	5	-10		0	-5	0	0	10	327	494
+161	Légalisation de l'euthanasie	Liberals		1	160	162	0	10	-5	5	-20		5	-10	0	0	10	328	495
+162	Droit au suicide	Liberals		2	161		0	15	-10	10	-35		10	-10	0	0	15	329	496
+163	Augmentation des subventions à la culture	Liberals		0		164	-5	5	0	5	0		0	-5	5	0	0	330	497
+164	Musées nationaux gratuits pour tous	Liberals		1	163	165	-10	10	0	5	0		-5	-10	5	0	0	331	498
+165	Gratuité complète des bibliothèques municipales	Liberals		2	164	166	-15	15	0	5	0		0	-10	5	0	0	332	499
+166	Crédits culture pour tous les citoyens	Liberals		3	165		-20	20	10	5	0		10	-20	-5	0	0	333	500
+167	Augmentation de la durée du travail à 39h	Liberals		0		168	0	-7	6	-4	0		-11	6	-4	3	0		
+168	Suppression de la durée légale du travail	Liberals		1		169	0	-11	6	-4	0		-11	6	-4	3	0		
+169	Suppression du code du travail	Liberals		2		170	0	-14	10	-4	0		-11	6	-4	3	0		
+170	Interdiction des pauses	Liberals		3		171	0	-14	13	-4	0		-11	6	-4	3	0		
+171	Autorisation de l’enfermement en cages des employés 	Liberals		4			0	-17	16	-7	0		-11	6	-4	3	0		
+172	Contrôle strict des allocations chômage	Liberals		0		173	6	-4	0	3	0		-11	6	-4	3	0		
+173	Limitation de la durée des allocations chômage	Liberals		1		174	6	-4	0	3	0		-11	6	-4	3	0		
+174	Suppression des allocations chômage	Liberals		2		175	10	-7	0	6	0		-11	6	-4	3	0		
+175	Impôt sur le chômage (taxe sur la non productivité)	Liberals		3		176	10	-11	3	10	0		-11	6	-4	3	0		
+176	Emploi imposé par l'Etat	Liberals		4			-11	-17	6	16	0		-11	6	-4	3	0		
+177	Privatisation des entreprises d'État	Liberals		0		178	6	-7	6	-4	0		-11	6	-4	3	0		
+178	Plan de réduction de 100 000 fonctionnaires	Liberals		1		179	6	-11	6	-4	0		-11	6	-4	3	0		
+179	Privatisation de l'Éducation Nationale	Liberals		2		180	10	-14	10	-7	0		-11	6	-4	3	0		
+180	Privatisation de l'armée	Liberals		3		181	13	-17	13	-11	0		-11	6	-4	3	0		
+181	Privatisation du gouvernement	Liberals		4			16	-17	16	-14	0		-11	6	-4	3	0		
+182	Diminution de la durée du travail à 30h	Socialist		0		183	-4	3	-4	6	0		3	3	3	0	0		
+183	Interdiction des licenciements pour les entreprises en bonne santé	Socialist		1		184	-4	3	-4	3	0		3	-4	3	0	0		
+184	Week-end de trois jours	Socialist		2		185	-4	6	-11	6	3		3	-4	3	0	0		
+185	Interdiction du travail nocturne	Socialist		3		186	-4	6	-11	3	0		3	-4	3	0	0		
+186	Interdiction des licenciements	Socialist		4			-11	10	-14	-7	0		3	-7	3	0	0		
+187	Reconnaissance de la pénibilité du travail (retraite anticipée pour les métiers à risque)	Socialist		0			-7	3	-4	3	0		3	0	3	3	0		
+188	Retraite à 60 ans	Socialist		0		189	-7	6	-7	6	0		3	-4	3	3	0		
+189	Interdiction du travail des seniors	Socialist		1		190	-11	10	-11	10	0		3	0	3	3	3		
+190	Interdiction des travaux pénibles	Socialist		2		191	-11	13	-14	13	0		3	0	3	3	0		
+191	Interdiction du travail	Socialist		3			-14	16	-17	-27	0		13	-4	6	3	0		
+192	Revalorisation des allocations chômage	Socialist		0		193	-7	6	-4	-7	0		6	-4	3	3	0		
+193	Revenu universel	Socialist		1		194	-11	10	-7	-11	0		0	-14	3	3	0		
+194	Revenu universel revalorisé	Socialist		2			-11	13	-7	-14	0		3	-7	3	3	0		
+195	Plan d'embauche de 100 000 fonctionnaires	Socialist		0		196	-7	3	-4	3	0		-4	-4	0	0	0		
+196	Renationalisation des entreprises privatisées par les précédents gouvernements	Socialist		1		197	-7	3	-7	6	0		-7	-11	0	0	0		
+197	Plan d'embauche de 1 000 000 fonctionnaires	Socialist		2			-11	6	-11	10	0		-11	-7	0	0	0		
+198	Nationalisation d'entreprises clés	Socialist		2		197	-14	10	-14	13	0		-14	-7	3	3	0		
+199	Nationalisation du secteur privé	Socialist		3		198	-17	10	-17	16	0		-14	-7	6	3	0		
+200	Droit de conscience sur le travail dominical et les jours de fêtes	Religious		0		201	0	3	-4	3	10		0	0	0	0	-4		
+201	Interdiction du travail les jours de fêtes	Religious		1		202	0	3	-4	3	10		0	0	0	0	-4		
+202	Interdiction du travail dominical (sauf pour les métiers de première nécessité)	Religious		1		203	0	6	-7	3	13		0	0	0	0	-7		
+203	Interdiction absolue du travail dominical	Religious		2		204	0	6	-11	6	13		0	0	0	0	-7		
+204	Obligation de présence à la messe le dimanche	Religious		2			0	-11	0	6	16		0	0	0	0	-7		
+205	Adaptation des menus des restaurants d'entreprises lors du carême	Religious		0		206	0	3	-4	3	10		0	0	0	0	-4		
+206	Prières obligatoires sur le lieu de travail	Religious		1		207	0	-7	-4	3	10		0	0	0	0	-7		
+207	Présence d'un prêtre du travail obligatoire	Religious		2		208	0	3	-7	3	10		0	0	0	0	-7		
+208	Baptême obligatoire pour embauche	Religious		2		209	0	-7	-11	3	13		0	0	0	0	-11		
+209	Bénédiction quotidienne de la production par le prêtre du travail	Religious		2			0	-7	-14	3	16		0	0	0	0	-11		
+210	Statut d'agent de l'Etat non-rémunéré pour les prêtres	Religious		0		211	0	3	0	3	10		0	-4	0	0	-7		
+211	Statut de fonctionnaire rémunéré pour les prêtres	Religious		1		212	-7	3	0	3	10		3	-4	0	0	-7		
+212	Revalorisation salariale de la prêtrise (création d'un barème de rémunération)	Religious		2		213	-7	3	0	3	10		3	-4	0	0	-7		
+213	Plan d'embauche de 100 000 prêtres	Religious		2		214	-7	3	0	6	13		3	-4	0	0	-11		
+214	Obligation pour les aînés de rentrer dans les ordres	Religious		3			0	3	0	6	16		0	-4	0	0	-11		
+215	Campagne de recrutement pour l'Armée de Terre	Militarist		0		216	3	-4	0	3	0		0	0	0	0	0		
+216	Renforcement des budgets militaires	Militarist		1		218	3	-4	6	3	0		0	0	0	0	0		
+217	Mobilisation de 500 000 hommes	Militarist		2		219	10	-7	3	13	0		0	0	0	0	0		
+218	Taxe sur l'Effort de Guerre	Militarist		1		217	13	-7	10	0	0		0	0	0	0	0		
+219	Loi Martiale permanente	Militarist		3			16	-14	20	20	3		0	0	0	0	0		
+220	Création d'une autorité de contrôle des discriminations à l'embauche	Liberals		0		221	0	3	-4	3	0		0	0	0	0	0		
+221	CV anonymisé obligatoire	Liberals		1		222	0	3	-4	3	0		0	0	0	0	0		
+222	Quotas d'employés issus de minorités	Liberals		2		223	0	6	-7	6	0		0	0	0	0	0		
+223	Peines de prison pour discriminations à l'embauche	Liberals		3			-4	10	-11	3	0		0	0	0	0	0		
+224	Reconnaissance du Burn-out comme maladie professionnelle	Liberals		0		225	0	3	-4	3	0		0	0	0	0	0		
+225	Taxe anti Burn-out	Liberals		1		226	0	6	-7	6	0		0	0	0	0	0		
+226	Pénalisation du Burn-out pour l'employeur	Liberals		2		227	0	10	-11	10	0		0	0	0	0	0		
+227	Peines de prison pour cadre de travail inhumain	Liberals		3			0	13	-14	13	0		0	0	0	0	0		
+228	Défiscalisation des heures supplémentaires	Liberals		0		229	-4	6	3	-4	0		0	0	0	0	0		
+229	Suppressions des charges patronales	Liberals		1		230	-11	6	3	6	0		0	0	0	0	0		
+230	Suppression des minimums salariaux	Liberals		1		231	0	-11	6	10	0		0	0	0	0	0		
+231	Légalisation des stages gratuits	Liberals		2		232	0	-11	10	13	-4		0	0	0	0	0		
+232	Légalisation du travail gratuit	Liberals		3			0	-14	16	16	-4		0	0	0	0	0		
+233	Réduction de l'imposition sur le bénéfice	Liberals		0		234	-4	0	3	3	0		0	0	0	0	0		
+234	Suppression de l'impôt sur les sociétés	Liberals		1		235	-7	0	6	3	0		0	0	0	0	0		
+235	Suppression de la TVA	Liberals		2		236	-14	10	13	3	0		0	0	0	0	0		
+236	Suppression de la notion d'Impôts	Liberals		3			-24	20	-24	3	0		0	0	0	0	0		
+237	TVA augmentée sur les produits de luxe	Socialist		0		238	3	-4	-4	0	0		0	0	0	0	0		
+238	Augmentation de l'impôt sur la fortune	Socialist		1		239	6	-7	-4	0	0		0	0	0	0	0		
+239	Augmentation de l'impôt successoral (jusqu'à 80 % par paliers)	Socialist		2		240	10	-11	0	0	0		0	0	0	0	0		
+240	Limitation du capital privé	Socialist		3		241	13	-14	-11	0	0		0	0	0	0	0		
+241	Interdiction de la propriété privée	Socialist		4			20	-21	-17	0	0		0	0	0	0	0		
+242	Participation obligatoire des employés dans leur entreprise (actions)	Socialist		0		242	0	6	3	0	0		0	0	0	0	0		
+243	Actions à prix réduits pour les employés	Socialist		1		243	0	10	-4	0	0		0	0	0	0	0		
+244	Collectivisation des moyens de productions pour les employés	Socialist		2		244	6	13	10	6	0		0	0	0	0	0		
+245	Nationalisation des moyens de productions	Socialist		3		245	16	-7	16	3	0		0	0	10	0	0		
+246	Taxation des importations issue d'un commerce non-équitable	Socialist		0		247	6	-7	10	6	3		0	-14	-7	-4	0		
+247	Interdiction des importations issue d'un commerce non-équitable	Socialist		1			-7	-11	16	13	3		0	-21	-7	0	0		
+248	Taxation des importations étrangères	Militarist		0			6	6	6	3	0		0	0	0	0	0		
+249	Préférence nationale pour les marchés publics	Militarist		0		250	0	6	6	6	0		0	0	0	0	0		
+250	Limitations des importations	Militarist		1		251	-4	6	6	10	0		0	0	0	0	0		
+251	Interdiction des importations	Militarist		2			-4	-14	13	13	0		0	0	0	0	0		
+252	Subventions aux énergies renouvelables	Ecologist		0		253	-4	3	6	3	0		6	-11	6	6	0		
+253	Taxe aux énergies fossiles	Ecologist		1		254	3	-4	-4	-4	0		6	-11	10	6	0		
+254	Taxe carbone	Ecologist		2		255	6	-7	-7	-4	0		16	-14	6	6	0		
+255	Sortie du Nucléaire	Ecologist		3		256	-7	6	0	10	0		13	-14	16	10	0		
+256	Tout renouvelable	Ecologist		4			-7	13	0	13	0		13	-14	16	10	0		
+257	Classe bilingues	Liberals		0		258	-4	3	3	3	3		6	-7	3	-4	0		
+258	Classe de 6ème option Médecine Nucléaire	Liberals		1		259	-4	6	3	3	3		6	0	3	-4	0		
+259	Subvention des lycées privés	Liberals		1		260	-7	3	3	-4	3	260	6	-4	3	3	0		
+260	Privatisation de l'enseignement secondaire	Liberals		2		261	10	-7	10	-7	3		10	-7	6	3	0		
+261	Privatisation de l'enseignement supérieur	Liberals		3			16	-14	13	-14	3		10	-14	13	3	0		
+262	Enseignement du créationnisme	Religious		0		263	0	-7	0	0	6		3	3	0	0	-14		
+263	Interdiction de l'enseignement de la théorie de l'évolution	Religious		1			0	-11	0	0	10		3	3	0	0	-17		
+264	Prière scolaire obligatoire	Religious		0		265	0	-14	0	0	13		3	3	0	0	-24		
+265	Enseignement par les moines	Religious		1			0	-17	0	0	16		3	10	0	0	-24		
+266	Enseignement optionnel du Latin	Religious		0		267	-4	6	0	0	3		-4	-4	0	3	-4		
+267	Enseignement obligatoire du Latin	Religious		1		268	-4	-4	0	0	6		3	3	0	3	-4		
+268	Etudes bibliques en latin obligatoire	Religious		2			-4	-11	0	0	10		3	3	0	3	-11		
+269	Messe en latin obligatoire à l'école	Religious		2		270	-4	-14	0	0	13		3	3	0	0	-11		
+270	Confessions en latin obligatoires avant les cours	Religious		3			-4	-17	0	0	16		3	6	0	0	-14		
+271	Service civique obligatoire	Militarist		0		272	6	-7	-4	3	0		-4	3	3	0	0		
+272	Service militaire obligatoire (6 mois)	Militarist		1		273	6	-7	-4	3	0		-7	6	3	0	0		
+273	Service militaire obligatoire (2 ans)	Militarist		2		274	10	-11	-4	3	0		-7	6	3	0	0		
+274	Conscription volontaire	Militarist		2		275	13	-14	-4	3	0		-7	13	6	3	0		
+275	Conscription forcée	Militarist		3			16	-17	-4	3	3		-7	20	6	3	0		
+276	Revalorisation du montant des bourses universitaires	Socialist		0		277	-11	10	6	6	0		0	0	0	0	0		
+277	Gratuité de l'Enseignement Supérieur pour tous	Socialist		1			-17	16	10	13	0		0	0	0	0	0		
+278	Enseignement du tri sélectif	Ecologist		0		279	-7	6	6	3	0		0	0	0	0	0		
+279	Bourses d'études pour les énergies renouvelables	Ecologist		1			-14	13	16	10	0		0	0	0	0	0		
+280	Revalorisation des aides à la création d'entreprise	Liberals		0		281	-7	0	6	3	0		0	0	0	0	0		
+281	Défiscalisation des jeunes entreprises	Liberals		1		282	-11	0	10	3	0		0	0	0	0	0		
+282	Financement systématique des jeunes entreprises	Liberals		2		283	-14	0	13	6	0		0	0	0	0	0		
+283	Subvention à l'envie de créer une entreprise	Liberals		3			-17	3	16	6	0		0	0	0	0	0		
+284	Suppression de la Sécurité Sociale	Liberals		0			20	-21	13	-7	0		0	0	0	0	10		
+285	Limitation des allocations familiales	Liberals		0		286	6	-7	-7	0	-4		6	-7	3	0	-4		
+286	Suppression des allocations familiales	Liberals		1			13	-14	-11	0	-7		6	-11	3	0	-4		
+287	Universalité des allocations familiales	Religious		0		288	-4	3	3	0	3		10	-4	3	0	-7		
+288	Revalorisations des allocations familiales pour les familles nombreuses	Religious		1		289	-7	6	6	0	6		10	-7	3	0	-11		
+289	Allocations religieuses versées au Baptême, puis à la confirmation	Religious		2			-11	3	10	0	16		10	0	0	0	-14		
+290	Financement des associations d'anciens combattants	Militarist		0		291	-4	3	3	0	0		0	0	0	0	-4		
+291	Revenu de solidarité pour les anciens combattants	Militarist		1		292	-7	3	3	-4	0		0	0	0	0	-4		
+292	Gratuité du coût de la vie pour les anciens combattants	Militarist		2			-11	3	3	-7	0		0	0	0	0	-11		
+293	Remédier aux déserts médicaux	Socialist		0			-7	10	6	10	0		0	0	0	0	3		
+294	Limitation des aides à la création d'entreprise	Socialist		0		295	6	0	-7	-4	0		0	0	0	0	0		
+295	Suppression des aides à la création d'entreprise	Socialist		1			10	0	-14	-7	0		0	0	0	0	0		
+296	Création de prisons privées	Socialist		0		297	3	-4	3	-4	0		0	0	0	0	0		
+297	Privatisation des prisons publiques lourdement endettées	Socialist		1		298	6	-4	6	-7	0		0	0	0	0	0		
+298	Privatisation des prisons publiques	Socialist		2		299	10	-7	10	-11	-4		0	0	0	0	0		
+299	Privatisation des tribunaux	Socialist		3			13	-17	13	-14	-7		0	0	0	0	0		
+300	Légalisation du Cannabis pour un usage médical	Socialist		0		301	0	3	3	3	-4		6	-7	-4	3	3		
+301	Légalisation du Cannabis pour un usage récréatif	Socialist		1		302	0	6	6	3	-7		6	-11	-4	3	3		
+302	Légalisation des drogues dures pour un usage récréatif	Socialist		2		303	0	10	-11	0	-11		10	-4	-7	-4	3		
+303	Légalisation de l'alcool au travail	Socialist		1		304	-4	13	-14	-4	-14		10	-4	-7	-4	10		
+304	Légalisation des drogues au volant	Socialist		2			-4	16	-17	-4	-17		10	-4	-7	-4	10		
+305	Augmentation des effectifs pour le traitement des demandes d'asile	Socialist		0			-4	-4	3	0	0		0	0	0	0	0		
+306	Permis de séjour facilité	Socialist		0		307	-7	-7	6	-4	0		0	0	0	0	0		
+307	Naturalisation facilité	Socialist		1		308	-11	-11	13	-4	0		0	0	0	0	0		
+308	Distribution dans la rue de passeports français	Socialist		2			-14	-14	20	-4	0		0	0	0	0	0		
+309	Reconnaissance officielle de la culture judéo-chrétienne de la France comme culture nationale	Religious		0		310	0	-4	0	0	3		0	3	0	0	-17		
+310	Reconnaissance officielle de la culture catholique de la France comme culture nationale	Religious		1		311	0	-7	0	0	6		0	6	0	0	-14		
+311	Reconnaissance officielle de la religion catholique comme religion d'état	Religious		2		312	0	-11	0	0	13		-4	6	0	0	-17		
+312	Interdiction des religions non officielles	Religious		3		313	0	-14	0	0	20		-4	10	0	0	-21		
+313	Inquisition	Religious		4			-7	-17	0	6	23		-4	10	0	0	-21		
+314	Interdiction de l'IVG	Religious		0		315	0	-7	0	0	6		0	0	3	0	-11		
+315	Interdiction du mariage homosexuel	Religious		1		316	0	-11	0	0	13		0	0	3	0	-11		
+316	Interdiction de l'homosexualité	Religious		2		317	0	-14	0	0	13		0	0	3	0	-14		
+317	Baptême catholique obligatoire	Religious		3			0	-17	0	0	20		0	0	3	0	-21		
+318	Déchéance de nationalité pour les binationaux pour les crimes contre la nation	Militarist		0		319	0	3	0	0	0		-11	3	0	0	0		
+319	Déchéance de nationalité systématique pour les crimes contre la nation	Militarist		1		320	0	6	0	0	0		-4	3	0	0	0		
+320	Déchéance de nationalité systématique pour les crimes graves	Militarist		1		321	0	3	0	0	0		-4	3	0	0	0		
+321	Déchéance de nationalité sur ordonnance du Président	Militarist		2		322	0	3	0	0	0		-4	6	0	0	0		
+322	Déchéance de nationalité pour les délits mineurs	Militarist		3			0	-11	0	0	0		-4	6	0	0	0		
+323	Sortie des accords de Schengen	Militarist		0			0	3	0	0	0		3	0	6	3	0		
+324	Test de citoyenneté	Militarist		1		325	0	6	0	0	0		3	0	6	3	0		
+325	Quotas d'immigration	Militarist		1		326	-4	10	-4	0	0		6	0	6	3	3		
+326	Fermeture totale des frontières	Militarist		2			-7	13	-7	3	0		6	0	6	3	6		
+327	Légalisation limitée de l'euthanasie	Liberals		0		328	0	10	-4	3	-7		0	-4	0	0	6		
+328	Légalisation de l'euthanasie	Liberals		1		329	0	6	-4	3	-14		3	-7	0	0	6		
+329	Droit au suicide	Liberals		2			0	10	-7	6	-24		6	-7	0	0	10		
+330	Augmentation des subventions à la culture	Liberals		0		331	-4	3	0	3	0		0	-4	3	0	0		
+331	Musées nationaux gratuits pour tous	Liberals		1		332	-7	6	0	3	0		-4	-7	3	0	0		
+332	Gratuité complète des bibliothèques municipales	Liberals		2		333	-11	10	0	3	0		0	-7	3	0	0		
+333	Crédits culture pour tous les citoyens	Liberals		3			-14	13	6	3	0		6	-14	-4	0	0		
+334	Augmentation de la durée du travail à 39h	Liberals		0		335	0	-14	13	-7	0		-20	13	-7	6	0		
+335	Suppression de la durée légale du travail	Liberals		1		336	0	-20	13	-7	0		-20	13	-7	6	0		
+336	Suppression du code du travail	Liberals		2		337	0	-27	19	-7	0		-20	13	-7	6	0		
+337	Interdiction des pauses	Liberals		3		338	0	-27	26	-7	0		-20	13	-7	6	0		
+338	Autorisation de l’enfermement en cages des employés 	Liberals		4			0	-34	33	-14	0		-20	13	-7	6	0		
+339	Contrôle strict des allocations chômage	Liberals		0		340	13	-7	0	6	0		-20	13	-7	6	0		
+340	Limitation de la durée des allocations chômage	Liberals		1		341	13	-7	0	6	0		-20	13	-7	6	0		
+341	Suppression des allocations chômage	Liberals		2		342	19	-14	0	13	0		-20	13	-7	6	0		
+342	Impôt sur le chômage (taxe sur la non productivité)	Liberals		3		343	19	-20	6	19	0		-20	13	-7	6	0		
+343	Emploi imposé par l'Etat	Liberals		4			-20	-34	13	33	0		-20	13	-7	6	0		
+344	Privatisation des entreprises d'État	Liberals		0		345	13	-14	13	-7	0		-20	13	-7	6	0		
+345	Plan de réduction de 100 000 fonctionnaires	Liberals		1		346	13	-20	13	-7	0		-20	13	-7	6	0		
+346	Privatisation de l'Éducation Nationale	Liberals		2		347	19	-27	19	-14	0		-20	13	-7	6	0		
+347	Privatisation de l'armée	Liberals		3		348	26	-34	26	-20	0		-20	13	-7	6	0		
+348	Privatisation du gouvernement	Liberals		4			33	-34	33	-27	0		-20	13	-7	6	0		
+349	Diminution de la durée du travail à 30h	Socialist		0		350	-7	6	-7	13	0		6	6	6	0	0		
+350	Interdiction des licenciements pour les entreprises en bonne santé	Socialist		1		351	-7	6	-7	6	0		6	-7	6	0	0		
+351	Week-end de trois jours	Socialist		2		352	-7	13	-20	13	6		6	-7	6	0	0		
+352	Interdiction du travail nocturne	Socialist		3		353	-7	13	-20	6	0		6	-7	6	0	0		
+353	Interdiction des licenciements	Socialist		4			-20	19	-27	-14	0		6	-14	6	0	0		
+354	Reconnaissance de la pénibilité du travail (retraite anticipée pour les métiers à risque)	Socialist		0			-14	6	-7	6	0		6	0	6	6	0		
+355	Retraite à 60 ans	Socialist		0		356	-14	13	-14	13	0		6	-7	6	6	0		
+356	Interdiction du travail des seniors	Socialist		1		357	-20	19	-20	19	0		6	0	6	6	6		
+357	Interdiction des travaux pénibles	Socialist		2		358	-20	26	-27	26	0		6	0	6	6	0		
+358	Interdiction du travail	Socialist		3			-27	33	-34	-54	0		26	-7	13	6	0		
+359	Revalorisation des allocations chômage	Socialist		0		360	-14	13	-7	-14	0		13	-7	6	6	0		
+360	Revenu universel	Socialist		1		361	-20	19	-14	-20	0		0	-27	6	6	0		
+361	Revenu universel revalorisé	Socialist		2			-20	26	-14	-27	0		6	-14	6	6	0		
+362	Plan d'embauche de 100 000 fonctionnaires	Socialist		0		363	-14	6	-7	6	0		-7	-7	0	0	0		
+363	Renationalisation des entreprises privatisées par les précédents gouvernements	Socialist		1		364	-14	6	-14	13	0		-14	-20	0	0	0		
+364	Plan d'embauche de 1 000 000 fonctionnaires	Socialist		2			-20	13	-20	19	0		-20	-14	0	0	0		
+365	Nationalisation d'entreprises clés	Socialist		2		364	-27	19	-27	26	0		-27	-14	6	6	0		
+366	Nationalisation du secteur privé	Socialist		3		365	-34	19	-34	33	0		-27	-14	13	6	0		
+367	Droit de conscience sur le travail dominical et les jours de fêtes	Religious		0		368	0	6	-7	6	19		0	0	0	0	-7		
+368	Interdiction du travail les jours de fêtes	Religious		1		369	0	6	-7	6	19		0	0	0	0	-7		
+369	Interdiction du travail dominical (sauf pour les métiers de première nécessité)	Religious		1		370	0	13	-14	6	26		0	0	0	0	-14		
+370	Interdiction absolue du travail dominical	Religious		2		371	0	13	-20	13	26		0	0	0	0	-14		
+371	Obligation de présence à la messe le dimanche	Religious		2			0	-20	0	13	33		0	0	0	0	-14		
+372	Adaptation des menus des restaurants d'entreprises lors du carême	Religious		0		373	0	6	-7	6	19		0	0	0	0	-7		
+373	Prières obligatoires sur le lieu de travail	Religious		1		374	0	-14	-7	6	19		0	0	0	0	-14		
+374	Présence d'un prêtre du travail obligatoire	Religious		2		375	0	6	-14	6	19		0	0	0	0	-14		
+375	Baptême obligatoire pour embauche	Religious		2		376	0	-14	-20	6	26		0	0	0	0	-20		
+376	Bénédiction quotidienne de la production par le prêtre du travail	Religious		2			0	-14	-27	6	33		0	0	0	0	-20		
+377	Statut d'agent de l'Etat non-rémunéré pour les prêtres	Religious		0		378	0	6	0	6	19		0	-7	0	0	-14		
+378	Statut de fonctionnaire rémunéré pour les prêtres	Religious		1		379	-14	6	0	6	19		6	-7	0	0	-14		
+379	Revalorisation salariale de la prêtrise (création d'un barème de rémunération)	Religious		2		380	-14	6	0	6	19		6	-7	0	0	-14		
+380	Plan d'embauche de 100 000 prêtres	Religious		2		381	-14	6	0	13	26		6	-7	0	0	-20		
+381	Obligation pour les aînés de rentrer dans les ordres	Religious		3			0	6	0	13	33		0	-7	0	0	-20		
+382	Campagne de recrutement pour l'Armée de Terre	Militarist		0		383	6	-7	0	6	0		0	0	0	0	0		
+383	Renforcement des budgets militaires	Militarist		1		385	6	-7	13	6	0		0	0	0	0	0		
+384	Mobilisation de 500 000 hommes	Militarist		2		386	19	-14	6	26	0		0	0	0	0	0		
+385	Taxe sur l'Effort de Guerre	Militarist		1		384	26	-14	19	0	0		0	0	0	0	0		
+386	Loi Martiale permanente	Militarist		3			33	-27	39	39	6		0	0	0	0	0		
+387	Création d'une autorité de contrôle des discriminations à l'embauche	Liberals		0		388	0	6	-7	6	0		0	0	0	0	0		
+388	CV anonymisé obligatoire	Liberals		1		389	0	6	-7	6	0		0	0	0	0	0		
+389	Quotas d'employés issus de minorités	Liberals		2		390	0	13	-14	13	0		0	0	0	0	0		
+390	Peines de prison pour discriminations à l'embauche	Liberals		3			-7	19	-20	6	0		0	0	0	0	0		
+391	Reconnaissance du Burn-out comme maladie professionnelle	Liberals		0		392	0	6	-7	6	0		0	0	0	0	0		
+392	Taxe anti Burn-out	Liberals		1		393	0	13	-14	13	0		0	0	0	0	0		
+393	Pénalisation du Burn-out pour l'employeur	Liberals		2		394	0	19	-20	19	0		0	0	0	0	0		
+394	Peines de prison pour cadre de travail inhumain	Liberals		3			0	26	-27	26	0		0	0	0	0	0		
+395	Défiscalisation des heures supplémentaires	Liberals		0		396	-7	13	6	-7	0		0	0	0	0	0		
+396	Suppressions des charges patronales	Liberals		1		397	-20	13	6	13	0		0	0	0	0	0		
+397	Suppression des minimums salariaux	Liberals		1		398	0	-20	13	19	0		0	0	0	0	0		
+398	Légalisation des stages gratuits	Liberals		2		399	0	-20	19	26	-7		0	0	0	0	0		
+399	Légalisation du travail gratuit	Liberals		3			0	-27	33	33	-7		0	0	0	0	0		
+400	Réduction de l'imposition sur le bénéfice	Liberals		0		401	-7	0	6	6	0		0	0	0	0	0		
+401	Suppression de l'impôt sur les sociétés	Liberals		1		402	-14	0	13	6	0		0	0	0	0	0		
+402	Suppression de la TVA	Liberals		2		403	-27	19	26	6	0		0	0	0	0	0		
+403	Suppression de la notion d'Impôts	Liberals		3			-47	39	-47	6	0		0	0	0	0	0		
+404	TVA augmentée sur les produits de luxe	Socialist		0		405	6	-7	-7	0	0		0	0	0	0	0		
+405	Augmentation de l'impôt sur la fortune	Socialist		1		406	13	-14	-7	0	0		0	0	0	0	0		
+406	Augmentation de l'impôt successoral (jusqu'à 80 % par paliers)	Socialist		2		407	19	-20	0	0	0		0	0	0	0	0		
+407	Limitation du capital privé	Socialist		3		408	26	-27	-20	0	0		0	0	0	0	0		
+408	Interdiction de la propriété privée	Socialist		4			39	-40	-34	0	0		0	0	0	0	0		
+409	Participation obligatoire des employés dans leur entreprise (actions)	Socialist		0		409	0	13	6	0	0		0	0	0	0	0		
+410	Actions à prix réduits pour les employés	Socialist		1		410	0	19	-7	0	0		0	0	0	0	0		
+411	Collectivisation des moyens de productions pour les employés	Socialist		2		411	13	26	19	13	0		0	0	0	0	0		
+412	Nationalisation des moyens de productions	Socialist		3		412	33	-14	33	6	0		0	0	19	0	0		
+413	Taxation des importations issue d'un commerce non-équitable	Socialist		0		414	13	-14	19	13	6		0	-27	-14	-7	0		
+414	Interdiction des importations issue d'un commerce non-équitable	Socialist		1			-14	-20	33	26	6		0	-40	-14	0	0		
+415	Taxation des importations étrangères	Militarist		0			13	13	13	6	0		0	0	0	0	0		
+416	Préférence nationale pour les marchés publics	Militarist		0		417	0	13	13	13	0		0	0	0	0	0		
+417	Limitations des importations	Militarist		1		418	-7	13	13	19	0		0	0	0	0	0		
+418	Interdiction des importations	Militarist		2			-7	-27	26	26	0		0	0	0	0	0		
+419	Subventions aux énergies renouvelables	Ecologist		0		420	-7	6	13	6	0		13	-20	13	13	0		
+420	Taxe aux énergies fossiles	Ecologist		1		421	6	-7	-7	-7	0		13	-20	19	13	0		
+421	Taxe carbone	Ecologist		2		422	13	-14	-14	-7	0		33	-27	13	13	0		
+422	Sortie du Nucléaire	Ecologist		3		423	-14	13	0	19	0		26	-27	33	19	0		
+423	Tout renouvelable	Ecologist		4			-14	26	0	26	0		26	-27	33	19	0		
+424	Classe bilingues	Liberals		0		425	-7	6	6	6	6		13	-14	6	-7	0		
+425	Classe de 6ème option Médecine Nucléaire	Liberals		1		426	-7	13	6	6	6		13	0	6	-7	0		
+426	Subvention des lycées privés	Liberals		1		427	-14	6	6	-7	6	427	13	-7	6	6	0		
+427	Privatisation de l'enseignement secondaire	Liberals		2		428	19	-14	19	-14	6		19	-14	13	6	0		
+428	Privatisation de l'enseignement supérieur	Liberals		3			33	-27	26	-27	6		19	-27	26	6	0		
+429	Enseignement du créationnisme	Religious		0		430	0	-14	0	0	13		6	6	0	0	-27		
+430	Interdiction de l'enseignement de la théorie de l'évolution	Religious		1			0	-20	0	0	19		6	6	0	0	-34		
+431	Prière scolaire obligatoire	Religious		0		432	0	-27	0	0	26		6	6	0	0	-47		
+432	Enseignement par les moines	Religious		1			0	-34	0	0	33		6	19	0	0	-47		
+433	Enseignement optionnel du Latin	Religious		0		434	-7	13	0	0	6		-7	-7	0	6	-7		
+434	Enseignement obligatoire du Latin	Religious		1		435	-7	-7	0	0	13		6	6	0	6	-7		
+435	Etudes bibliques en latin obligatoire	Religious		2			-7	-20	0	0	19		6	6	0	6	-20		
+436	Messe en latin obligatoire à l'école	Religious		2		437	-7	-27	0	0	26		6	6	0	0	-20		
+437	Confessions en latin obligatoires avant les cours	Religious		3			-7	-34	0	0	33		6	13	0	0	-27		
+438	Service civique obligatoire	Militarist		0		439	13	-14	-7	6	0		-7	6	6	0	0		
+439	Service militaire obligatoire (6 mois)	Militarist		1		440	13	-14	-7	6	0		-14	13	6	0	0		
+440	Service militaire obligatoire (2 ans)	Militarist		2		441	19	-20	-7	6	0		-14	13	6	0	0		
+441	Conscription volontaire	Militarist		2		442	26	-27	-7	6	0		-14	26	13	6	0		
+442	Conscription forcée	Militarist		3			33	-34	-7	6	6		-14	39	13	6	0		
+443	Revalorisation du montant des bourses universitaires	Socialist		0		444	-20	19	13	13	0		0	0	0	0	0		
+444	Gratuité de l'Enseignement Supérieur pour tous	Socialist		1			-34	33	19	26	0		0	0	0	0	0		
+445	Enseignement du tri sélectif	Ecologist		0		446	-14	13	13	6	0		0	0	0	0	0		
+446	Bourses d'études pour les énergies renouvelables	Ecologist		1			-27	26	33	19	0		0	0	0	0	0		
+447	Revalorisation des aides à la création d'entreprise	Liberals		0		448	-14	0	13	6	0		0	0	0	0	0		
+448	Défiscalisation des jeunes entreprises	Liberals		1		449	-20	0	19	6	0		0	0	0	0	0		
+449	Financement systématique des jeunes entreprises	Liberals		2		450	-27	0	26	13	0		0	0	0	0	0		
+450	Subvention à l'envie de créer une entreprise	Liberals		3			-34	6	33	13	0		0	0	0	0	0		
+451	Suppression de la Sécurité Sociale	Liberals		0			39	-40	26	-14	0		0	0	0	0	19		
+452	Limitation des allocations familiales	Liberals		0		453	13	-14	-14	0	-7		13	-14	6	0	-7		
+453	Suppression des allocations familiales	Liberals		1			26	-27	-20	0	-14		13	-20	6	0	-7		
+454	Universalité des allocations familiales	Religious		0		455	-7	6	6	0	6		19	-7	6	0	-14		
+455	Revalorisations des allocations familiales pour les familles nombreuses	Religious		1		456	-14	13	13	0	13		19	-14	6	0	-20		
+456	Allocations religieuses versées au Baptême, puis à la confirmation	Religious		2			-20	6	19	0	33		19	0	0	0	-27		
+457	Financement des associations d'anciens combattants	Militarist		0		458	-7	6	6	0	0		0	0	0	0	-7		
+458	Revenu de solidarité pour les anciens combattants	Militarist		1		459	-14	6	6	-7	0		0	0	0	0	-7		
+459	Gratuité du coût de la vie pour les anciens combattants	Militarist		2			-20	6	6	-14	0		0	0	0	0	-20		
+460	Remédier aux déserts médicaux	Socialist		0			-14	19	13	19	0		0	0	0	0	6		
+461	Limitation des aides à la création d'entreprise	Socialist		0		462	13	0	-14	-7	0		0	0	0	0	0		
+462	Suppression des aides à la création d'entreprise	Socialist		1			19	0	-27	-14	0		0	0	0	0	0		
+463	Création de prisons privées	Socialist		0		464	6	-7	6	-7	0		0	0	0	0	0		
+464	Privatisation des prisons publiques lourdement endettées	Socialist		1		465	13	-7	13	-14	0		0	0	0	0	0		
+465	Privatisation des prisons publiques	Socialist		2		466	19	-14	19	-20	-7		0	0	0	0	0		
+466	Privatisation des tribunaux	Socialist		3			26	-34	26	-27	-14		0	0	0	0	0		
+467	Légalisation du Cannabis pour un usage médical	Socialist		0		468	0	6	6	6	-7		13	-14	-7	6	6		
+468	Légalisation du Cannabis pour un usage récréatif	Socialist		1		469	0	13	13	6	-14		13	-20	-7	6	6		
+469	Légalisation des drogues dures pour un usage récréatif	Socialist		2		470	0	19	-20	0	-20		19	-7	-14	-7	6		
+470	Légalisation de l'alcool au travail	Socialist		1		471	-7	26	-27	-7	-27		19	-7	-14	-7	19		
+471	Légalisation des drogues au volant	Socialist		2			-7	33	-34	-7	-34		19	-7	-14	-7	19		
+472	Augmentation des effectifs pour le traitement des demandes d'asile	Socialist		0			-7	-7	6	0	0		0	0	0	0	0		
+473	Permis de séjour facilité	Socialist		0		474	-14	-14	13	-7	0		0	0	0	0	0		
+474	Naturalisation facilité	Socialist		1		475	-20	-20	26	-7	0		0	0	0	0	0		
+475	Distribution dans la rue de passeports français	Socialist		2			-27	-27	39	-7	0		0	0	0	0	0		
+476	Reconnaissance officielle de la culture judéo-chrétienne de la France comme culture nationale	Religious		0		477	0	-7	0	0	6		0	6	0	0	-34		
+477	Reconnaissance officielle de la culture catholique de la France comme culture nationale	Religious		1		478	0	-14	0	0	13		0	13	0	0	-27		
+478	Reconnaissance officielle de la religion catholique comme religion d'état	Religious		2		479	0	-20	0	0	26		-7	13	0	0	-34		
+479	Interdiction des religions non officielles	Religious		3		480	0	-27	0	0	39		-7	19	0	0	-40		
+480	Inquisition	Religious		4			-14	-34	0	13	46		-7	19	0	0	-40		
+481	Interdiction de l'IVG	Religious		0		482	0	-14	0	0	13		0	0	6	0	-20		
+482	Interdiction du mariage homosexuel	Religious		1		483	0	-20	0	0	26		0	0	6	0	-20		
+483	Interdiction de l'homosexualité	Religious		2		484	0	-27	0	0	26		0	0	6	0	-27		
+484	Baptême catholique obligatoire	Religious		3			0	-34	0	0	39		0	0	6	0	-40		
+485	Déchéance de nationalité pour les binationaux pour les crimes contre la nation	Militarist		0		486	0	6	0	0	0		-20	6	0	0	0		
+486	Déchéance de nationalité systématique pour les crimes contre la nation	Militarist		1		487	0	13	0	0	0		-7	6	0	0	0		
+487	Déchéance de nationalité systématique pour les crimes graves	Militarist		1		488	0	6	0	0	0		-7	6	0	0	0		
+488	Déchéance de nationalité sur ordonnance du Président	Militarist		2		489	0	6	0	0	0		-7	13	0	0	0		
+489	Déchéance de nationalité pour les délits mineurs	Militarist		3			0	-20	0	0	0		-7	13	0	0	0		
+490	Sortie des accords de Schengen	Militarist		0			0	6	0	0	0		6	0	13	6	0		
+491	Test de citoyenneté	Militarist		1		492	0	13	0	0	0		6	0	13	6	0		
+492	Quotas d'immigration	Militarist		1		493	-7	19	-7	0	0		13	0	13	6	6		
+493	Fermeture totale des frontières	Militarist		2			-14	26	-14	6	0		13	0	13	6	13		
+494	Légalisation limitée de l'euthanasie	Liberals		0		495	0	19	-7	6	-14		0	-7	0	0	13		
+495	Légalisation de l'euthanasie	Liberals		1		496	0	13	-7	6	-27		6	-14	0	0	13		
+496	Droit au suicide	Liberals		2			0	19	-14	13	-47		13	-14	0	0	19		
+497	Augmentation des subventions à la culture	Liberals		0		498	-7	6	0	6	0		0	-7	6	0	0		
+498	Musées nationaux gratuits pour tous	Liberals		1		499	-14	13	0	6	0		-7	-14	6	0	0		
+499	Gratuité complète des bibliothèques municipales	Liberals		2		500	-20	19	0	6	0		0	-14	6	0	0		
+500	Crédits culture pour tous les citoyens	Liberals		3			-27	26	13	6	0		13	-27	-7	0	0		
+501																			
+502																			
+503																			
+504																			
+505																			
+506																			
+507																			
+508																			
+509																			
+510																			
+511																			
+512																			
+513																			
+514																			
+515																			
+516																			
+517																			
+518																			
+519																			
+520																			
+521																			
+522																			
+523																			
+524																			
+525																			
+526																			
+527																			
+528																			
+529																			
+530																			
+531																			
+532																			
+533																			
+534																			
+535																			
+536																			
+537																			
+538																			
+539																			
+540																			
+541																			
+542																			
+543																			
+544																			
+545																			
+546																			
+547																			
+548																			
+549																			
+550																			
+551																			
+552																			
+553																			
+554																			
+555																			
+556																			
+557																			
+558																			
+559																			
+560																			
+561																			
+562																			
+563																			
+564																			
+565																			
+566																			
+567																			
+568																			
+569																			
+570																			
+571																			
+572																			
+573																			
+574																			
+575																			
+576																			
+577																			
