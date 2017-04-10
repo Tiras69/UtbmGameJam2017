@@ -432,9 +432,13 @@ public class GameManager : Singleton<GameManager>, INotifyPause {
     }
     public void EndSemesterReport()
     {
-        if( m_personalMoney > 1000000)
+        if (m_personalMoney > 1500000)
         {
             LevelManager.Instance.LoadLevel("WinScene");
+        }
+        else
+        {
+            FireOnResume();
         }
         report.enabled = false;
         report.GetComponentInChildren<Text>().enabled = false;
@@ -443,7 +447,6 @@ public class GameManager : Singleton<GameManager>, INotifyPause {
         gouvOpinionSemestre = 0;
         populaceOpinionSemestre = 0;
         personalMoneySemestre = 0;
-        FireOnResume();
     }
     public void ModifyGameProperty(GameProperty _property, int _value)
     {
