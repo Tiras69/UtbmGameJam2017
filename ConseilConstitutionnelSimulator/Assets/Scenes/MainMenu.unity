@@ -1480,6 +1480,7 @@ GameObject:
   - component: {fileID: 1220414665}
   - component: {fileID: 1220414664}
   - component: {fileID: 1220414667}
+  - component: {fileID: 1220414668}
   m_Layer: 5
   m_Name: LoadButton
   m_TagString: Untagged
@@ -1628,6 +1629,18 @@ MonoBehaviour:
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   delegates: []
+--- !u!114 &1220414668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1220414662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a273c9b27cb42c4a83c9cbab79a1311, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  yourButton: {fileID: 1220414664}
 --- !u!1 &1378762287
 GameObject:
   m_ObjectHideFlags: 0

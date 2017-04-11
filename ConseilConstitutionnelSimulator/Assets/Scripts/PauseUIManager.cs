@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -10,8 +11,8 @@ using UnityEngine.SceneManagement;
  *    etre désactivé quand le jeux est en pause
  * 3) glisser dans pauseCanvas le canvas de pause (o'rly ?) disponnible en prefab
  * 4) Se retaper la config de chaque bouton dans le canvas de pause
- */ 
-public class PauseUIManager : Singleton<PauseUIManager>
+ */
+public class PauseUIManager : Singleton<PauseUIManager>, IPausable
 {
     [SerializeField]
     private GameObject[] activeObjects;
@@ -22,6 +23,14 @@ public class PauseUIManager : Singleton<PauseUIManager>
     private bool[] canvaStates;
 
     private bool isActive = false;
+
+    private bool m_isPaused = true;
+
+    void Start()
+    {
+        GameManager.Instance.OnPause += OnPauseCallBack;
+        GameManager.Instance.OnResume += OnResumeCallBack;
+    }
 
     void OnEnable()
     {
@@ -35,7 +44,7 @@ public class PauseUIManager : Singleton<PauseUIManager>
 
     void Update()
     {
-        if (Input.GetKeyUp(KeyCode.Escape))
+        if (!m_isPaused && Input.GetKeyUp(KeyCode.Escape))
         {
             Show();
         }
@@ -53,6 +62,7 @@ public class PauseUIManager : Singleton<PauseUIManager>
 
     public void Quit()
     {
+        GameManager.Instance.saveGame(null);
 #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
 #else
@@ -62,21 +72,25 @@ public class PauseUIManager : Singleton<PauseUIManager>
 
     public void LoadByName(string sceneName)
     {
-        LevelManager.Instance.LoadLevel(sceneName);
+        GameManager.Instance.saveGame(null);
+        GameManager.Instance.resetOnNewLawLoaded();
+        LevelManager.Instance.LoadLevel(sceneName, null);
     }
 
     public void Show()
     {
-        foreach (GameObject activeObject in activeObjects)
-        {
-            activeObject.SetActive(false);
-        }
+        GameManager.Instance.FireOnPause();
+        //foreach (GameObject activeObject in activeObjects)
+        //{
+        //    activeObject.SetActive(false);
+        //}
         pauseCanvas.SetActive(true);
         isActive = true;
     }
 
     public void Hide()
     {
+        GameManager.Instance.FireOnResume();
         pauseCanvas.SetActive(false);
         for (uint i = 0; i < activeObjects.Length; ++i)
         {
@@ -95,5 +109,17 @@ public class PauseUIManager : Singleton<PauseUIManager>
         {
             Show();
         }
+    }
+
+    public PauseEventResult OnPauseCallBack(PauseEventArgs _args)
+    {
+        m_isPaused = true;
+        return null;
+    }
+
+    public PauseEventResult OnResumeCallBack(PauseEventArgs _args)
+    {
+        m_isPaused = false;
+        return null;
     }
 }

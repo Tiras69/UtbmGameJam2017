@@ -7,19 +7,26 @@ public class LevelManager : Singleton<LevelManager> {
 
   public FadeScreenAutoRef fadeScreen;
 
-  public void LoadLevel(string levelName)
+  public void LoadLevel(string levelName, LoadAndSave _saveGame)
   {
     fadeScreen.FadeOut();
     GameManager.Instance.FireOnPause();
-    StartCoroutine(DelayedLoadLevel(levelName));
+    StartCoroutine(DelayedLoadLevel(levelName, _saveGame));
   }
 
-  private IEnumerator DelayedLoadLevel(string levelString)
+  private IEnumerator DelayedLoadLevel(string levelString, LoadAndSave _saveGame)
   {
     yield return new WaitForSeconds(1.1f);
     //Application.LoadLevel(levelString);
+    if (levelString == "MainScene")
+    {
+        GameManager.Instance.LoadAllLaws();
+        GameManager.Instance.StartGameSession(_saveGame);
+    }
     SceneManager.LoadScene(levelString);
-    PlayMusicOnLoad(levelString); 
+    PlayMusicOnLoad(levelString);
+    
+    
   }
 
     private void PlayMusicOnLoad(string _levelString)

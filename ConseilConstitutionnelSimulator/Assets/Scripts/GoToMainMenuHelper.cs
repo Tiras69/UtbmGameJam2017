@@ -16,8 +16,9 @@ public class GoToMainMenuHelper : MonoBehaviour, IPausable{
     {
         if (!m_isPaused)
         {
+            GameManager.Instance.DestroySaveFile();
             GameManager.Instance.resetOnNewLawLoaded();
-            LevelManager.Instance.LoadLevel("MainMenu");
+            LevelManager.Instance.LoadLevel("MainMenu", null);
         }
     }
 

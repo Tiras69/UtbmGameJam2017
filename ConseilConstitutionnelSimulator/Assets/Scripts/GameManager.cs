@@ -32,18 +32,23 @@ public class GameManager : Singleton<GameManager>, INotifyPause {
     #region constructors
     protected GameManager()
     {
-        m_currentGameState = GameState.GameState_MENU;
-        m_allGameLaws = new List<Law>(100);                 // Set to 100 to avoid memory allocations.
+        m_allGameLaws = new List<Law>(1000);                 // Set to 1000 to avoid memory allocations.
         m_currentGameSessionLaws = new LinkedList<Law>();
+        InitNewGame();
+    }
+    #endregion
+
+    public void InitNewGame()
+    {
+        m_currentGameState = GameState.GameState_MENU;
         CurrentMonthInSemester = 0;
         m_governmentOpinion = 50;
         m_populaceOpinion = 50;
         m_personalMoney = 50;
-        gouvOpinionSemestre=0;
-        populaceOpinionSemestre=0;
-        personalMoneySemestre=0;
-}
-    #endregion
+        gouvOpinionSemestre = 0;
+        populaceOpinionSemestre = 0;
+        personalMoneySemestre = 0;
+    }
 
     /// <summary>
     /// Those fields must never be modify outside this manager
@@ -220,9 +225,27 @@ public class GameManager : Singleton<GameManager>, INotifyPause {
 
     }
 
-    public void StartGameSession()
+    public void StartGameSession(LoadAndSave _savedGame)
+    {   
+        m_currentGameState = GameState.GameState_BEGINSEMESTER;
+        AddInitialLaws();
+
+        if (_savedGame != null)
+        {
+            loadGame(_savedGame);
+        }
+        else
+        {
+            InitNewGame();
+            RefreshJauge();
+            m_currentLaw = m_currentGameSessionLaws.ElementAt(UnityEngine.Random.Range(0, m_currentGameSessionLaws.Count));
+        }
+    }
+
+    public void RegisterJauges()
     {
-        foreach(Slider s in FindObjectsOfType<Slider>()){
+        foreach (Slider s in FindObjectsOfType<Slider>())
+        {
             if (s.name == "Economie")
                 economy = s;
             else if (s.name == "Emploi")
@@ -232,6 +255,10 @@ public class GameManager : Singleton<GameManager>, INotifyPause {
             else
                 UnityEngine.Debug.Log("Slider Missing");
         }
+    }
+
+    public void HideSemesterReport()
+    {
         foreach (Image s in FindObjectsOfType<Image>())
         {
             if (s.name == "Report")
@@ -242,15 +269,10 @@ public class GameManager : Singleton<GameManager>, INotifyPause {
                 report.GetComponentInChildren<Button>().enabled = false;
                 report.GetComponentInChildren<Button>().image.enabled = false;
                 report.GetComponentInChildren<Button>().GetComponentInChildren<Text>().enabled = false;
+                break;
             }
-               
-        }
-        m_currentGameState = GameState.GameState_BEGINSEMESTER;
-        // Here we will add the first avaible laws for a start game.
-        // But for debug purpose it's the entire law database.
-        AddInitialLaws();
 
-        m_currentLaw = m_currentGameSessionLaws.ElementAt( UnityEngine.Random.Range(0, m_currentGameSessionLaws.Count));
+        }
     }
 
     private void AddInitialLaws()
@@ -417,6 +439,14 @@ public class GameManager : Singleton<GameManager>, INotifyPause {
 
     }
 
+    public void DestroySaveFile()
+    {
+        if (File.Exists(Application.streamingAssetsPath + "/PlayerSave.xml"))
+        {
+            File.Delete(Application.streamingAssetsPath + "/PlayerSave.xml");
+        }
+    }
+
     public void StartSemesterReport()
     {
         FireOnPause();
@@ -434,7 +464,8 @@ public class GameManager : Singleton<GameManager>, INotifyPause {
     {
         if (m_personalMoney > 1500000)
         {
-            LevelManager.Instance.LoadLevel("WinScene");
+            InitNewGame();
+            LevelManager.Instance.LoadLevel("WinScene", null);
         }
         else
         {
@@ -520,21 +551,12 @@ public class GameManager : Singleton<GameManager>, INotifyPause {
 
     public void loadGameFile()
     {
-        //---------------------------------------------------
-        //
-        //  FIND A SOLUTION WITHOUT EDITOR FEATURES !!!
-        //
-        //---------------------------------------------------
-
-        // Get files with the xml extension
-
-        string[] file = Directory.GetFiles(Application.streamingAssetsPath + "/../../", "*.xml");
-
+        
         try
         {
-            LoadAndSave loadAndSave = XmlSerializerHelper<LoadAndSave>.DeserializeXmlFile(file[0]);
-            
-            this.loadGame(loadAndSave);
+            LoadAndSave loadAndSave = XmlSerializerHelper<LoadAndSave>.DeserializeXmlFile(Application.streamingAssetsPath + "/PlayerSave.xml");
+
+            LevelManager.Instance.LoadLevel("MainScene", loadAndSave);
         }
         catch (Exception e)
         {
@@ -546,7 +568,6 @@ public class GameManager : Singleton<GameManager>, INotifyPause {
             UnityEngine.Debug.Log(e.Message);
         }
         
-        StartGameSession();
         
     }
 
@@ -568,10 +589,18 @@ public class GameManager : Singleton<GameManager>, INotifyPause {
         this.m_currentLaw = this.FindLawById(loadAndSave.CurrentLawId);
         this.m_currentMonthInSemester = loadAndSave.CurrentMonthInSemester;
 
-        economy.GetComponent<ManageJauge>().ChangeValue(m_economy);
-        emploi.GetComponent<ManageJauge>().ChangeValue(m_employement);
-        religion.GetComponent<ManageJauge>().ChangeValue(m_religion);
+        
 
+    }
+
+    public void RefreshJauge()
+    {
+        if(economy != null)
+            economy.GetComponent<ManageJauge>().ChangeValue(m_economy);
+        if(emploi != null)
+            emploi.GetComponent<ManageJauge>().ChangeValue(m_employement);
+        if(religion != null)
+            religion.GetComponent<ManageJauge>().ChangeValue(m_religion);
     }
 
     public void saveGame(Button buttonSave)
@@ -594,9 +623,9 @@ public class GameManager : Singleton<GameManager>, INotifyPause {
 
         loadAndSave.CurrentMonthInSemester = this.m_currentMonthInSemester;
 
-        XmlSerializerHelper<LoadAndSave>.SerializeXmlFile("save.xml", loadAndSave);
+        XmlSerializerHelper<LoadAndSave>.SerializeXmlFile(Application.streamingAssetsPath+"/PlayerSave.xml", loadAndSave);
 
-        buttonSave.GetComponentInChildren<Text>().text = "Game Saved";
+        //buttonSave.GetComponentInChildren<Text>().text = "Game Saved";
     }
 
     public void AddLawToPool(int _id, bool _isAddedLawsAreModified)

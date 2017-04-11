@@ -25,8 +25,11 @@ public class ManageJauge : MonoBehaviour, IPausable {
         ValueSlider.value += val;
         if (ValueSlider.value <= 0)
         {
-            if(!m_isPaused)
-                LevelManager.Instance.LoadLevel("LoseScene");
+            if (!m_isPaused)
+            {
+                GameManager.Instance.InitNewGame();
+                LevelManager.Instance.LoadLevel("LoseScene", null);
+            }
         }
     }
 

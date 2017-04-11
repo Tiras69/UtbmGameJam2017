@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Xml.Serialization;
 using UnityEngine;
 
-[XmlRoot("LoadAndSave")]
+[XmlRoot("1")]
 public class LoadAndSave {
 
     #region constructors
@@ -16,52 +16,52 @@ public class LoadAndSave {
     #endregion
 
     #region CurentLawsIds
-    [XmlArray("ListCurrentLawId")]
+    [XmlArray("2")]
     public List<int> ListCurrentLawId { get; set; }
     #endregion
 
     #region GovernementOpinion
-    [XmlElement("GovernementOpinion")]
+    [XmlElement("3")]
     public int GovernementOpinion { get; set; }
     #endregion
 
     #region PopulaceOpinion
-    [XmlElement("PopulaceOpinion")]
+    [XmlElement("4")]
     public int PopulaceOpinion { get; set; }
     #endregion
 
     #region Economy
-    [XmlElement("Economy")]
+    [XmlElement("5")]
     public int EconomyValue { get; set; }
     #endregion
 
     #region Employment
-    [XmlElement("Employment")]
+    [XmlElement("6")]
     public int EmploymentValue { get; set; }
     #endregion
 
     #region Religion
-    [XmlElement("Religion")]
+    [XmlElement("7")]
     public int ReligionValue { get; set; }
     #endregion
 
     #region Money
-    [XmlElement("Money")]
+    [XmlElement("8")]
     public int MoneyValue { get; set; }
     #endregion
 
     #region CurrentMonthInSemester
-    [XmlElement("CurrentMonthInSemester")]
+    [XmlElement("9")]
     public int CurrentMonthInSemester { get; set; }
     #endregion
 
     #region CurrentLawId
-    [XmlElement("CurrentLawId")]
+    [XmlElement("10")]
     public int CurrentLawId { get; set; }
     #endregion
 
 
-    [XmlRoot("PropertyModifier")]
+    [XmlRoot("11")]
     public class PropertyModifier
     {
         public PropertyModifier()
@@ -75,10 +75,10 @@ public class LoadAndSave {
             Value = _value;
         }
 
-        [XmlAttribute("AttributeName")]
+        [XmlAttribute("12")]
         public GameProperty Property { get; set; }
 
-        [XmlAttribute("Value")]
+        [XmlAttribute("13")]
         public int Value { get; set; }
     }
 }

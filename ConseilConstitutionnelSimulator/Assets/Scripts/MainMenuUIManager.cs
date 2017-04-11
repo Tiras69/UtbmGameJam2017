@@ -42,7 +42,7 @@ public class MainMenuUIManager : MonoBehaviour, IPausable {
     public void LoadByName(string sceneName)
     {
         if( !m_isPaused)
-            LevelManager.Instance.LoadLevel(sceneName);
+            LevelManager.Instance.LoadLevel(sceneName, null);
     }
 
     public void Resume()

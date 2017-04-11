@@ -10,8 +10,9 @@ public class ManageEvent : MonoBehaviour, IPausable {
     private bool m_isPaused = true;
     // Use this for initialization
     void Start () {
-        GameManager.Instance.LoadAllLaws();
-        GameManager.Instance.StartGameSession();
+        GameManager.Instance.RegisterJauges();
+        GameManager.Instance.RefreshJauge();
+        GameManager.Instance.HideSemesterReport();
         m_currentLaw = GameManager.Instance.GetCurrentLaw();
         GameManager.Instance.OnPause += OnPauseCallBack;
         GameManager.Instance.OnResume += OnResumeCallBack;  
@@ -25,6 +26,7 @@ public class ManageEvent : MonoBehaviour, IPausable {
         
         // We took the inverse value because its only when its a modified value 
         // We want to change the state.
+
         GameManager.Instance.FireOnNewLawLoaded(!m_currentLaw.IsAModifiedLaw);
 
         control.title.text = m_currentLaw.Title;
